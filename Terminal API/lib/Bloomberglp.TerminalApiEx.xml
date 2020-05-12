@@ -1,0 +1,3022 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bloomberglp.TerminalApiEx</name>
+    </assembly>
+    <members>
+        <member name="T:Bloomberglp.TerminalApiEx.BlpApi">
+            <summary>
+            Class enabling use of API by third party applications
+            </summary>
+            <remarks>
+            Before your application can make any calls to the Terminal  API it must first 
+            register use of the API by calling the asynchronous BlpApi.BeginRegister() 
+            and subsequent BlpApi.EndRegister() calls or by calling the synchronous 
+            BlpApi.Register() method. The registration operation will establish a 
+            session with the Bloomberg terminal that is valid for the lifetime of 
+            your running application or as long as the current user is logged in 
+            to the Bloomberg terminal.  If any API calls are made before the 
+            registration operation is complete then an Exception will be thrown.  
+            </remarks>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpApi.IsRegistered">
+            <summary>
+            Gets a value indicating if the API has been registered.
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpApi.Timeout">
+            <summary>
+            Gets or sets the timeout in milliseconds for terminal connection
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpApi.DebugLogging">
+            <summary>
+            Gets a value indicating if debug logging is enabled.
+            </summary>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpApi.Register">
+            <summary>
+            Synchronously registers the use of the API by third party applications
+            </summary>
+            <example>
+            <para>
+            The following example shows how to synchronously register use of the Bloomberg Terminal API.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //synchronous register operation
+            BlpApi.Register();
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpApi.RegisterRemote(System.String)">
+            <summary>
+            Synchronously registers the use of the API by third party applications
+            for use on a remote Blooomberg terminal machine
+            </summary>
+            <param name="machineName">The name of the machine Bloomberg terminal is running on.
+            </param>
+            <remarks>
+            This method should only be used when Bloomberg terminal and application are running on
+            different macchines. 
+            </remarks>
+            <example>
+            <para>
+            The following example shows how to synchronously register use of the 
+            Bloomberg Terminal API on a remote machine.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //synchronous register operation
+            BlpApi.RegisterRemote("BloombergTerminalMachine");
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpApi.BeginRegister(System.AsyncCallback,System.Object)">
+            <summary>
+            Asynchronously registers the use of the API by third party applications
+            </summary>
+            <param name="callback">The method to call when the asynchronous operation has completed</param>
+            <param name="state">Application specific state to associate with the asynchronous operation</param>
+            <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+            <example>
+            <para>
+            The following example shows how to asynchronously register use of the Bloomberg Terminal API.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //begin the asynchronous register operation
+            BlpApi.BeginRegister(OnRegistrationComplete, null);
+            
+            //callback method called when the register operation is complete
+            void OnRegistrationComplete(IAsyncResult ar)
+            {
+                //complete the asynchronous operation
+                BlpApi.EndRegister(ar);
+            }
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpApi.BeginRegisterRemote(System.String,System.AsyncCallback,System.Object)">
+            <summary>
+            Asynchronously registers the use of the API by third party applications
+            for use on a remote Blooomberg terminal machine
+            </summary>
+            <param name="machineName">The name of the machine Bloomberg terminal is running on</param>
+            <param name="callback">The method to call when the asynchronous operation has completed</param>
+            <param name="state">Application specific state to associate with the asynchronous operation</param>
+            <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+            <remarks>
+            This method should only be used when Bloomberg terminal and application are running on
+            different macchines. 
+            </remarks>
+            <example>
+            <para>
+            The following example shows how to asynchronously register use of the 
+            Bloomberg Terminal API on a remote machine.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //begin the asynchronous register operation
+            BlpApi.BeginRegisterRemote("BloombergTerminalMachine", OnRegistrationComplete, null);
+            
+            //callback method called when the register operation is complete
+            void OnRegistrationComplete(IAsyncResult ar)
+            {
+                //complete the asynchronous operation
+                BlpApi.EndRegisterRemote(ar);
+            }
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpApi.EndRegister(System.IAsyncResult)">
+            <summary>
+            Called by application to complete the asynchronous BeginRegister operation
+            </summary>
+            <param name="asyncResult">The IAsyncResult instance obtained by calling BeginRegister</param>
+            <example>
+            <para>
+            The following example shows how to asynchronously register use of the Bloomberg Terminal API.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //begin the asynchronous register operation
+            BlpApi.BeginRegister(OnRegistrationComplete, null);
+            
+            //callback method called when the register operation is complete
+            void OnRegistrationComplete(IAsyncResult ar)
+            {
+                //complete the asynchronous operation
+                BlpApi.EndRegister(ar);
+            }
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpApi.EndRegisterRemote(System.IAsyncResult)">
+            <summary>
+            Called by application to complete the asynchronous BeginRegisterRemote operation
+            </summary>
+            <param name="asyncResult">The IAsyncResult instance obtained by calling BeginRegisterRemote</param>
+            <example>
+            <para>
+            The following example shows how to asynchronously register use of the Bloomberg Terminal API
+            for use on remote Bloomberg terminal machine
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //begin the asynchronous register operation
+            BlpApi.BeginRegisterRemote("BloombergTerminalMachine", OnRegistrationComplete, null);
+            
+            //callback method called when the register operation is complete
+            void OnRegistrationComplete(IAsyncResult ar)
+            {
+                //complete the asynchronous operation
+                BlpApi.EndRegisterRemote(ar);
+            }
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="E:Bloomberglp.TerminalApiEx.BlpApi.Disconnected">
+            <summary>
+            Event raised when API is disconnected
+            </summary>
+            <example>
+            <para>
+            The following example shows how to subscribe to the API Disconnected event.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //subscribe to the disconnect event
+            BlpApi.Disconnected += new EventHandler(BlpApi_Disconnected);
+            
+            void BlpApi_Disconnected(object sender, EventArgs e)
+            {
+                System.Diagnostics.Trace.WriteLine("Terminal API Disconnected");
+            }
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="T:Bloomberglp.TerminalApiEx.Charts.ChartPeriodicity">
+            <summary>
+            Represents the periodicity for the chart component
+            </summary>
+        </member>
+        <member name="T:Bloomberglp.TerminalApiEx.Charts.ChartLine">
+            <summary>
+            Represents a line in the chart component
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.Charts.ChartLine.Id">
+            <summary>
+            Gets the Id of the chart line. 
+            When adding new lines this value should be null.
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.Charts.ChartLine.Security">
+            <summary>
+            Gets or sets the security of the chart line.
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.Charts.ChartLine.DataField">
+            <summary>
+            Gets or sets the data represented/plotted by the chart line.
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.Charts.ChartLine.PCS">
+            <summary>
+            Gets or sets the pricing source for the chart line.
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.Charts.ChartLine.Currency">
+            <summary>
+            Gets or sets the currency for the chart line.
+            </summary>
+        </member>
+        <member name="T:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent">
+            <summary>
+            A derived BlpComponent class representing the BCHART component.
+            This class contains getters and setters for BCHART specific properties.
+            </summary>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.GetLines">
+             <summary>
+             Synchronously gets a list of the lines displayed/plotted by the chart component
+             </summary>
+             <returns>List of chart lines</returns>
+             <example>
+             <para>
+             The following example shows how to synchronously get list of chart lines.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             var lines = chartComponent.GetLines();
+             foreach (var line in lines)
+             {
+                 Trace.WriteLine("Line Id:" + line.Id + ", Line Security:" + line.Security);
+             }
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.BeginGetLines(System.AsyncCallback,System.Object)">
+             <summary>
+             Asynchronously gets a list of the lines displayed/plotted by the chart component
+             </summary>
+             <param name="callback">The method to call when the asynchronous operation has completed</param>
+             <param name="state">Application specific state to associate with the asynchronous operation</param>
+             <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously get list of chart lines.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginGetLines((AsyncCallback)delegate(IAsyncResult ar)
+             {
+                var lines = chartComponent.EndGetLines(ar);
+                foreach (var line in lines)
+                {
+                    Trace.WriteLine("Line Id:" + line.Id + ", Line Security:" + line.Security);
+                }
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.EndGetLines(System.IAsyncResult)">
+             <summary>
+             Called by application to complete the asynchronous BeginGetLines operation and return result
+             </summary>
+             <param name="asyncResult">The IAsyncResult instance obtained by calling BeginGetLines</param>
+             <returns>List of chart lines</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously get list of chart lines.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginGetLines((AsyncCallback)delegate(IAsyncResult ar)
+             {
+                var lines = chartComponent.EndGetLines(ar);
+                foreach (var line in lines)
+                {
+                    Trace.WriteLine("Line Id:" + line.Id + ", Line Security:" + line.Security);
+                }
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.SetLines(System.Collections.Generic.IEnumerable{Bloomberglp.TerminalApiEx.Charts.ChartLine})">
+             <summary>
+             Synchronously sets the lines displayed/plotted by the chart component
+             </summary>
+             <param name="lines">The list of chart lines to set</param>
+             <example>
+             <para>
+             The following example shows how to synchronously set the displayed chart lines.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.SetLines(new ChartLine[] {
+                new ChartLine() {Security = "MSFT US Equity", DataField = "PR005"},
+                new ChartLine() {Security = "AAPL US Equity", DataField = "PR005"},
+             });
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.BeginSetLines(System.Collections.Generic.IEnumerable{Bloomberglp.TerminalApiEx.Charts.ChartLine},System.AsyncCallback,System.Object)">
+             <summary>
+             Asynchronously sets the lines displayed/plotted by the chart component
+             </summary>
+             <param name="lines">The list of chart lines to set</param>
+             <param name="callback">The method to call when the asynchronous operation has completed</param>
+             <param name="state">Application specific state to associate with the asynchronous operation</param>
+             <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously set the displayed chart lines.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             var lines = new ChartLine[] {
+                new ChartLine() {Security = "MSFT US Equity", DataField = "PR005"},
+                new ChartLine() {Security = "AAPL US Equity", DataField = "PR005"},
+             };
+            
+             chartComponent.BeginSetLines(lines, (AsyncCallback)delegate(IAsyncResult ar) {
+                chartComponent.EndSetLines(ar);
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.EndSetLines(System.IAsyncResult)">
+             <summary>
+             Called by application to complete the asynchronous BeginSetLines operation and return result
+             </summary>
+             <param name="asyncResult">The IAsyncResult instance obtained by calling BeginSetLines</param>
+             <returns>List of chart lines</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously set the displayed chart lines.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             var lines = new ChartLine[] {
+                new ChartLine() {Security = "MSFT US Equity", DataField = "PR005"},
+                new ChartLine() {Security = "AAPL US Equity", DataField = "PR005"},
+             };
+            
+             chartComponent.BeginSetLines(lines, (AsyncCallback)delegate(IAsyncResult ar) {
+                chartComponent.EndSetLines(ar);
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.GetChartId">
+             <summary>
+             Synchronously gets the value of the 'ChartId' property for the chart component
+             The 'ChartId' property represents the type of chart displayed
+             </summary>
+             <returns>The value of the 'ChartId' property</returns>
+             <example>
+             <para>
+             The following example shows how to synchronously get the value of the 'ChartId' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             var chartId = chartComponent.GetChartId();
+             Trace.WriteLine("ChartId: " + chartId);
+             
+             </code>
+             
+             </para>
+             </example>        
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.BeginGetChartId(System.AsyncCallback,System.Object)">
+             <summary>
+             Asynchronously gets the value of the 'ChartId' property for the chart component
+             </summary>
+             <param name="callback">The method to call when the asynchronous operation has completed</param>
+             <param name="state">Application specific state to associate with the asynchronous operation</param>
+             <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously get the value of the 'ChartId' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginGetChartId((AsyncCallback)delegate(IAsyncResult ar) {
+                var chartId = chartComponent.EndGetChartId();
+                Trace.WriteLine("ChartId: " + chartId);
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.EndGetChartId(System.IAsyncResult)">
+             <summary>
+             Called by application to complete the asynchronous BeginGetChartId operation and return result
+             </summary>
+             <param name="asyncResult">The IAsyncResult instance obtained by calling BeginGetChartId</param>
+             <returns>The value of the 'ChartId' property</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously get the value of the 'ChartId' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginGetChartId((AsyncCallback)delegate(IAsyncResult ar) {
+                var chartId = chartComponent.EndGetChartId();
+                Trace.WriteLine("ChartId: " + chartId);
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.SetChartId(System.Int32)">
+             <summary>
+             Synchronously sets the value of the 'ChartId' property for the chart component
+             The 'ChartId' property represents the type of chart displayed
+             </summary>
+             <param name="chartId">The value of the 'ChartId' property</param>
+             <example>
+             <para>
+             The following example shows how to synchronously set the value of the 'ChartId' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.SetChartId(2);
+             
+             </code>
+             
+             </para>
+             </example>    
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.BeginSetChartId(System.Int32,System.AsyncCallback,System.Object)">
+             <summary>
+             Asynchronously sets the value of the 'ChartId' property for the chart component
+             The 'ChartId' property represents the type of chart displayed
+             </summary>
+             <param name="chartId">The value of the 'ChartId' property</param>
+             <param name="callback">The method to call when the asynchronous operation has completed</param>
+             <param name="state">Application specific state to associate with the asynchronous operation</param>
+             <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously set the value of the 'ChartId' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginSetChartId(2, (AsyncCallback)delegate(IAsyncResult ar) {
+                chartComponent.EndSetChartId();
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.EndSetChartId(System.IAsyncResult)">
+             <summary>
+             Called by application to complete the asynchronous BeginSetChartId operation and return result
+             </summary>
+             <param name="asyncResult">The IAsyncResult instance obtained by calling BeginSetChartId</param>
+             <example>
+             <para>
+             The following example shows how to asynchronously set the value of the 'ChartId' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginSetChartId(2, (AsyncCallback)delegate(IAsyncResult ar) {
+                chartComponent.EndSetChartId();
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.GetPrimarySecurity">
+             <summary>
+             Synchronously gets the value of the 'PrimarySecurity' property for the chart component
+             The 'PrimarySecurity' property represents the primary security of the chart
+             </summary>
+             <returns>The value of the 'PrimarySecurity' property</returns>
+             <example>
+             <para>
+             The following example shows how to synchronously get the value of the 'PrimarySecurity' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             var primarySecurity = chartComponent.GetPrimarySecurity();
+             Trace.WriteLine("PrimarySecurity: " + primarySecurity);
+             
+             </code>
+             
+             </para>
+             </example>   
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.BeginGetPrimarySecurity(System.AsyncCallback,System.Object)">
+             <summary>
+             Asynchronously gets the value of the 'PrimarySecurity' property for the chart component
+             The 'PrimarySecurity' property represents the primary security of the chart
+             </summary>
+             <param name="callback">The method to call when the asynchronous operation has completed</param>
+             <param name="state">Application specific state to associate with the asynchronous operation</param>
+             <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously get the value of the 'PrimarySecurity' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginGetPrimarySecurity((AsyncCallback)delegate(IAsyncResult ar) {
+                var primarySecurity = chartComponent.EndGetPrimarySecurity();
+                Trace.WriteLine("PrimarySecurity: " + primarySecurity);
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.EndGetPrimarySecurity(System.IAsyncResult)">
+             <summary>
+             Called by application to complete the asynchronous BeginGetPrimarySecurity operation and return result
+             </summary>
+             <param name="asyncResult">The IAsyncResult instance obtained by calling BeginGetPrimarySecurity</param>
+             <returns>The value of the 'PrimarySecurity' property</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously get the value of the 'PrimarySecurity' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginGetPrimarySecurity((AsyncCallback)delegate(IAsyncResult ar) {
+                var primarySecurity = chartComponent.EndGetPrimarySecurity();
+                Trace.WriteLine("PrimarySecurity: " + primarySecurity);
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.SetPrimarySecurity(System.String)">
+             <summary>
+             Synchronously sets the value of the 'PrimarySecurity' property for the chart component
+             The 'PrimarySecurity' property represents the primary security of the chart
+             </summary>
+             <param name="primarySecurity">The value of the 'PrimarySecurity' property</param>
+             <example>
+             <para>
+             The following example shows how to synchronously set the value of the 'PrimarySecurity' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.SetPrimarySecurity("MSFT US Equity");
+             
+             </code>
+             
+             </para>
+             </example>    
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.BeginSetPrimarySecurity(System.String,System.AsyncCallback,System.Object)">
+             <summary>
+             Asynchronously sets the value of the 'PrimarySecurity' property for the chart component
+             The 'PrimarySecurity' property represents the primary security of the chart
+             </summary>
+             <param name="primarySecurity">The value of the 'PrimarySecurity' property</param>
+             <param name="callback">The method to call when the asynchronous operation has completed</param>
+             <param name="state">Application specific state to associate with the asynchronous operation</param>
+             <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously set the value of the 'PrimarySecurity' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginSetPrimarySecurity("MSFT US Equity", (AsyncCallback)delegate(IAsyncResult ar) {
+                chartComponent.EndSetPrimarySecurity();
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.EndSetPrimarySecurity(System.IAsyncResult)">
+             <summary>
+             Called by application to complete the asynchronous BeginSetPrimarySecurity operation and return result
+             </summary>
+             <param name="asyncResult">The IAsyncResult instance obtained by calling BeginSetPrimarySecurity</param>
+             <example>
+             <para>
+             The following example shows how to asynchronously set the value of the 'PrimarySecurity' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginSetPrimarySecurity("MSFT US Equity", (AsyncCallback)delegate(IAsyncResult ar) {
+                chartComponent.EndSetPrimarySecurity();
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.GetShortcut">
+             <summary>
+             Synchronously gets the value of the 'Shortcut' property for the chart component
+             The 'Shortcut' property is used to load a saved chart
+             </summary>
+             <returns>The value of the 'Shortcut' property</returns>
+             <example>
+             <para>
+             The following example shows how to synchronously get the value of the 'Shortcut' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             var shortcut = chartComponent.GetShortcut();
+             Trace.WriteLine("Shortcut: " + shortcut);
+             
+             </code>
+             
+             </para>
+             </example>   
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.BeginGetShortcut(System.AsyncCallback,System.Object)">
+             <summary>
+             Asynchronously gets the value of the 'Shortcut' property for the chart component
+             The 'Shortcut' property is used to load a saved chart
+             </summary>
+             <param name="callback">The method to call when the asynchronous operation has completed</param>
+             <param name="state">Application specific state to associate with the asynchronous operation</param>
+             <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously get the value of the 'Shortcut' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginGetShortcut((AsyncCallback)delegate(IAsyncResult ar) {
+                var shortcut = chartComponent.EndGetShortcut();
+                Trace.WriteLine("Shortcut: " + shortcut);
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.EndGetShortcut(System.IAsyncResult)">
+             <summary>
+             Called by application to complete the asynchronous BeginGetShortcut operation and return result
+             The 'Shortcut' property is used to load a saved chart
+             </summary>
+             <param name="asyncResult">The IAsyncResult instance obtained by calling BeginGetShortcut</param>
+             <returns>The value of the 'Shortcut' property</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously get the value of the 'Shortcut' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginGetShortcut((AsyncCallback)delegate(IAsyncResult ar) {
+                var shortcut = chartComponent.EndGetShortcut();
+                Trace.WriteLine("Shortcut: " + shortcut);
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.SetShortcut(System.String)">
+             <summary>
+             Synchronously sets the value of the 'Shortcut' property for the chart component
+             The 'Shortcut' property is used to load a saved chart
+             </summary>
+             <param name="shortcut">The value of the 'Shortcut' property</param>
+             <example>
+             <para>
+             The following example shows how to synchronously set the value of the 'Shortcut' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.SetShortcut("100");
+             
+             </code>
+             
+             </para>
+             </example>    
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.BeginSetShortcut(System.String,System.AsyncCallback,System.Object)">
+             <summary>
+             Asynchronously sets the value of the 'Shortcut' property for the chart component
+             The 'Shortcut' property is used to load a saved chart
+             </summary>
+             <param name="shortcut">The value of the 'Shortcut' property</param>
+             <param name="callback">The method to call when the asynchronous operation has completed</param>
+             <param name="state">Application specific state to associate with the asynchronous operation</param>
+             <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously set the value of the 'Shortcut' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginSetShortcut("100", (AsyncCallback)delegate(IAsyncResult ar) {
+                chartComponent.EndSetShortcut();
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.EndSetShortcut(System.IAsyncResult)">
+             <summary>
+             Called by application to complete the asynchronous BeginSetShortcut operation and return result
+             </summary>
+             <param name="asyncResult">The IAsyncResult instance obtained by calling BeginSetShortcut</param>
+             <example>
+             <para>
+             The following example shows how to asynchronously set the value of the 'Shortcut' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginSetShortcut("100", (AsyncCallback)delegate(IAsyncResult ar) {
+                chartComponent.EndSetShortcut();
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.GetPeriodicity">
+             <summary>
+             Synchronously gets the value of the 'Periodicity' property for the chart component
+             </summary>
+             <returns>The value of the 'Periodicity' property</returns>
+             <example>
+             <para>
+             The following example shows how to synchronously get the value of the 'Periodicity' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             var periodicity = chartComponent.GetPeriodicity();
+             Trace.WriteLine("Periodicity: " + periodicity);
+             
+             </code>
+             
+             </para>
+             </example>  
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.BeginGetPeriodicity(System.AsyncCallback,System.Object)">
+             <summary>
+             Asynchronously gets the value of the 'Periodicity' property for the chart component
+             </summary>
+             <param name="callback">The method to call when the asynchronous operation has completed</param>
+             <param name="state">Application specific state to associate with the asynchronous operation</param>
+             <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously get the value of the 'Periodicity' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginGetPeriodicity((AsyncCallback)delegate(IAsyncResult ar) {
+                var periodicity = chartComponent.EndGetPeriodicity();
+                Trace.WriteLine("Periodicity: " + periodicity);
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.EndGetPeriodicity(System.IAsyncResult)">
+             <summary>
+             Called by application to complete the asynchronous BeginGetPeriodicity operation and return result
+             </summary>
+             <param name="asyncResult">The IAsyncResult instance obtained by calling BeginGetPeriodicity</param>
+             <returns>The value of the 'Periodicity' property</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously get the value of the 'Periodicity' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginGetPeriodicity((AsyncCallback)delegate(IAsyncResult ar) {
+                var periodicity = chartComponent.EndGetPeriodicity();
+                Trace.WriteLine("Periodicity: " + periodicity);
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.SetPeriodicity(Bloomberglp.TerminalApiEx.Charts.ChartPeriodicity)">
+             <summary>
+             Synchronously sets the value of the 'Periodicity' property for the chart component
+             </summary>
+             <param name="periodicity">The value of the 'Periodicity' property</param>
+             <example>
+             <para>
+             The following example shows how to synchronously set the value of the 'Periodicity' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.SetPeriodicity(ChartPeriodicity.DAILY);
+             
+             </code>
+             
+             </para>
+             </example> 
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.BeginSetPeriodicity(Bloomberglp.TerminalApiEx.Charts.ChartPeriodicity,System.AsyncCallback,System.Object)">
+             <summary>
+             Asynchronously sets the value of the 'Periodicity' property for the chart component
+             </summary>
+             <param name="periodicity">The value of the 'Periodicity' property</param>
+             <param name="callback">The method to call when the asynchronous operation has completed</param>
+             <param name="state">Application specific state to associate with the asynchronous operation</param>
+             <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously set the value of the 'Periodicity' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginSetPeriodicity(ChartPeriodicity.DAILY, (AsyncCallback)delegate(IAsyncResult ar) {
+                chartComponent.EndSetPeriodicity();
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.EndSetPeriodicity(System.IAsyncResult)">
+             <summary>
+             Called by application to complete the asynchronous BeginSetPeriodicity operation and return result
+             </summary>
+             <param name="asyncResult">The IAsyncResult instance obtained by calling BeginSetPeriodicity</param>
+             <example>
+             <para>
+             The following example shows how to asynchronously set the value of the 'Periodicity' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginSetPeriodicity(ChartPeriodicity.DAILY, (AsyncCallback)delegate(IAsyncResult ar) {
+                chartComponent.EndSetPeriodicity();
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.GetStartDate">
+             <summary>
+             Synchronously gets the value of the 'StartDate' property for the chart component
+             </summary>
+             <returns>The value of the 'StartDate' property</returns>
+             <example>
+             <para>
+             The following example shows how to synchronously get the value of the 'StartDate' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             var startDate = chartComponent.GetStartDate();
+             Trace.WriteLine("StartDate: " + startDate);
+             
+             </code>
+             
+             </para>
+             </example>  
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.BeginGetStartDate(System.AsyncCallback,System.Object)">
+             <summary>
+             Asynchronously gets the value of the 'StartDate' property for the chart component
+             </summary>
+             <param name="callback">The method to call when the asynchronous operation has completed</param>
+             <param name="state">Application specific state to associate with the asynchronous operation</param>
+             <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously get the value of the 'StartDate' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginGetStartDate((AsyncCallback)delegate(IAsyncResult ar) {
+                var startDate = chartComponent.EndGetStartDate();
+                Trace.WriteLine("StartDate: " + startDate);
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.EndGetStartDate(System.IAsyncResult)">
+             <summary>
+             Called by application to complete the asynchronous BeginGetStartDate operation and return result
+             </summary>
+             <param name="asyncResult">The IAsyncResult instance obtained by calling BeginGetStartDate</param>
+             <returns>The value of the 'StartDate' property</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously get the value of the 'StartDate' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginGetStartDate((AsyncCallback)delegate(IAsyncResult ar) {
+                var startDate = chartComponent.EndGetStartDate();
+                Trace.WriteLine("StartDate: " + startDate);
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.SetStartDate(System.DateTime)">
+             <summary>
+             Synchronously sets the value of the 'StartDate' property for the chart component
+             </summary>
+             <param name="startDate">The value of the 'StartDate' property</param>
+             <example>
+             <para>
+             The following example shows how to synchronously set the value of the 'StartDate' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.SetStartDate(new DateTime(2015, 3, 26));
+             
+             </code>
+             
+             </para>
+             </example> 
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.BeginSetStartDate(System.DateTime,System.AsyncCallback,System.Object)">
+             <summary>
+             Asynchronously sets the value of the 'StartDate' property for the chart component
+             </summary>
+             <param name="startDate">The value of the 'StartDate' property</param>
+             <param name="callback">The method to call when the asynchronous operation has completed</param>
+             <param name="state">Application specific state to associate with the asynchronous operation</param>
+             <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously set the value of the 'StartDate' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginSetStartDate(new DateTime(2015, 3, 26), (AsyncCallback)delegate(IAsyncResult ar) {
+                chartComponent.EndSetStartDate();
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.EndSetStartDate(System.IAsyncResult)">
+             <summary>
+             Called by application to complete the asynchronous BeginSetStartDate operation and return result
+             </summary>
+             <param name="asyncResult">The IAsyncResult instance obtained by calling BeginSetStartDate</param>
+             <example>
+             <para>
+             The following example shows how to asynchronously set the value of the 'StartDate' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginSetStartDate(new DateTime(2015, 3, 26), (AsyncCallback)delegate(IAsyncResult ar) {
+                chartComponent.EndSetStartDate();
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.GetEndDate">
+             <summary>
+             Synchronously gets the value of the 'EndDate' property for the chart component
+             </summary>
+             <returns>The value of the 'EndDate' property</returns>
+             <example>
+             <para>
+             The following example shows how to synchronously get the value of the 'EndDate' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             var endDate = chartComponent.GetEndDate();
+             Trace.WriteLine("EndDate: " + endDate);
+             
+             </code>
+             
+             </para>
+             </example> 
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.BeginGetEndDate(System.AsyncCallback,System.Object)">
+             <summary>
+             Asynchronously gets the value of the 'EndDate' property for the chart component
+             </summary>
+             <param name="callback">The method to call when the asynchronous operation has completed</param>
+             <param name="state">Application specific state to associate with the asynchronous operation</param>
+             <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously get the value of the 'EndDate' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginGetEndDate((AsyncCallback)delegate(IAsyncResult ar) {
+                var endDate = chartComponent.EndGetEndDate();
+                Trace.WriteLine("EndDate: " + endDate);
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.EndGetEndDate(System.IAsyncResult)">
+             <summary>
+             Called by application to complete the asynchronous BeginGetEndDate operation and return result
+             </summary>
+             <param name="asyncResult">The IAsyncResult instance obtained by calling BeginGetEndDate</param>
+             <returns>The value of the 'EndDate' property</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously get the value of the 'EndDate' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginGetEndDate((AsyncCallback)delegate(IAsyncResult ar) {
+                var endDate = chartComponent.EndGetEndDate();
+                Trace.WriteLine("EndDate: " + endDate);
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.SetEndDate(System.DateTime)">
+             <summary>
+             Synchronously sets the value of the 'EndDate' property for the chart component
+             </summary>
+             <param name="endDate">The value of the 'EndDate' property</param>
+             <example>
+             <para>
+             The following example shows how to synchronously set the value of the 'EndDate' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.SetEndDate(new DateTime(2015, 3, 26));
+             
+             </code>
+             
+             </para>
+             </example> 
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.BeginSetEndDate(System.DateTime,System.AsyncCallback,System.Object)">
+             <summary>
+             Asynchronously sets the value of the 'EndDate' property for the chart component
+             </summary>
+             <param name="endDate">The value of the 'EndDate' property</param>
+             <param name="callback">The method to call when the asynchronous operation has completed</param>
+             <param name="state">Application specific state to associate with the asynchronous operation</param>
+             <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously set the value of the 'EndDate' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginSetEndDate(new DateTime(2015, 3, 26), (AsyncCallback)delegate(IAsyncResult ar) {
+                chartComponent.EndSetEndDate();
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.EndSetEndDate(System.IAsyncResult)">
+             <summary>
+             Called by application to complete the asynchronous BeginSetEndDate operation and return result
+             </summary>
+             <param name="asyncResult">The IAsyncResult instance obtained by calling BeginSetEndDate</param>
+             <example>
+             <para>
+             The following example shows how to asynchronously set the value of the 'EndDate' property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             using Bloomberglp.TerminalApiEx.Charts;
+             
+             var chartComponent = BlpTerminal.CreateComponent("BCHART") as BlpChartComponent;
+            
+             chartComponent.BeginSetEndDate(new DateTime(2015, 3, 26), (AsyncCallback)delegate(IAsyncResult ar) {
+                chartComponent.EndSetEndDate();
+             }, null);
+             
+             </code>
+             
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.Charts.BlpChartComponent.BeginGetProperties(System.Collections.Generic.IList{System.String},System.AsyncCallback,System.Object)">
+             <summary>
+             Asynchronously gets the property value(s) associated with the component instance
+             </summary>
+             <param name="names">Collection of property names to retrieve</param>
+             <param name="callback">The method to call when the asynchronous operation has completed</param>
+             <param name="state">Application specific state to associate with the asynchronous operation</param>
+             <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously get the value of a component property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             
+             //create chart component
+             BlpTerminal.BeginCreateComponent("BCHART", (AsyncCallback)delegate(IAsyncResult ar)
+             {
+                 var chartComponent = BlpTerminal.EndCreateComponent(ar);
+            
+                 var properties = new string[] { "ChartId" };
+            
+                 //get the property value(s)
+                 chartComponent.BeginGetProperties(properties, (AsyncCallback)delegate(IAsyncResult ar2)
+                 {
+                     var result = chartComponent.EndGetProperties(ar2);
+                     foreach (var prop in result)
+                     {
+                         Trace.WriteLine(String.Format("Name:{0}, Value:{1}", prop.Name, prop.Value));
+                     }
+                 }, null);
+             }, null);
+             
+             </code>
+             </para>
+             </example>
+        </member>
+        <member name="T:Bloomberglp.TerminalApiEx.BlpComponentEventArgs">
+            <summary>
+            Event arguments for Bloomberg component events
+            </summary>
+        </member>
+        <member name="T:Bloomberglp.TerminalApiEx.BlpComponentContextChangedEventArgs">
+            <summary>
+            Event arguments for when a Bloomberg component context changes
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpComponentContextChangedEventArgs.ContextItems">
+            <summary>
+            List of context items that have changed
+            </summary>
+        </member>
+        <member name="T:Bloomberglp.TerminalApiEx.BlpComponentPropertyChangedEventArgs">
+            <summary>
+            Event arguments for when a Bloomberg component property changes
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpComponentPropertyChangedEventArgs.Properties">
+            <summary>
+            List of properties that have changed
+            </summary>
+        </member>
+        <member name="T:Bloomberglp.TerminalApiEx.BlpComponentDestroyedEventArgs">
+            <summary>
+            Event arguments for when a Bloomberg component is destroyed
+            </summary>
+        </member>
+        <member name="T:Bloomberglp.TerminalApiEx.BlpComponentException">
+            <summary>
+            Exception thrown when a failure occurs in the creation
+            or operation of a Bloomberg component instance
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpComponentException.ErrorCode">
+            <summary>
+            Gets the error code associated with the exception
+            </summary>
+        </member>
+        <member name="T:Bloomberglp.TerminalApiEx.BlpGroupEventArgs">
+            <summary>
+            Event arguments for Bloomberg component groups
+            </summary>
+        </member>
+        <member name="T:Bloomberglp.TerminalApiEx.BlpGroupSuccessEventArgs">
+            <summary>
+            Event arguments for when group event subscription succeeded
+            </summary>
+        </member>
+        <member name="T:Bloomberglp.TerminalApiEx.BlpGroupErrorEventArgs">
+            <summary>
+            Event arguments for when a Bloomberg component group error occurs
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpGroupErrorEventArgs.ErrorMsg">
+            <summary>
+            Error message
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpGroupErrorEventArgs.Exception">
+            <summary>
+            Exception
+            </summary>
+        </member>
+        <member name="T:Bloomberglp.TerminalApiEx.BlpGroupContextChangedEventArgs">
+            <summary>
+            Event arguments for when a Bloomberg component group context changes
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpGroupContextChangedEventArgs.Groups">
+            <summary>
+            List of groups that have changed
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpGroupContextChangedEventArgs.Group">
+            <summary>
+            Group that has changed
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpGroupContextChangedEventArgs.Cookie">
+            <summary>
+            Optional cookie value passed in SetGroupContext call
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpGroupContextChangedEventArgs.ExternalSource">
+            <summary>
+            Returns true if the event originated from a source other than the current application
+            </summary>
+        </member>
+        <member name="T:Bloomberglp.TerminalApiEx.BlpTerminal">
+            <summary>
+             Allows third party applications to control and interact with the Bloomberg terminal
+            </summary>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.RunFunction(System.String,System.String,System.String)">
+            <summary>
+            Synchronously runs a function in one of the panel windows
+            </summary>
+            <param name="mnemonic">The mnemonic of the function to run</param>
+            <param name="panel">The panel window in which to run the function</param>
+            <param name="tails">Optional paramaters passed to the function</param>
+            <example>
+            <para>
+            The following example shows how to synchronously run a function in-panel.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //TOP news function
+            var mnemonic = "TOP";
+            //run function in panel #1
+            var panel = "1"; 
+            //no tails for this function
+            var tails = "";
+            
+            //run function in-panel synchronously
+            BlpTerminal.RunFunction(mnemonic, panel, tails);
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.RunFunction(System.String,System.String,System.Collections.Generic.IList{Bloomberglp.TerminalApiEx.BlpProperty},System.String)">
+            <summary>
+            Synchronously runs a function in one of the panel windows
+            </summary>
+            <param name="mnemonic">The mnemonic of the function to run</param>
+            <param name="panel">The panel window in which to run the function</param>
+            <param name="properties">Additional properties that can be specified when running the function</param>
+            <param name="tails">Optional paramaters passed to the function</param>
+            <example>
+            <para>
+            The following example shows how to synchronously run a function in-panel.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //TOP news function
+            var mnemonic = "TOP";
+            //run function in panel #1
+            var panel = "1"; 
+            //no extra properties
+            var properties = new List&lt;BlpProperty&gt;();
+            //no tails for this function
+            var tails = "";
+            
+            //run function in-panel synchronously
+            BlpTerminal.RunFunction(mnemonic, panel, properties, tails);
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.RunFunction(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.String)">
+            <summary>
+            Synchronously runs a function in one of the panel windows
+            </summary>
+            <param name="mnemonic">The mnemonic of the function to run</param>
+            <param name="panel">The panel window in which to run the function</param>
+            <param name="securities">Collection of securities for the function</param>
+            <param name="tails">Optional paramaters passed to the function</param>
+            <example>
+            <para>
+            The following example shows how to synchronously run a function in-panel.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //historical spread function
+            var mnemonic = "HS";
+            //run function in panel #1
+            var panel = "1"; 
+            //securities for HS function
+            var securities = new string[2] {"IBM US Equity", "MSFT US Equity"};
+            //no tails for this function
+            var tails = "";
+            
+            //run function in-panel synchronously
+            BlpTerminal.RunFunction(mnemonic, panel, securities, tails);
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.RunFunction(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IList{Bloomberglp.TerminalApiEx.BlpProperty},System.String)">
+            <summary>
+            Synchronously runs a function in one of the panel windows
+            </summary>
+            <param name="mnemonic">The mnemonic of the function to run</param>
+            <param name="panel">The panel window in which to run the function</param>
+            <param name="securities">Collection of securities for the function</param>
+            <param name="properties">Additional properties that can be specified when running the function</param>
+            <param name="tails">Optional paramaters passed to the function</param>
+            <example>
+            <para>
+            The following example shows how to synchronously run a function in-panel.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //historical spread function
+            var mnemonic = "HS";
+            //run function in panel #1
+            var panel = "1"; 
+            //securities for HS function
+            var securities = new string[2] {"IBM US Equity", "MSFT US Equity"};
+            //no extra properties
+            var properties = new List&lt;BlpProperty&gt;();
+            //no tails for this function
+            var tails = "";
+            
+            //run function in-panel synchronously
+            BlpTerminal.RunFunction(mnemonic, panel, securities, properties, tails);
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.BeginRunFunction(System.String,System.String,System.String,System.AsyncCallback,System.Object)">
+            <summary>
+            Asynchronously runs a function in one of the panel windows
+            </summary>
+            <param name="mnemonic">The mnemonic of the function to run</param>
+            <param name="panel">The panel window in which to run the function</param>
+            <param name="tails">Optional paramaters passed to the function</param>/// 
+            <param name="callback">The method to call when the asynchronous operation has completed</param>
+            <param name="state">Application specific state to associate with the asynchronous operation</param>
+            <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+            <example>
+            <para>
+            The following example shows how to asynchronously run a function in-panel.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //TOP news function
+            var mnemonic = "TOP";
+            //run function in panel #1
+            var panel = "1"; 
+            //no tails for this function
+            var tails = "";
+            
+            //begin the asynchronous operation
+            BlpTerminal.BeginRunFunction(mnemonic, panel, tails, OnRunFunctionComplete, null);
+            
+            //callback method called when the RunFunction operation is complete
+            void OnRunFunctionComplete(IAsyncResult ar)
+            {
+                //complete the asynchronous operation
+                BlpTerminal.EndRunFunction(ar);
+            }
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.BeginRunFunction(System.String,System.String,System.Collections.Generic.IList{Bloomberglp.TerminalApiEx.BlpProperty},System.String,System.AsyncCallback,System.Object)">
+            <summary>
+            Asynchronously runs a function in one of the panel windows
+            </summary>
+            <param name="mnemonic">The mnemonic of the function to run</param>
+            <param name="panel">The panel window in which to run the function</param>
+            <param name="properties">Additional properties that can be specified when running the function</param>
+            <param name="tails">Optional paramaters passed to the function</param>/// 
+            <param name="callback">The method to call when the asynchronous operation has completed</param>
+            <param name="state">Application specific state to associate with the asynchronous operation</param>
+            <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+            <example>
+            <para>
+            The following example shows how to asynchronously run a function in-panel.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //TOP news function
+            var mnemonic = "TOP";
+            //run function in panel #1
+            var panel = "1"; 
+            //no extra properties
+            var properties = new List&lt;BlpProperty&gt;();
+            //no tails for this function
+            var tails = "";
+            
+            //begin the asynchronous operation
+            BlpTerminal.BeginRunFunction(mnemonic, panel, properties, tails, 
+                                         OnRunFunctionComplete, null);
+            
+            //callback method called when the RunFunction operation is complete
+            void OnRunFunctionComplete(IAsyncResult ar)
+            {
+                //complete the asynchronous operation
+                BlpTerminal.EndRunFunction(ar);
+            }
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.BeginRunFunction(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.AsyncCallback,System.Object)">
+            <summary>
+            Asynchronously runs a function in one of the panel windows
+            </summary>
+            <param name="mnemonic">The mnemonic of the function to run</param>
+            <param name="panel">The panel window in which to run the function</param>
+            <param name="securities">Collection of securities for the function</param>
+            <param name="tails">Optional paramaters passed to the function</param>/// 
+            <param name="callback">The method to call when the asynchronous operation has completed</param>
+            <param name="state">Application specific state to associate with the asynchronous operation</param>
+            <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+            <example>
+            <para>
+            The following example shows how to asynchronously run a function in-panel.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //historical spread function
+            var mnemonic = "HS";
+            //run function in panel #1
+            var panel = "1"; 
+            //securities for HS function
+            var securities = new string[2] {"IBM US Equity", "MSFT US Equity"};
+            //no tails for this function
+            var tails = "";
+            
+            //begin the asynchronous operation
+            BlpTerminal.BeginRunFunction(mnemonic, panel, securities, tails, 
+                                         OnRunFunctionComplete, null);
+            
+            //callback method called when the RunFunction operation is complete
+            void OnRunFunctionComplete(IAsyncResult ar)
+            {
+                //complete the asynchronous operation
+                BlpTerminal.EndRunFunction(ar);
+            }
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.BeginRunFunction(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IList{Bloomberglp.TerminalApiEx.BlpProperty},System.String,System.AsyncCallback,System.Object)">
+            <summary>
+            Asynchronously runs a function in one of the panel windows
+            </summary>
+            <param name="mnemonic">The mnemonic of the function to run</param>
+            <param name="panel">The panel window in which to run the function</param>
+            <param name="securities">Collection of securities for the function</param>
+            <param name="properties">Additional properties that can be specified when running the function</param>
+            <param name="tails">Optional paramaters passed to the function</param>/// 
+            <param name="callback">The method to call when the asynchronous operation has completed</param>
+            <param name="state">Application specific state to associate with the asynchronous operation</param>
+            <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+            <example>
+            <para>
+            The following example shows how to asynchronously run a function in-panel.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //historical spread function
+            var mnemonic = "HS";
+            //run function in panel #1
+            var panel = "1"; 
+            //securities for HS function
+            var securities = new string[2] {"IBM US Equity", "MSFT US Equity"};
+            //no extra properties
+            var properties = new List&lt;BlpProperty&gt;();
+            //no tails for this function
+            var tails = "";
+            
+            //begin the asynchronous operation
+            BlpTerminal.BeginRunFunction(mnemonic, panel, securities, properties, tails,
+                                         OnRunFunctionComplete, null);
+            
+            //callback method called when the RunFunction operation is complete
+            void OnRunFunctionComplete(IAsyncResult ar)
+            {
+                //complete the asynchronous operation
+                BlpTerminal.EndRunFunction(ar);
+            }
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.EndRunFunction(System.IAsyncResult)">
+            <summary>
+            Called by application to complete the asynchronous BeginRunFunction operation
+            </summary>
+            <param name="asyncResult">The IAsyncResult instance obtained by calling BeginRunFunction</param>
+            <example>
+            <para>
+            The following example shows how to asynchronously run a function in-panel.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //historical spread function
+            var mnemonic = "HS";
+            //run function in panel #1
+            var panel = "1"; 
+            //securities for HS function
+            var securities = new string[2] {"IBM US Equity", "MSFT US Equity"};
+            //no extra properties
+            var properties = new List&lt;BlpProperty&gt;();
+            //no tails for this function
+            var tails = "";
+            
+            //begin the asynchronous operation
+            BlpTerminal.BeginRunFunction(mnemonic, panel, securities, properties, tails,
+                                         OnRunFunctionComplete, null);
+            
+            //callback method called when the RunFunction operation is complete
+            void OnRunFunctionComplete(IAsyncResult ar)
+            {
+                //complete the asynchronous operation
+                BlpTerminal.EndRunFunction(ar);
+            }
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.IsLoggedIn">
+            <summary>
+            Check if user is logged in to Bloomberg terminal.
+            Example:
+            var running = BlpTerminal.IsLoggedIn();
+            Trace.WriteLine(string.Format("{0}", running));
+            </summary>
+            <returns>True if terminal is logged in. False if terminal is not running or not logged in.</returns>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.CreateComponent(System.String)">
+            <summary>
+            Synchronously creates a Bloomberg component
+            </summary>
+            <param name="name">The name of component to create</param>
+            <returns>Instance of Bloomberg component</returns>
+            <example>
+            <para>
+            The following example shows how to synchronously create a Bloomberg component.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //create the Bloomberg Multiple Security Chart
+            var componentType = "BCHART";
+            
+            //create component synchronously
+            var component = BlpTerminal.CreateComponent(componentType);
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.CreateComponent(System.String,System.Collections.Generic.IList{Bloomberglp.TerminalApiEx.BlpProperty})">
+            <summary>
+            Synchronously creates a Bloomberg component
+            </summary>
+            <param name="name">The name of component to create</param>
+            <param name="properties">Properties that can be specified when creating a component</param>
+            <returns>Instance of Bloomberg component</returns>
+            <example>
+            <para>
+            The following example shows how to synchronously create a Bloomberg component.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //create the Bloomberg Multiple Security Chart
+            var componentType = "BCHART";
+            
+            //creation properties
+            var properties = new List&lt;BlpProperty&gt;();
+            properties.Add(new BlpProperty("ChartId", 2));
+            properties.Add(new BlpProperty("PrimarySecurity", "MSFT US Equity"));
+            
+            //create component synchronously
+            var component = BlpTerminal.CreateComponent(componentType, properties);
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.BeginCreateComponent(System.String,System.AsyncCallback,System.Object)">
+            <summary>
+            Asynchronously creates a Bloomberg component
+            </summary>
+            <param name="name">The name of component to create</param>
+            <param name="callback">The method to call when the asynchronous operation has completed</param>
+            <param name="state">Application specific state to associate with the asynchronous operation</param>
+            <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+            <example>
+            <para>
+            The following example shows how to asynchronously create a Bloomberg component.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //create the Bloomberg Multiple Security Chart
+            var componentType = "BCHART";
+            
+            //begin the asynchronous CreateComponent operation
+            BlpTerminal.BeginCreateComponent(componentType, OnComponentCreated, null);
+            
+            //callback method called when the CreateComponent operation is complete
+            void OnComponentCreated(IAsyncResult ar)
+            {
+                //complete the asynchronous operation and get returned component instance
+                var component = (BlpComponent)BlpTerminal.EndCreateComponent(ar);
+            }
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.BeginCreateComponent(System.String,System.Collections.Generic.IList{Bloomberglp.TerminalApiEx.BlpProperty},System.AsyncCallback,System.Object)">
+            <summary>
+            Asynchronously creates a Bloomberg component
+            </summary>
+            <param name="name">The name of component to create</param>
+            <param name="properties">Properties that can be specified when creating a component</param>
+            <param name="callback">The method to call when the asynchronous operation has completed</param>
+            <param name="state">Application specific state to associate with the asynchronous operation</param>
+            <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+            <example>
+            <para>
+            The following example shows how to asynchronously create a Bloomberg component.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //create the Bloomberg Multiple Security Chart
+            var componentType = "BCHART";
+            
+            //creation properties
+            var properties = new List&lt;BlpProperty&gt;();
+            properties.Add(new BlpProperty("ChartId", 2));
+            properties.Add(new BlpProperty("PrimarySecurity", "MSFT US Equity"));
+            
+            //begin the asynchronous CreateComponent operation
+            BlpTerminal.BeginCreateComponent(componentType, properties, OnComponentCreated, null);
+            
+            //callback method called when the CreateComponent operation is complete
+            void OnComponentCreated(IAsyncResult ar)
+            {
+                //complete the asynchronous operation and get returned component instance
+                var component = (BlpComponent)BlpTerminal.EndCreateComponent(ar);
+            }
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.EndCreateComponent(System.IAsyncResult)">
+            <summary>
+            Called by application to complete the asynchronous BeginCreateComponent operation and return result
+            </summary>
+            <param name="asyncResult">The IAsyncResult instance obtained by calling BeginCreateComponent</param>
+            <returns>Instance of Bloomberg component</returns>
+            <example>
+            <para>
+            The following example shows how to asynchronously create a Bloomberg component.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //create the Bloomberg Multiple Security Chart
+            var componentType = "BCHART";
+            
+            //begin the asynchronous CreateComponent operation
+            BlpTerminal.BeginCreateComponent(componentType, OnComponentCreated, null);
+            
+            //callback method called when the CreateComponent operation is complete
+            void OnComponentCreated(IAsyncResult ar)
+            {
+                //complete the asynchronous operation and get returned component instance
+                var component = (BlpComponent)BlpTerminal.EndCreateComponent(ar);
+            }
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.GetComponent(System.String)">
+            <summary>
+            Synchronously gets the Bloomberg component associated with a specified cookie
+            </summary>
+            <param name="cookie">The cookie for which to retrieve the associated Bloomberg component</param>
+            <returns>Instance of Bloomberg Component</returns>
+            <example>
+            <para>
+            The following example shows how to synchronously get a Bloomberg component by its cookie identifier.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            var component = BlpTerminal.GetComponent(cookie);
+            Trace.WriteLine("component cookie: " + component.Cookie);
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.BeginGetComponent(System.String,System.AsyncCallback,System.Object)">
+            <summary>
+            Asynchronously gets the Bloomberg component associated with a specified cookie
+            </summary>
+            <param name="cookie">The cookie for which to retrieve the associated Bloomberg componet</param>
+            <param name="callback">The method to call when the asynchronous operation has completed</param>
+            <param name="state">Application specific state to associate with the asynchronous operation</param>
+            <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+            <example>
+            <para>
+            The following example shows how to asynchronously get a Bloomberg component by its cookie identifier.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            BlpTerminal.BeginGetComponent(cookie, (AsyncCallback)delegate(IAsyncResult ar)
+            {
+                var component = BlpTerminal.EndGetComponent(ar);
+                Trace.WriteLine("component cookie: " + component.Cookie);
+            }, null);
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.EndGetComponent(System.IAsyncResult)">
+            <summary>
+            Called by application to complete the asynchronous BeginGetComponent operation and return result
+            </summary>
+            <param name="asyncResult">The IAsyncResult instance obtained by calling BeginGetComponent</param>
+            <returns>Instance of BlpComponent</returns>
+            <example>
+            <para>
+            The following example shows how to asynchronously get a Bloomberg component by its cookie identifier.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            BlpTerminal.BeginGetComponent(cookie, (AsyncCallback)delegate(IAsyncResult ar)
+            {
+                var component = BlpTerminal.EndGetComponent(ar);
+                Trace.WriteLine("component cookie: " + component.Cookie);
+            }, null);
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.GetAvailableComponents">
+            <summary>
+            Synchronously gets a list of all Bloomberg components that are available for use by applications
+            </summary>
+            <returns>List of strings representing the names of Bloomberg components available to applications</returns>
+            <example>
+            <para>
+            The following example shows how to synchronously get list of available components.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            var list = BlpTerminal.GetAvailableComponents();
+            foreach (var name in list)
+            {
+                Trace.WriteLine("component: " + name);
+            }
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.BeginGetAvailableComponents(System.AsyncCallback,System.Object)">
+            <summary>
+            Asynchronously gets a list of all Bloomberg components that are available for use by applications
+            </summary>
+            <param name="callback">The method to call when the asynchronous operation has completed</param>
+            <param name="state">Application specific state to associate with the asynchronous operation</param>
+            <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+            <example>
+            <para>
+            The following example shows how to asynchronously get list of available components.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            BlpTerminal.BeginGetAvailableComponents((AsyncCallback)delegate(IAsyncResult ar)
+            {
+               var list = BlpTerminal.EndGetAvailableComponents(ar);
+               foreach (var name in list)
+               {
+                   Trace.WriteLine("component: " + name);
+               }
+            }, null);
+            
+            </code>
+            
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.EndGetAvailableComponents(System.IAsyncResult)">
+            <summary>
+            Called by application to complete the asynchronous BeginGetAvailableComponents operation and return result
+            </summary>
+            <param name="asyncResult">The IAsyncResult instance obtained by calling BeginGetAvailableComponents</param>
+            <returns>List of strings representing the names of Bloomberg components available to applications</returns>
+            <example>
+            <para>
+            The following example shows how to asynchronously get list of available components.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            BlpTerminal.BeginGetAvailableComponents((AsyncCallback)delegate(IAsyncResult ar)
+            {
+               var list = BlpTerminal.EndGetAvailableComponents(ar);
+               foreach (var name in list)
+               {
+                   Trace.WriteLine("component: " + name);
+               }
+            }, null);
+            
+            </code>
+            
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.DestroyAllComponents">
+            <summary>
+            Synchronously destroys all components created/owned by the application
+            </summary>
+            <remarks>
+            When your application is done using a Bloomberg component it should call 
+            the Dispose() method on the BlpComponent instance in order to release 
+            resources held by the component.  If your application has created multiple 
+            components you can call the asynchronous BlpTerminal.BeginDestroyAllComponents() 
+            or the synchronous BlpTerminal.DestroyAllComponents() method in order to destroy 
+            all components created during the current session. 
+            </remarks>
+            <example>
+            <para>
+            The following example shows how to synchronously destroy Bloomberg component(s).
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //create component synchronously
+            var component = BlpTerminal.CreateComponent("BCHART", null, null);
+            
+            //call to dispose/destroy a single component instance
+            component.Dispose();
+            
+            //destroy all components synchronously
+            BlpTerminal.DestroyAllComponents();
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.BeginDestroyAllComponents(System.AsyncCallback,System.Object)">
+            <summary>
+            Asynchronously destroys all components created/owned by the application
+            </summary>
+            <param name="callback">The method to call when the asynchronous operation has completed</param>
+            <param name="state">Application specific state to associate with the asynchronous operation</param>
+            <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+            <remarks>
+            When your application is done using a Bloomberg component it should call 
+            the Dispose() method on the BlpComponent instance in order to release 
+            resources held by the component.  If your application has created multiple 
+            components you can call the asynchronous BlpTerminal.BeginDestroyAllComponents() 
+            or the synchronous BlpTerminal.DestroyAllComponents() method in order to destroy 
+            all components created during the current session. 
+            </remarks>
+            <example>
+            <para>
+            The following example shows how to asynchronously destroy Bloomberg component(s).
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //begin the asynchronous create component operation
+            BlpTerminal.BeginCreateComponent("BCHART", OnComponentCreated, null);
+            
+            //callback method called when the CreateComponent operation is complete
+            void OnComponentCreated(IAsyncResult ar)
+            {
+                //complete asynchronous operation and get returned component instance
+                var component = (BlpComponent)BlpTerminal.EndCreateComponent(ar);
+            
+                //call to dispose/destroy a single component instance
+                component.Dispose();
+            
+                //call to dispose/destroy all components created during the current session
+                BlpTerminal.BeginDestroyAllComponents(delegate(IAsyncResult ar)
+                {
+                    BlpTerminal.EndDestroyAllComponents(ar);
+                }, null);
+            }
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.EndDestroyAllComponents(System.IAsyncResult)">
+            <summary>
+            Called by application to complete the asynchronous EndDestroyAllComponents operation and return result
+            </summary>
+            <remarks>
+            When your application is done using a Bloomberg component it should call 
+            the Dispose() method on the BlpComponent instance in order to release 
+            resources held by the component.  If your application has created multiple 
+            components you can call the asynchronous BlpTerminal.BeginDestroyAllComponents() 
+            or the synchronous BlpTerminal.DestroyAllComponents() method in order to destroy 
+            all components created during the current session. 
+            </remarks>
+            <param name="asyncResult">The IAsyncResult instance obtained by calling BeginDestroyAllComponents</param>
+            <example>
+            <para>
+            The following example shows how to asynchronously destroy Bloomberg component(s).
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //begin the asynchronous create component operation
+            BlpTerminal.BeginCreateComponent("BCHART", OnComponentCreated, null);
+            
+            //callback method called when the CreateComponent operation is complete
+            void OnComponentCreated(IAsyncResult ar)
+            {
+                //complete asynchronous operation and get returned component instance
+                var component = (BlpComponent)BlpTerminal.EndCreateComponent(ar);
+            
+                //call to dispose/destroy a single component instance
+                component.Dispose();
+            
+                //call to dispose/destroy all components created during the current session
+                BlpTerminal.BeginDestroyAllComponents(delegate(IAsyncResult ar)
+                {
+                    BlpTerminal.EndDestroyAllComponents(ar);
+                }, null);
+            }
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.SetGroupContext(System.String,System.String)">
+            <summary>
+            Synchronously sets the context value for the specified component group
+            </summary>
+            <param name="name">The name of the group</param>
+            <param name="value">The value for the group context i.e. 'security', 'tsbook', etc</param>
+            <example>
+            <para>
+            The following example shows how to synchronously set a component group context.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            BlpTerminal.SetGroupContext("GroupName", "MSFT US Equity");
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.SetGroupContext(System.String,System.String,System.String)">
+            <summary>
+            Synchronously sets the context value for the specified component group
+            </summary>
+            <param name="name">The name of the group</param>
+            <param name="value">The value for the group context i.e. 'security', 'tsbook', etc</param>
+            <param name="cookie">Application specific value that will be returned in corresponding event</param>
+            <example>
+            <para>
+            The following example shows how to synchronously set a component group context.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            BlpTerminal.SetGroupContext("GroupName", "MSFT US Equity", "cookie");
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.BeginSetGroupContext(System.String,System.String,System.AsyncCallback,System.Object)">
+            <summary>
+            Asynchronously sets the context value for the specified component group
+            </summary>
+            <param name="name">The name of the group</param>
+            <param name="value">The value for the group context i.e. 'security', 'tsbook', etc</param>
+            <param name="callback">The method to call when the asynchronous operation has completed</param>
+            <param name="state">Application specific state to associate with the asynchronous operation</param>
+            <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+            <example>
+            <para>
+            The following example shows how to asynchronously set a component group context.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            BlpTerminal.BeginSetGroupContext("GroupName", "MSFT US Equity", (AsyncCallback)delegate(IAsyncResult ar)
+            {
+                BlpTerminal.EndSetGroupContext(ar);
+            }, null);
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.BeginSetGroupContext(System.String,System.String,System.String,System.AsyncCallback,System.Object)">
+            <summary>
+            Asynchronously sets the context value for the specified component group
+            </summary>
+            <param name="name">The name of the group</param>
+            <param name="value">The value for the group context i.e. 'security', 'tsbook', etc</param>
+            <param name="cookie">Application specific value that will be returned in corresponding event</param>
+            <param name="callback">The method to call when the asynchronous operation has completed</param>
+            <param name="state">Application specific state to associate with the asynchronous operation</param>
+            <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+            <example>
+            <para>
+            The following example shows how to asynchronously set a component group context.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            BlpTerminal.BeginSetGroupContext("GroupName", "MSFT US Equity", "cookie", (AsyncCallback)delegate(IAsyncResult ar)
+            {
+                BlpTerminal.EndSetGroupContext(ar);
+            }, null);
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.EndSetGroupContext(System.IAsyncResult)">
+            <summary>
+            Called by application to complete the asynchronous BeginSetGroupContext operation
+            </summary>
+            <param name="asyncResult">The IAsyncResult instance obtained by calling BeginSetGroupContext</param>
+            <example>
+            <para>
+            The following example shows how to asynchronously set a component group context.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            BlpTerminal.BeginSetGroupContext("GroupName", "MSFT US Equity", (AsyncCallback)delegate(IAsyncResult ar)
+            {
+                BlpTerminal.EndSetGroupContext(ar);
+            }, null);
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.GetAllGroups">
+            <summary>
+            Synchronously gets a list of all available component groups
+            </summary>
+            <returns>List of component groups</returns>
+            <example>
+            <para>
+            The following example shows how to synchronously get list of component groups.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            foreach (var group in BlpTerminal.GetAllGroups())
+            {
+                Trace.WriteLine("Group: " + group);
+            }
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.BeginGetAllGroups(System.AsyncCallback,System.Object)">
+            <summary>
+            Asynchronously gets a list of all available component groups
+            </summary>
+            <param name="callback">The method to call when the asynchronous operation has completed</param>
+            <param name="state">Application specific state to associate with the asynchronous operation</param>
+            <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+            <example>
+            <para>
+            The following example shows how to asynchronously get list of component groups.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            BlpTerminal.BeginGetAllGroups((AsyncCallback)delegate(IAsyncResult ar)
+            {
+                foreach (var group in BlpTerminal.EndGetAllGroups(ar))
+                {
+                    Trace.WriteLine("Group: " + group);
+                }
+            }, null);
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.EndGetAllGroups(System.IAsyncResult)">
+            <summary>
+            Called by application to complete the asynchronous BeginGetAllGroups operation
+            </summary>
+            <param name="asyncResult">The IAsyncResult instance obtained by calling BeginGetAllGroups</param>
+            <example>
+            <para>
+            The following example shows how to asynchronously get list of component groups.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            BlpTerminal.BeginGetAllGroups((AsyncCallback)delegate(IAsyncResult ar)
+            {
+                foreach (var group in BlpTerminal.EndGetAllGroups(ar))
+                {
+                    Trace.WriteLine("Group: " + group);
+                }
+            }, null);
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.GetGroupContext(System.String)">
+            <summary>
+            Synchronously gets the value of a component group context
+            </summary>
+            <param name="name">The name of the group</param>
+            <returns>Value of component group context</returns>
+            <example>
+            <para>
+            The following example shows how to synchronously get the value of a component group context.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            var group = BlpTerminal.GetGroupContext("MyGroup");
+            Trace.WriteLine("Group name: {0}, value: {1}", group.name, group.value);
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.BeginGetGroupContext(System.String,System.AsyncCallback,System.Object)">
+            <summary>
+            Asynchronously gets the value of a component group context
+            </summary>
+            <param name="name">The name of the group</param>
+            <param name="callback">The method to call when the asynchronous operation has completed</param>
+            <param name="state">Application specific state to associate with the asynchronous operation</param>
+            <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+            <example>
+            <para>
+            The following example shows how to get the value of a component group context asynchronously.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            BlpTerminal.BeginGetGroupContext("MyGroup", (AsyncCallback)delegate(IAsyncResult ar)
+            {
+                var group = BlpTerminal.EndGetGroupContext(ar);
+                Trace.WriteLine("Group name: {0}, value: {1}", group.name, group.value);
+            }, null);
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.EndGetGroupContext(System.IAsyncResult)">
+            <summary>
+            Called by application to complete the asynchronous BeginGetGroupContext operation
+            </summary>
+            <param name="asyncResult">The IAsyncResult instance obtained by calling BeginGetGroupContext</param>
+            <returns>Value of component group context</returns>
+            <example>
+            <para>
+            The following example shows how to get the value of a component group context asynchronously.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            BlpTerminal.BeginGetGroupContext("MyGroup", (AsyncCallback)delegate(IAsyncResult ar)
+            {
+                var group = BlpTerminal.EndGetGroupContext(ar);
+                Trace.WriteLine("Group name: {0}, value: {1}", group.name, group.value);
+            }, null);
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.SubscribeGroupEvents">
+            <summary>
+            Synchronously subscribe to Bloomberg component group events
+            </summary>
+            <example>
+            <para>
+            The following example shows how to synchronously subscribe to Bloomberg component events.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            BlpTerminal.SubscribeGroupEvents();
+            
+            Trace.WriteLine("Subscribed to component group events");
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.BeginSubscribeGroupEvents(System.AsyncCallback,System.Object)">
+            <summary>
+            Asynchronously subscribe to Bloomberg component group events
+            </summary>
+            <param name="callback">The method to call when the asynchronous operation has completed</param>
+            <param name="state">Application specific state to associate with the asynchronous operation</param>
+            <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+            <example>
+            <para>
+            The following example shows how to asynchronously subscribe to component group events.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            BlpTerminal.BeginSubscribeGroupEvents((AsyncCallback)delegate(IAsyncResult ar)
+            {
+                BlpTerminal.EndSubscribeGroupEvents(ar);
+                Trace.WriteLine("Subscribed to component group events");
+            }, null);
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.EndSubscribeGroupEvents(System.IAsyncResult)">
+            <summary>
+            Called by application to complete the asynchronous BeginSubscribeGroupEvents operation
+            </summary>
+            <param name="asyncResult">The IAsyncResult instance obtained by calling BeginSubscribeGroupEvents</param>
+            <example>
+            <para>
+            The following example shows how to asynchronously subscribe to component group events.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            BlpTerminal.BeginSubscribeGroupEvents((AsyncCallback)delegate(IAsyncResult ar)
+            {
+                BlpTerminal.EndSubscribeGroupEvents(ar);
+                Trace.WriteLine("Subscribed to component group events");
+            }, null);
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.UnsubscribeGroupEvents">
+            <summary>
+            Synchronously unsubscribe to Bloomberg component group events
+            </summary>
+            <example>
+            <para>
+            The following example shows how to synchronously unsubscribe to Bloomberg component events.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            BlpTerminal.UnsubscribeGroupEvents();
+            
+            Trace.WriteLine("Unsubscribed to component group events");
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.BeginUnsubscribeGroupEvents(System.AsyncCallback,System.Object)">
+            <summary>
+            Asynchronously unsubscribe to Bloomberg component group events
+            </summary>
+            <param name="callback">The method to call when the asynchronous operation has completed</param>
+            <param name="state">Application specific state to associate with the asynchronous operation</param>
+            <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+            <example>
+            <para>
+            The following example shows how to asynchronously unsubscribe to component group events.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            BlpTerminal.BeginUnsubscribeGroupEvents((AsyncCallback)delegate(IAsyncResult ar)
+            {
+                BlpTerminal.EndUnsubscribeGroupEvents(ar);
+                Trace.WriteLine("Unubscribed to component group events");
+            }, null);
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpTerminal.EndUnsubscribeGroupEvents(System.IAsyncResult)">
+            <summary>
+            Called by application to complete the asynchronous BeginUnsubscribeGroupEvents operation
+            </summary>
+            <param name="asyncResult">The IAsyncResult instance obtained by calling BeginUnsubscribeGroupEvents</param>
+            <example>
+            <para>
+            The following example shows how to asynchronously unsubscribe to component group events.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            BlpTerminal.BeginUnsubscribeGroupEvents((AsyncCallback)delegate(IAsyncResult ar)
+            {
+                BlpTerminal.EndUnsubscribeGroupEvents(ar);
+                Trace.WriteLine("Unsubscribed to component group events");
+            }, null);
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="E:Bloomberglp.TerminalApiEx.BlpTerminal.ComponentEvent">
+            <summary>
+            Raised when a Bloomberg component event occurs
+            </summary>
+            <example>
+            <para>
+            The following example shows how to subscribe to Bloomberg component events.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //subscribe to component events
+            BlpTerminal.ComponentEvent += BlpTerminal_ComponentEvent;
+            
+            void BlpTerminal_ComponentEvent(object sender, BlpComponentEventArgs e)
+            {
+                System.Diagnostics.Trace.WriteLine("Component event: " + e.GetType().FullName);
+            }
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="E:Bloomberglp.TerminalApiEx.BlpTerminal.GroupEvent">
+            <summary>
+            Raised when a Bloomberg component group event occurs
+            </summary>
+            <example>
+            <para>
+            The following example shows how to subscribe to Bloomberg component group events.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            
+            //subscribe to component group events
+            BlpTerminal.GroupEvent += BlpTerminal_ComponentGroupEvent;
+            
+            void BlpTerminal_ComponentGroupEvent(object sender, BlpGroupEventArgs e)
+            {
+                System.Diagnostics.Trace.WriteLine("Component group event: " + e.GetType().FullName);
+            }
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="T:Bloomberglp.TerminalApiEx.BlpContextItem">
+            <summary>
+            Represents a single item in a Bloomberg component context 
+            </summary>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpContextItem.#ctor(System.String,System.String)">
+            <summary>
+            Creates a new instance of the BlpContextItem class
+            </summary>
+            <param name="name">The name of the context item</param>
+            <param name="value">The value of the context item</param>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpContextItem.Name">
+            <summary>
+            Gets the name of the context item
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpContextItem.Value">
+            <summary>
+            Gets the value of the context item
+            </summary>
+        </member>
+        <member name="T:Bloomberglp.TerminalApiEx.BlpProperty">
+            <summary>
+            Represents a Bloomberg component property
+            </summary>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpProperty.#ctor(System.String,System.Object)">
+            <summary>
+            Creates a new instance of the BlpProperty class
+            </summary>
+            <param name="name">The name of the property</param>
+            <param name="value">The value of the property</param>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpProperty.#ctor(System.String)">
+            <summary>
+            Creates a new instance of the BlpProperty class
+            </summary>
+            <param name="property">String representing the name and the value of the property</param>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpProperty.Name">
+            <summary>
+            Gets the name of the property
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpProperty.Value">
+            <summary>
+            Gets the value of the property
+            </summary>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpProperty.Parse(System.String)">
+            <summary>
+            Parses fields from a string
+            </summary>
+        </member>
+        <member name="T:Bloomberglp.TerminalApiEx.BlpGroup">
+            <summary>
+            Represents a Bloomberg component group
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpGroup.Name">
+            <summary>
+            Gets the name of the group
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpGroup.Type">
+            <summary>
+            Gets the type of the group
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpGroup.Value">
+            <summary>
+            Gets the value of the group
+            </summary>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpGroup.ToString">
+            <summary>
+            Convert group to string value
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Bloomberglp.TerminalApiEx.BlpComponent">
+            <summary>
+            Represents an instance of a Bloomberg component
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpComponent.Hwnd">
+            <summary>
+            The window handle.
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpComponent.ComponentName">
+            <summary>
+            Gets the name/type of the component
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.TerminalApiEx.BlpComponent.Cookie">
+            <summary>
+            Gets the component cookie that uniquely identifies an instance of a component
+            </summary>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpComponent.GetProperties(System.Collections.Generic.IList{System.String})">
+             <summary>
+             Synchronously gets the property value(s) associated with the component instance
+             </summary>
+             <param name="names">Collection of property names to retrieve</param>
+             <returns>List of properties associated with the component instance</returns>
+             <example>
+             <para>
+             The following example shows how to synchronously get the value of a component property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             
+             //create chart component
+             var chartComponent = BlpTerminal.CreateComponent("BCHART");
+            
+             var properties = new string[] {"ChartId"};
+            
+             //get the property value(s)
+             var result = chartComponent.GetProperties(properties);
+             foreach (var prop in result)
+             {
+                 Trace.WriteLine(String.Format("Name:{0}, Value:{1}", prop.Name, prop.Value));
+             }
+             
+             </code>
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpComponent.BeginGetProperties(System.Collections.Generic.IList{System.String},System.AsyncCallback,System.Object)">
+             <summary>
+             Asynchronously gets the property value(s) associated with the component instance
+             </summary>
+             <param name="names">Collection of property names to retrieve</param>
+             <param name="callback">The method to call when the asynchronous operation has completed</param>
+             <param name="state">Application specific state to associate with the asynchronous operation</param>
+             <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously get the value of a component property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             
+             //create chart component
+             BlpTerminal.BeginCreateComponent("BCHART", (AsyncCallback)delegate(IAsyncResult ar)
+             {
+                 var chartComponent = BlpTerminal.EndCreateComponent(ar);
+            
+                 var properties = new string[] { "ChartId" };
+            
+                 //get the property value(s)
+                 chartComponent.BeginGetProperties(properties, (AsyncCallback)delegate(IAsyncResult ar2)
+                 {
+                     var result = chartComponent.EndGetProperties(ar2);
+                     foreach (var prop in result)
+                     {
+                         Trace.WriteLine(String.Format("Name:{0}, Value:{1}", prop.Name, prop.Value));
+                     }
+                 }, null);
+             }, null);
+             
+             </code>
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpComponent.EndGetProperties(System.IAsyncResult)">
+             <summary>
+             Called by application to complete the asynchronous BeginGetProperties operation and return result
+             </summary>
+             <param name="asyncResult">The IAsyncResult instance obtained by calling BeginGetProperties</param>
+             <returns>List of properties associated with the component instance</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously get the value of a component property.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             
+             //create chart component
+             BlpTerminal.BeginCreateComponent("BCHART", (AsyncCallback)delegate(IAsyncResult ar)
+             {
+                 var chartComponent = BlpTerminal.EndCreateComponent(ar);
+            
+                 var properties = new string[] { "ChartId" };
+            
+                 //get the property value(s)
+                 chartComponent.BeginGetProperties(properties, (AsyncCallback)delegate(IAsyncResult ar2)
+                 {
+                     var result = chartComponent.EndGetProperties(ar2);
+                     foreach (var prop in result)
+                     {
+                         Trace.WriteLine(String.Format("Name:{0}, Value:{1}", prop.Name, prop.Value));
+                     }
+                 }, null);
+             }, null);
+             
+             </code>
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpComponent.SetProperties(System.Collections.Generic.IList{Bloomberglp.TerminalApiEx.BlpProperty})">
+             <summary>
+             Synchronously sets the specified property value(s) of the component instance
+             </summary>
+             <param name="properties">Collection of properties to set</param>
+             <summary>
+             Synchronously sets the specified properties of the component instance
+             </summary>
+             <example>
+             <para>
+             The following example shows how to synchronously set a property of a component.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             
+             //create chart component
+             var chartComponent = BlpTerminal.CreateComponent("BCHART");
+                
+             var properties = new List&lt;BlpProperty&gt;();
+             properties.Add(new BlpProperty("PrimarySecurity", "AAPL US Equity"));
+            
+             //set the property
+             chartComponent.SetProperties(properties);
+             
+             </code>
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpComponent.BeginSetProperties(System.Collections.Generic.IList{Bloomberglp.TerminalApiEx.BlpProperty},System.AsyncCallback,System.Object)">
+             <summary>
+             Asynchronously sets the specified property value(s) of the component instance
+             </summary>
+             <param name="properties">Collection of properties to set</param>
+             <param name="callback">The method to call when the asynchronous operation has completed</param>
+             <param name="state">Application specific state to associate with the asynchronous operation</param>
+             <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+             <example>
+             <para>
+             The following example shows how to asynchronously set a property of a component.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             
+             //create chart component
+             BlpTerminal.BeginCreateComponent("BCHART", (AsyncCallback)delegate(IAsyncResult ar)
+             {
+                var chartComponent = BlpTerminal.EndCreateComponent(ar);
+            
+                var properties = new List&lt;BlpProperty&gt;();
+                properties.Add(new BlpProperty("PrimarySecurity", "AAPL US Equity"));
+            
+                //set the property
+                chartComponent.BeginSetProperties(properties, (AsyncCallback)delegate(IAsyncResult ar2)
+                {
+                    chartComponent.EndSetProperties(ar2);
+                }, null);
+             }, null);
+             
+             </code>
+             </para>
+             </example>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpComponent.EndSetProperties(System.IAsyncResult)">
+             <summary>
+             Called by application to complete the asynchronous BeginSetProperties operation
+             </summary>
+             <param name="asyncResult">The IAsyncResult instance obtained by calling BeginSetProperties</param>
+             <example>
+             <para>
+             The following example shows how to asynchronously set a property of a component.
+             <code>
+             
+             using Bloomberglp.TerminalApiEx;
+             
+             //create chart component
+             BlpTerminal.BeginCreateComponent("BCHART", (AsyncCallback)delegate(IAsyncResult ar)
+             {
+                var chartComponent = BlpTerminal.EndCreateComponent(ar);
+            
+                var properties = new List&lt;BlpProperty&gt;();
+                properties.Add(new BlpProperty("PrimarySecurity", "AAPL US Equity"));
+            
+                //set the property
+                chartComponent.BeginSetProperties(properties, (AsyncCallback)delegate(IAsyncResult ar2)
+                {
+                    chartComponent.EndSetProperties(ar2);
+                }, null);
+             }, null);
+             
+             </code>
+             </para>
+             </example>
+        </member>
+        <member name="E:Bloomberglp.TerminalApiEx.BlpComponent.ComponentEvent">
+            <summary>
+            Events for this component
+            </summary>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpComponent.Dispose">
+            <summary>
+            Destroys the instance of the Bloomberg component if it was created by
+            application and releases any resources used by the component
+            </summary>
+            <remarks>
+            When your application is done using a Bloomberg component it should call 
+            the Dispose() method on the BlpComponent instance in order to release 
+            resources held by the component.  If your application has created multiple 
+            components you can call the asynchronous BlpTerminal.BeginDestroyAllComponents() 
+            or the synchronous BlpTerminal.DestroyAllComponents() method in order to destroy 
+            all components created during the current session. 
+            </remarks>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpComponent.BeginDispose(System.AsyncCallback,System.Object)">
+            <summary>
+            Destroys the instance of the Bloomberg component if it was created by
+            application and releases any resources used by the component
+            </summary>
+            <param name="callback">The method to call when the asynchronous operation has completed</param>
+            <param name="state">Application specific state to associate with the asynchronous operation</param>
+            <returns>IAsyncResult that can be used to wait for the asynchronous operation to complete</returns>
+        </member>
+        <member name="M:Bloomberglp.TerminalApiEx.BlpComponent.EndDispose(System.IAsyncResult)">
+            <summary>
+            Called by application to complete the asynchronous BeginDispose operation
+            </summary>
+            <param name="asyncResult">The IAsyncResult instance obtained by calling BeginDispose</param>
+        </member>
+        <member name="F:Bloomberglp.TerminalApiEx.Interop.StrongNameInFlags.ForceVerification">
+            <summary>verify even if the settings in the registry disable it</summary>
+        </member>
+        <member name="F:Bloomberglp.TerminalApiEx.Interop.StrongNameInFlags.Install">
+            <summary>verification is the first (on entry to the cache)</summary>
+        </member>
+        <member name="F:Bloomberglp.TerminalApiEx.Interop.StrongNameInFlags.AdminAccess">
+            <summary>cache protects assembly from all but admin access</summary>
+        </member>
+        <member name="F:Bloomberglp.TerminalApiEx.Interop.StrongNameInFlags.UserAccess">
+            <summary>cache protects user's assembly from other users</summary>
+        </member>
+        <member name="F:Bloomberglp.TerminalApiEx.Interop.StrongNameInFlags.AllAccess">
+            <summary>cache provides no access restriction guarantees</summary>
+        </member>
+        <member name="F:Bloomberglp.TerminalApiEx.Interop.StrongNameOutFlags.WasVerified">
+            <summary>set to false if verify succeeded due to registry settings</summary>
+        </member>
+        <member name="F:Bloomberglp.TerminalApiEx.WinCrypt.SIGNER_SUBJECT_INFO.cbSize">
+            DWORD->unsigned int
+        </member>
+        <member name="F:Bloomberglp.TerminalApiEx.WinCrypt.SIGNER_SUBJECT_INFO.pdwIndex">
+            DWORD*
+        </member>
+        <member name="F:Bloomberglp.TerminalApiEx.WinCrypt.SIGNER_SUBJECT_INFO.dwSubjectChoice">
+            DWORD->unsigned int
+        </member>
+        <member name="F:Bloomberglp.TerminalApiEx.WinCrypt.SIGNER_SUBJECT_INFO.Union1">
+            SubjectChoiceUnion
+        </member>
+        <member name="F:Bloomberglp.TerminalApiEx.WinCrypt.SubjectChoiceUnion.pSignerFileInfo">
+            SIGNER_FILE_INFO*
+        </member>
+        <member name="F:Bloomberglp.TerminalApiEx.WinCrypt.SubjectChoiceUnion.pSignerBlobInfo">
+            SIGNER_BLOB_INFO*
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,55 @@
+Version 1.6.11.0
+
+1) Fix to IsLoggedIn() method to support user settings being stored in HKCU instead of HKLM.
+
+Version 1.6.8.0
+
+1) Fix for security exceptions when running in App Portal Sandbox.
+
+
+Version 1.6.3.0
+
+1) Attempt to reregister already registered application will cause exception now.
+
+
+Version 1.6.1.0
+
+1) Enhanced ability to interact with Bloomberg Charts through added classes to Bloomberglp.TerminalApiEx.Charts.
+2) Updated layout and improved usability of Sample Application
+3) Bug fixes related to embedded components
+
+
+Version 1.3.0.0
+
+1) Added overload SetGroupContext() method in BlpTerminal class that accepts an additional cookie argument. If used the cookie will be included in the BlpGroupContextChangedEventArgs received in BlpTerminal.GroupEvent handler.
+
+ 
+Version 1.2.8.3
+
+1) Added support for embedding components.
+2) TerminalApiEx now targets .Net 4.0 .Net 3.5 is no longer supported.
+3) Updated Terminal API Sample Application
+
+
+Version 1.2.7.8
+
+1) New registration process
+	Applications that use the Bloomberg Terminal API need to have a strong name.
+	Public key token for applcation must be registered with Bloomberg.
+	BlpApi.Register() no longer accepts appId string - instead public key token is extracted and verified.
+
+	Once application is built with a strong name its publick key token have to be registered with Bloomberg.
+	To get the public key token for application run the following command: 
+		"%ProgramFiles%\Microsoft SDKs\Windows\v7.0A\bin\sn.exe" -T <assemblyPath>
+		Or on a 64 bit machine:
+		"%ProgramFiles(x86)%\Microsoft SDKs\Windows\v7.0A\bin\sn.exe" -T <assemblyPath>	
+		
+2) Remote Terminal API support
+	BlpApi.RegisterRemote() call added allowing a subset of Terminal API functionality to work across machine bounaries.
+	This enables client applications using Terminal API to run on a different machine than the Bloomberg terminal.
+	There are some requirements/restrictions including that client application must run under same user account as the Bloomberg terminal and remote usage of components in not supported.
+
+3) Enhanced component group support and notifications
+	New API calls added to allow applications to get component group security context and receive notifications about component group security context changes.
+
+4) Updated Terminal API Sample Application

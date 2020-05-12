@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2016.9.17.0" projectFile="E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\Library\sand.shfbproj" started="12/4/2019 4:47:46 PM">
+<buildStep step="Initializing">
+Finding tools...
+The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
+Locating components in the following folder(s):
+    E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\Library
+    C:\ProgramData\EWSoftware\Sandcastle Help File Builder\Components and Plug-Ins\
+    C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\
+Using framework reflection data for &#39;.NET Framework 4.5.2&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework&#39;
+Using presentation style &#39;VS2013&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013&#39;
+Loading and initializing plug-ins...
+Lightweight Website Style Version 2016.9.17.0
+Copyright &#169; 2006-2016, Eric Woodruff, All Rights Reserved
+Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
+-------------------------------
+Clearing any prior web/markdown output...
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+Source: E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\Library\Blpapi\bin\Debug\net452\Bloomberglp.Blpapi.dll
+    Found assembly &#39;E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\Library\Blpapi\bin\Debug\net452\Bloomberglp.Blpapi.dll&#39;
+Source: E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\Library\Blpapi\bin\Debug\net452\Bloomberglp.Blpapi.XML
+
+Copying XML comments files
+    E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\Library\Blpapi\bin\Debug\net452\Bloomberglp.Blpapi.XML -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Bloomberglp.Blpapi.XML
+</buildStep>
+<buildStep step="GenerateSharedContent">
+Generating shared content files (en-US, English (United States))...
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+</plugIn>    Last step completed in 00:00:00.0180
+</buildStep>
+<buildStep step="GenerateApiFilter">
+Generating API filter for MRefBuilder...
+    Last step completed in 00:00:00.0490
+</buildStep>
+<buildStep step="GenerateReflectionInfo">
+Generating reflection information...
+[C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\MSBuild.exe - GenerateRefInfo.proj]
+Build started 12/4/2019 4:47:48 PM.
+Project &quot;E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\GenerateRefInfo.proj&quot; on node 1 (default targets).
+PrepareForBuild:
+  Creating directory &quot;obj\Debug\&quot;.
+GenerateRefInfo:
+  MRefBuilder (v2016.9.17.0)
+  Copyright c 2006-2016, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2016, Eric Woodruff, All Rights Reserved.
+  No source code context base path specified.  Source context information is unavailable.
+  Loaded 1 assemblies for reflection and 1 dependency assemblies.
+  Wrote information on 1 namespaces, 62 types, and 798 members
+  Copying file from &quot;reflection.org&quot; to &quot;reflection.all&quot;.
+  XslTransform (v2016.9.17.0)
+  Copyright c 2006-2016, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
+Done Building Project &quot;E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\GenerateRefInfo.proj&quot; (default targets).
+    Last step completed in 00:00:03.4278
+</buildStep>
+<buildStep step="TransformReflectionInfo">
+Transforming reflection output...
+[C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\MSBuild.exe - TransformManifest.proj]
+Build started 12/4/2019 4:47:52 PM.
+Project &quot;E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\TransformManifest.proj&quot; on node 1 (default targets).
+TransformManifest:
+  XslTransform (v2016.9.17.0)
+  Copyright c 2006-2016, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\ApplyVSDocModel.xsl&#39;.
+  Copying file from &quot;reflection.xml&quot; to &quot;reflection.nofilenames&quot;.
+  XslTransform (v2016.9.17.0)
+  Copyright c 2006-2016, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\AddFilenames.xsl&#39;.
+    Unique name M_Bloomberglp_Blpapi_AbstractSession_Cancel_1 generated for M:Bloomberglp.Blpapi.AbstractSession.Cancel(Bloomberglp.Blpapi.CorrelationID,System.String)
+    Unique name M_Bloomberglp_Blpapi_AbstractSession_Cancel_2 generated for M:Bloomberglp.Blpapi.AbstractSession.Cancel(System.Collections.Generic.IList{Bloomberglp.Blpapi.CorrelationID})
+    Unique name M_Bloomberglp_Blpapi_AbstractSession_Cancel_3 generated for M:Bloomberglp.Blpapi.AbstractSession.Cancel(System.Collections.Generic.IList{Bloomberglp.Blpapi.CorrelationID},System.String)
+    Unique name M_Bloomberglp_Blpapi_AbstractSession_GenerateToken_1 generated for M:Bloomberglp.Blpapi.AbstractSession.GenerateToken(Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_AbstractSession_GenerateToken_2 generated for M:Bloomberglp.Blpapi.AbstractSession.GenerateToken(Bloomberglp.Blpapi.CorrelationID,Bloomberglp.Blpapi.EventQueue)
+    Unique name M_Bloomberglp_Blpapi_AbstractSession_GenerateToken_3 generated for M:Bloomberglp.Blpapi.AbstractSession.GenerateToken(System.String,System.String,Bloomberglp.Blpapi.CorrelationID,Bloomberglp.Blpapi.EventQueue)
+    Unique name M_Bloomberglp_Blpapi_AbstractSession_NextEvent_1 generated for M:Bloomberglp.Blpapi.AbstractSession.NextEvent(System.Int64)
+    Unique name M_Bloomberglp_Blpapi_AbstractSession_OpenServiceAsync_1 generated for M:Bloomberglp.Blpapi.AbstractSession.OpenServiceAsync(System.String,Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_AbstractSession_SendAuthorizationRequest_1 generated for M:Bloomberglp.Blpapi.AbstractSession.SendAuthorizationRequest(Bloomberglp.Blpapi.Request,Bloomberglp.Blpapi.Identity,Bloomberglp.Blpapi.CorrelationID,System.String)
+    Unique name M_Bloomberglp_Blpapi_AbstractSession_SendAuthorizationRequest_2 generated for M:Bloomberglp.Blpapi.AbstractSession.SendAuthorizationRequest(Bloomberglp.Blpapi.Request,Bloomberglp.Blpapi.Identity,Bloomberglp.Blpapi.EventQueue,Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_AbstractSession_SendAuthorizationRequest_3 generated for M:Bloomberglp.Blpapi.AbstractSession.SendAuthorizationRequest(Bloomberglp.Blpapi.Request,Bloomberglp.Blpapi.Identity,Bloomberglp.Blpapi.EventQueue,Bloomberglp.Blpapi.CorrelationID,System.String)
+    Unique name M_Bloomberglp_Blpapi_AbstractSession_SendAuthorizationRequest_4 generated for M:Bloomberglp.Blpapi.AbstractSession.SendAuthorizationRequest(Bloomberglp.Blpapi.Request,Bloomberglp.Blpapi.UserHandle,Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_AbstractSession_SendAuthorizationRequest_5 generated for M:Bloomberglp.Blpapi.AbstractSession.SendAuthorizationRequest(Bloomberglp.Blpapi.Request,Bloomberglp.Blpapi.UserHandle,Bloomberglp.Blpapi.CorrelationID,System.String)
+    Unique name M_Bloomberglp_Blpapi_AbstractSession_SendAuthorizationRequest_6 generated for M:Bloomberglp.Blpapi.AbstractSession.SendAuthorizationRequest(Bloomberglp.Blpapi.Request,Bloomberglp.Blpapi.UserHandle,Bloomberglp.Blpapi.EventQueue,Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_AbstractSession_SendAuthorizationRequest_7 generated for M:Bloomberglp.Blpapi.AbstractSession.SendAuthorizationRequest(Bloomberglp.Blpapi.Request,Bloomberglp.Blpapi.UserHandle,Bloomberglp.Blpapi.EventQueue,Bloomberglp.Blpapi.CorrelationID,System.String)
+    Unique name M_Bloomberglp_Blpapi_AbstractSession_Stop_1 generated for M:Bloomberglp.Blpapi.AbstractSession.Stop(Bloomberglp.Blpapi.AbstractSession.StopOption)
+    Unique name M_Bloomberglp_Blpapi_Constant_Print_1 generated for M:Bloomberglp.Blpapi.Constant.Print(System.IO.TextWriter)
+    Unique name M_Bloomberglp_Blpapi_ConstantsList_Print_1 generated for M:Bloomberglp.Blpapi.ConstantsList.Print(System.IO.TextWriter)
+    Unique name M_Bloomberglp_Blpapi_Constraint_Print_1 generated for M:Bloomberglp.Blpapi.Constraint.Print(System.IO.TextWriter)
+    Unique name M_Bloomberglp_Blpapi_CorrelationID__ctor_1 generated for M:Bloomberglp.Blpapi.CorrelationID.#ctor(Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_CorrelationID__ctor_2 generated for M:Bloomberglp.Blpapi.CorrelationID.#ctor(System.Int64)
+    Unique name M_Bloomberglp_Blpapi_CorrelationID__ctor_3 generated for M:Bloomberglp.Blpapi.CorrelationID.#ctor(System.Object)
+    Unique name M_Bloomberglp_Blpapi_Datetime__ctor_1 generated for M:Bloomberglp.Blpapi.Datetime.#ctor(Bloomberglp.Blpapi.Datetime)
+    Unique name M_Bloomberglp_Blpapi_Datetime__ctor_2 generated for M:Bloomberglp.Blpapi.Datetime.#ctor(System.DateTime)
+    Unique name M_Bloomberglp_Blpapi_Datetime__ctor_3 generated for M:Bloomberglp.Blpapi.Datetime.#ctor(System.Int32,System.Int32,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Datetime__ctor_4 generated for M:Bloomberglp.Blpapi.Datetime.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Datetime__ctor_5 generated for M:Bloomberglp.Blpapi.Datetime.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Datetime_SetDatetime_1 generated for M:Bloomberglp.Blpapi.Datetime.SetDatetime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_DuplicateCorrelationIDException__ctor_1 generated for M:Bloomberglp.Blpapi.DuplicateCorrelationIDException.#ctor(System.String)
+    Unique name M_Bloomberglp_Blpapi_DuplicateCorrelationIDException__ctor_2 generated for M:Bloomberglp.Blpapi.DuplicateCorrelationIDException.#ctor(System.String,System.Exception)
+    Unique name M_Bloomberglp_Blpapi_Element_AppendValue_1 generated for M:Bloomberglp.Blpapi.Element.AppendValue(Bloomberglp.Blpapi.Datetime)
+    Unique name M_Bloomberglp_Blpapi_Element_AppendValue_2 generated for M:Bloomberglp.Blpapi.Element.AppendValue(Bloomberglp.Blpapi.Name)
+    Unique name M_Bloomberglp_Blpapi_Element_AppendValue_3 generated for M:Bloomberglp.Blpapi.Element.AppendValue(System.Boolean)
+    Unique name M_Bloomberglp_Blpapi_Element_AppendValue_4 generated for M:Bloomberglp.Blpapi.Element.AppendValue(System.Byte[])
+    Unique name M_Bloomberglp_Blpapi_Element_AppendValue_5 generated for M:Bloomberglp.Blpapi.Element.AppendValue(System.Char)
+    Unique name M_Bloomberglp_Blpapi_Element_AppendValue_6 generated for M:Bloomberglp.Blpapi.Element.AppendValue(System.Double)
+    Unique name M_Bloomberglp_Blpapi_Element_AppendValue_7 generated for M:Bloomberglp.Blpapi.Element.AppendValue(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_AppendValue_8 generated for M:Bloomberglp.Blpapi.Element.AppendValue(System.Int64)
+    Unique name M_Bloomberglp_Blpapi_Element_AppendValue_9 generated for M:Bloomberglp.Blpapi.Element.AppendValue(System.Single)
+    Unique name M_Bloomberglp_Blpapi_Element_AppendValue_10 generated for M:Bloomberglp.Blpapi.Element.AppendValue(System.String)
+    Unique name M_Bloomberglp_Blpapi_Element_FindConstant_1 generated for M:Bloomberglp.Blpapi.Element.FindConstant(Bloomberglp.Blpapi.ConstantsList,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_GetElement_1 generated for M:Bloomberglp.Blpapi.Element.GetElement(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_GetElement_2 generated for M:Bloomberglp.Blpapi.Element.GetElement(System.String)
+    Unique name M_Bloomberglp_Blpapi_Element_GetElementAsBool_1 generated for M:Bloomberglp.Blpapi.Element.GetElementAsBool(System.String)
+    Unique name M_Bloomberglp_Blpapi_Element_GetElementAsBytes_1 generated for M:Bloomberglp.Blpapi.Element.GetElementAsBytes(System.String)
+    Unique name M_Bloomberglp_Blpapi_Element_GetElementAsChar_1 generated for M:Bloomberglp.Blpapi.Element.GetElementAsChar(System.String)
+    Unique name M_Bloomberglp_Blpapi_Element_GetElementAsDate_1 generated for M:Bloomberglp.Blpapi.Element.GetElementAsDate(System.String)
+    Unique name M_Bloomberglp_Blpapi_Element_GetElementAsDatetime_1 generated for M:Bloomberglp.Blpapi.Element.GetElementAsDatetime(System.String)
+    Unique name M_Bloomberglp_Blpapi_Element_GetElementAsFloat32_1 generated for M:Bloomberglp.Blpapi.Element.GetElementAsFloat32(System.String)
+    Unique name M_Bloomberglp_Blpapi_Element_GetElementAsFloat64_1 generated for M:Bloomberglp.Blpapi.Element.GetElementAsFloat64(System.String)
+    Unique name M_Bloomberglp_Blpapi_Element_GetElementAsInt32_1 generated for M:Bloomberglp.Blpapi.Element.GetElementAsInt32(System.String)
+    Unique name M_Bloomberglp_Blpapi_Element_GetElementAsInt64_1 generated for M:Bloomberglp.Blpapi.Element.GetElementAsInt64(System.String)
+    Unique name M_Bloomberglp_Blpapi_Element_GetElementAsName_1 generated for M:Bloomberglp.Blpapi.Element.GetElementAsName(System.String)
+    Unique name M_Bloomberglp_Blpapi_Element_GetElementAsString_1 generated for M:Bloomberglp.Blpapi.Element.GetElementAsString(System.String)
+    Unique name M_Bloomberglp_Blpapi_Element_GetElementAsTime_1 generated for M:Bloomberglp.Blpapi.Element.GetElementAsTime(System.String)
+    Unique name M_Bloomberglp_Blpapi_Element_GetValue_1 generated for M:Bloomberglp.Blpapi.Element.GetValue(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_GetValueAsBool_1 generated for M:Bloomberglp.Blpapi.Element.GetValueAsBool(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_GetValueAsBytes_1 generated for M:Bloomberglp.Blpapi.Element.GetValueAsBytes(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_GetValueAsChar_1 generated for M:Bloomberglp.Blpapi.Element.GetValueAsChar(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_GetValueAsDate_1 generated for M:Bloomberglp.Blpapi.Element.GetValueAsDate(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_GetValueAsDatetime_1 generated for M:Bloomberglp.Blpapi.Element.GetValueAsDatetime(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_GetValueAsElement_1 generated for M:Bloomberglp.Blpapi.Element.GetValueAsElement(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_GetValueAsEnumeration_1 generated for M:Bloomberglp.Blpapi.Element.GetValueAsEnumeration(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_GetValueAsFloat32_1 generated for M:Bloomberglp.Blpapi.Element.GetValueAsFloat32(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_GetValueAsFloat64_1 generated for M:Bloomberglp.Blpapi.Element.GetValueAsFloat64(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_GetValueAsInt32_1 generated for M:Bloomberglp.Blpapi.Element.GetValueAsInt32(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_GetValueAsInt64_1 generated for M:Bloomberglp.Blpapi.Element.GetValueAsInt64(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_GetValueAsName_1 generated for M:Bloomberglp.Blpapi.Element.GetValueAsName(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_GetValueAsString_1 generated for M:Bloomberglp.Blpapi.Element.GetValueAsString(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_GetValueAsTime_1 generated for M:Bloomberglp.Blpapi.Element.GetValueAsTime(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_HasElement_1 generated for M:Bloomberglp.Blpapi.Element.HasElement(Bloomberglp.Blpapi.Name,System.Boolean)
+    Unique name M_Bloomberglp_Blpapi_Element_HasElement_2 generated for M:Bloomberglp.Blpapi.Element.HasElement(System.String)
+    Unique name M_Bloomberglp_Blpapi_Element_HasElement_3 generated for M:Bloomberglp.Blpapi.Element.HasElement(System.String,System.Boolean)
+    Unique name M_Bloomberglp_Blpapi_Element_IsEqualTo_1 generated for M:Bloomberglp.Blpapi.Element.IsEqualTo(Bloomberglp.Blpapi.Constant,System.Int32)
+    Unique name P_Bloomberglp_Blpapi_Element_Item_1 generated for P:Bloomberglp.Blpapi.Element.Item(Bloomberglp.Blpapi.Name,System.Int32)
+    Unique name P_Bloomberglp_Blpapi_Element_Item_2 generated for P:Bloomberglp.Blpapi.Element.Item(System.Int32)
+    Unique name P_Bloomberglp_Blpapi_Element_Item_3 generated for P:Bloomberglp.Blpapi.Element.Item(System.String)
+    Unique name P_Bloomberglp_Blpapi_Element_Item_4 generated for P:Bloomberglp.Blpapi.Element.Item(System.String,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_Print_1 generated for M:Bloomberglp.Blpapi.Element.Print(System.IO.TextWriter)
+    Unique name M_Bloomberglp_Blpapi_Element_SetChoice_1 generated for M:Bloomberglp.Blpapi.Element.SetChoice(System.String)
+    Unique name M_Bloomberglp_Blpapi_Element_SetElement_1 generated for M:Bloomberglp.Blpapi.Element.SetElement(Bloomberglp.Blpapi.Name,Bloomberglp.Blpapi.Datetime)
+    Unique name M_Bloomberglp_Blpapi_Element_SetElement_2 generated for M:Bloomberglp.Blpapi.Element.SetElement(Bloomberglp.Blpapi.Name,Bloomberglp.Blpapi.Name)
+    Unique name M_Bloomberglp_Blpapi_Element_SetElement_3 generated for M:Bloomberglp.Blpapi.Element.SetElement(Bloomberglp.Blpapi.Name,System.Boolean)
+    Unique name M_Bloomberglp_Blpapi_Element_SetElement_4 generated for M:Bloomberglp.Blpapi.Element.SetElement(Bloomberglp.Blpapi.Name,System.Byte[])
+    Unique name M_Bloomberglp_Blpapi_Element_SetElement_5 generated for M:Bloomberglp.Blpapi.Element.SetElement(Bloomberglp.Blpapi.Name,System.Char)
+    Unique name M_Bloomberglp_Blpapi_Element_SetElement_6 generated for M:Bloomberglp.Blpapi.Element.SetElement(Bloomberglp.Blpapi.Name,System.Double)
+    Unique name M_Bloomberglp_Blpapi_Element_SetElement_7 generated for M:Bloomberglp.Blpapi.Element.SetElement(Bloomberglp.Blpapi.Name,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_SetElement_8 generated for M:Bloomberglp.Blpapi.Element.SetElement(Bloomberglp.Blpapi.Name,System.Int64)
+    Unique name M_Bloomberglp_Blpapi_Element_SetElement_9 generated for M:Bloomberglp.Blpapi.Element.SetElement(Bloomberglp.Blpapi.Name,System.Single)
+    Unique name M_Bloomberglp_Blpapi_Element_SetElement_10 generated for M:Bloomberglp.Blpapi.Element.SetElement(Bloomberglp.Blpapi.Name,System.String)
+    Unique name M_Bloomberglp_Blpapi_Element_SetElement_11 generated for M:Bloomberglp.Blpapi.Element.SetElement(System.String,Bloomberglp.Blpapi.Constant)
+    Unique name M_Bloomberglp_Blpapi_Element_SetElement_12 generated for M:Bloomberglp.Blpapi.Element.SetElement(System.String,Bloomberglp.Blpapi.Datetime)
+    Unique name M_Bloomberglp_Blpapi_Element_SetElement_13 generated for M:Bloomberglp.Blpapi.Element.SetElement(System.String,Bloomberglp.Blpapi.Name)
+    Unique name M_Bloomberglp_Blpapi_Element_SetElement_14 generated for M:Bloomberglp.Blpapi.Element.SetElement(System.String,System.Boolean)
+    Unique name M_Bloomberglp_Blpapi_Element_SetElement_15 generated for M:Bloomberglp.Blpapi.Element.SetElement(System.String,System.Byte[])
+    Unique name M_Bloomberglp_Blpapi_Element_SetElement_16 generated for M:Bloomberglp.Blpapi.Element.SetElement(System.String,System.Char)
+    Unique name M_Bloomberglp_Blpapi_Element_SetElement_17 generated for M:Bloomberglp.Blpapi.Element.SetElement(System.String,System.Double)
+    Unique name M_Bloomberglp_Blpapi_Element_SetElement_18 generated for M:Bloomberglp.Blpapi.Element.SetElement(System.String,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_SetElement_19 generated for M:Bloomberglp.Blpapi.Element.SetElement(System.String,System.Int64)
+    Unique name M_Bloomberglp_Blpapi_Element_SetElement_20 generated for M:Bloomberglp.Blpapi.Element.SetElement(System.String,System.Single)
+    Unique name M_Bloomberglp_Blpapi_Element_SetElement_21 generated for M:Bloomberglp.Blpapi.Element.SetElement(System.String,System.String)
+    Unique name M_Bloomberglp_Blpapi_Element_SetValue_1 generated for M:Bloomberglp.Blpapi.Element.SetValue(Bloomberglp.Blpapi.Constant,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_SetValue_2 generated for M:Bloomberglp.Blpapi.Element.SetValue(Bloomberglp.Blpapi.Datetime)
+    Unique name M_Bloomberglp_Blpapi_Element_SetValue_3 generated for M:Bloomberglp.Blpapi.Element.SetValue(Bloomberglp.Blpapi.Datetime,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_SetValue_4 generated for M:Bloomberglp.Blpapi.Element.SetValue(Bloomberglp.Blpapi.Name)
+    Unique name M_Bloomberglp_Blpapi_Element_SetValue_5 generated for M:Bloomberglp.Blpapi.Element.SetValue(Bloomberglp.Blpapi.Name,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_SetValue_6 generated for M:Bloomberglp.Blpapi.Element.SetValue(System.Boolean)
+    Unique name M_Bloomberglp_Blpapi_Element_SetValue_7 generated for M:Bloomberglp.Blpapi.Element.SetValue(System.Boolean,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_SetValue_8 generated for M:Bloomberglp.Blpapi.Element.SetValue(System.Byte[])
+    Unique name M_Bloomberglp_Blpapi_Element_SetValue_9 generated for M:Bloomberglp.Blpapi.Element.SetValue(System.Byte[],System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_SetValue_10 generated for M:Bloomberglp.Blpapi.Element.SetValue(System.Char)
+    Unique name M_Bloomberglp_Blpapi_Element_SetValue_11 generated for M:Bloomberglp.Blpapi.Element.SetValue(System.Char,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_SetValue_12 generated for M:Bloomberglp.Blpapi.Element.SetValue(System.Double)
+    Unique name M_Bloomberglp_Blpapi_Element_SetValue_13 generated for M:Bloomberglp.Blpapi.Element.SetValue(System.Double,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_SetValue_14 generated for M:Bloomberglp.Blpapi.Element.SetValue(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_SetValue_15 generated for M:Bloomberglp.Blpapi.Element.SetValue(System.Int32,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_SetValue_16 generated for M:Bloomberglp.Blpapi.Element.SetValue(System.Int64)
+    Unique name M_Bloomberglp_Blpapi_Element_SetValue_17 generated for M:Bloomberglp.Blpapi.Element.SetValue(System.Int64,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_SetValue_18 generated for M:Bloomberglp.Blpapi.Element.SetValue(System.Single)
+    Unique name M_Bloomberglp_Blpapi_Element_SetValue_19 generated for M:Bloomberglp.Blpapi.Element.SetValue(System.Single,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Element_SetValue_20 generated for M:Bloomberglp.Blpapi.Element.SetValue(System.String)
+    Unique name M_Bloomberglp_Blpapi_Element_SetValue_21 generated for M:Bloomberglp.Blpapi.Element.SetValue(System.String,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_EventDispatcher__ctor_1 generated for M:Bloomberglp.Blpapi.EventDispatcher.#ctor(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_EventDispatcher__ctor_2 generated for M:Bloomberglp.Blpapi.EventDispatcher.#ctor(System.Int32,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_EventDispatcher_Stop_1 generated for M:Bloomberglp.Blpapi.EventDispatcher.Stop(Bloomberglp.Blpapi.EventDispatcher.StopOption)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_AppendMessage_1 generated for M:Bloomberglp.Blpapi.EventFormatter.AppendMessage(Bloomberglp.Blpapi.Name,Bloomberglp.Blpapi.Topic,System.Nullable{System.Int32})
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_AppendMessage_2 generated for M:Bloomberglp.Blpapi.EventFormatter.AppendMessage(System.String,Bloomberglp.Blpapi.Topic)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_AppendMessage_3 generated for M:Bloomberglp.Blpapi.EventFormatter.AppendMessage(System.String,Bloomberglp.Blpapi.Topic,System.Nullable{System.Int32})
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_AppendRecapMessage_1 generated for M:Bloomberglp.Blpapi.EventFormatter.AppendRecapMessage(Bloomberglp.Blpapi.Topic,System.Nullable{System.Int32},Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_AppendResponse_1 generated for M:Bloomberglp.Blpapi.EventFormatter.AppendResponse(System.String)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_AppendValue_1 generated for M:Bloomberglp.Blpapi.EventFormatter.AppendValue(Bloomberglp.Blpapi.Name)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_AppendValue_2 generated for M:Bloomberglp.Blpapi.EventFormatter.AppendValue(System.Boolean)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_AppendValue_3 generated for M:Bloomberglp.Blpapi.EventFormatter.AppendValue(System.Char)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_AppendValue_4 generated for M:Bloomberglp.Blpapi.EventFormatter.AppendValue(System.Double)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_AppendValue_5 generated for M:Bloomberglp.Blpapi.EventFormatter.AppendValue(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_AppendValue_6 generated for M:Bloomberglp.Blpapi.EventFormatter.AppendValue(System.Int64)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_AppendValue_7 generated for M:Bloomberglp.Blpapi.EventFormatter.AppendValue(System.Single)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_AppendValue_8 generated for M:Bloomberglp.Blpapi.EventFormatter.AppendValue(System.String)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_PushElement_1 generated for M:Bloomberglp.Blpapi.EventFormatter.PushElement(System.String)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_SetElement_1 generated for M:Bloomberglp.Blpapi.EventFormatter.SetElement(Bloomberglp.Blpapi.Name,Bloomberglp.Blpapi.Name)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_SetElement_2 generated for M:Bloomberglp.Blpapi.EventFormatter.SetElement(Bloomberglp.Blpapi.Name,System.Boolean)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_SetElement_3 generated for M:Bloomberglp.Blpapi.EventFormatter.SetElement(Bloomberglp.Blpapi.Name,System.Char)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_SetElement_4 generated for M:Bloomberglp.Blpapi.EventFormatter.SetElement(Bloomberglp.Blpapi.Name,System.Double)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_SetElement_5 generated for M:Bloomberglp.Blpapi.EventFormatter.SetElement(Bloomberglp.Blpapi.Name,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_SetElement_6 generated for M:Bloomberglp.Blpapi.EventFormatter.SetElement(Bloomberglp.Blpapi.Name,System.Int64)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_SetElement_7 generated for M:Bloomberglp.Blpapi.EventFormatter.SetElement(Bloomberglp.Blpapi.Name,System.Single)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_SetElement_8 generated for M:Bloomberglp.Blpapi.EventFormatter.SetElement(Bloomberglp.Blpapi.Name,System.String)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_SetElement_9 generated for M:Bloomberglp.Blpapi.EventFormatter.SetElement(System.String,Bloomberglp.Blpapi.Datetime)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_SetElement_10 generated for M:Bloomberglp.Blpapi.EventFormatter.SetElement(System.String,Bloomberglp.Blpapi.Name)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_SetElement_11 generated for M:Bloomberglp.Blpapi.EventFormatter.SetElement(System.String,System.Boolean)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_SetElement_12 generated for M:Bloomberglp.Blpapi.EventFormatter.SetElement(System.String,System.Char)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_SetElement_13 generated for M:Bloomberglp.Blpapi.EventFormatter.SetElement(System.String,System.Double)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_SetElement_14 generated for M:Bloomberglp.Blpapi.EventFormatter.SetElement(System.String,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_SetElement_15 generated for M:Bloomberglp.Blpapi.EventFormatter.SetElement(System.String,System.Int64)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_SetElement_16 generated for M:Bloomberglp.Blpapi.EventFormatter.SetElement(System.String,System.Single)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_SetElement_17 generated for M:Bloomberglp.Blpapi.EventFormatter.SetElement(System.String,System.String)
+    Unique name M_Bloomberglp_Blpapi_EventFormatter_SetElementNull_1 generated for M:Bloomberglp.Blpapi.EventFormatter.SetElementNull(System.String)
+    Unique name M_Bloomberglp_Blpapi_EventQueue_NextEvent_1 generated for M:Bloomberglp.Blpapi.EventQueue.NextEvent(System.Int64)
+    Unique name M_Bloomberglp_Blpapi_Identity_HasEntitlements_1 generated for M:Bloomberglp.Blpapi.Identity.HasEntitlements(Bloomberglp.Blpapi.Element,Bloomberglp.Blpapi.Service,System.Collections.Generic.List{System.Int32})
+    Unique name M_Bloomberglp_Blpapi_Identity_HasEntitlements_2 generated for M:Bloomberglp.Blpapi.Identity.HasEntitlements(System.Int32[],Bloomberglp.Blpapi.Service)
+    Unique name M_Bloomberglp_Blpapi_Identity_HasEntitlements_3 generated for M:Bloomberglp.Blpapi.Identity.HasEntitlements(System.Int32[],Bloomberglp.Blpapi.Service,System.Collections.Generic.List{System.Int32})
+    Unique name M_Bloomberglp_Blpapi_InvalidConversionException__ctor_1 generated for M:Bloomberglp.Blpapi.InvalidConversionException.#ctor(System.String)
+    Unique name M_Bloomberglp_Blpapi_InvalidConversionException__ctor_2 generated for M:Bloomberglp.Blpapi.InvalidConversionException.#ctor(System.String,System.Exception)
+    Unique name M_Bloomberglp_Blpapi_InvalidRequestException__ctor_1 generated for M:Bloomberglp.Blpapi.InvalidRequestException.#ctor(System.String)
+    Unique name M_Bloomberglp_Blpapi_InvalidRequestException__ctor_2 generated for M:Bloomberglp.Blpapi.InvalidRequestException.#ctor(System.String,System.Exception)
+    Unique name M_Bloomberglp_Blpapi_Message_GetElement_1 generated for M:Bloomberglp.Blpapi.Message.GetElement(System.String)
+    Unique name M_Bloomberglp_Blpapi_Message_GetElementAsBool_1 generated for M:Bloomberglp.Blpapi.Message.GetElementAsBool(System.String)
+    Unique name M_Bloomberglp_Blpapi_Message_GetElementAsBytes_1 generated for M:Bloomberglp.Blpapi.Message.GetElementAsBytes(System.String)
+    Unique name M_Bloomberglp_Blpapi_Message_GetElementAsChar_1 generated for M:Bloomberglp.Blpapi.Message.GetElementAsChar(System.String)
+    Unique name M_Bloomberglp_Blpapi_Message_GetElementAsDate_1 generated for M:Bloomberglp.Blpapi.Message.GetElementAsDate(System.String)
+    Unique name M_Bloomberglp_Blpapi_Message_GetElementAsDatetime_1 generated for M:Bloomberglp.Blpapi.Message.GetElementAsDatetime(System.String)
+    Unique name M_Bloomberglp_Blpapi_Message_GetElementAsFloat32_1 generated for M:Bloomberglp.Blpapi.Message.GetElementAsFloat32(System.String)
+    Unique name M_Bloomberglp_Blpapi_Message_GetElementAsFloat64_1 generated for M:Bloomberglp.Blpapi.Message.GetElementAsFloat64(System.String)
+    Unique name M_Bloomberglp_Blpapi_Message_GetElementAsInt32_1 generated for M:Bloomberglp.Blpapi.Message.GetElementAsInt32(System.String)
+    Unique name M_Bloomberglp_Blpapi_Message_GetElementAsInt64_1 generated for M:Bloomberglp.Blpapi.Message.GetElementAsInt64(System.String)
+    Unique name M_Bloomberglp_Blpapi_Message_GetElementAsName_1 generated for M:Bloomberglp.Blpapi.Message.GetElementAsName(System.String)
+    Unique name M_Bloomberglp_Blpapi_Message_GetElementAsString_1 generated for M:Bloomberglp.Blpapi.Message.GetElementAsString(System.String)
+    Unique name M_Bloomberglp_Blpapi_Message_GetElementAsTime_1 generated for M:Bloomberglp.Blpapi.Message.GetElementAsTime(System.String)
+    Unique name M_Bloomberglp_Blpapi_Message_HasElement_1 generated for M:Bloomberglp.Blpapi.Message.HasElement(Bloomberglp.Blpapi.Name,System.Boolean)
+    Unique name M_Bloomberglp_Blpapi_Message_HasElement_2 generated for M:Bloomberglp.Blpapi.Message.HasElement(System.String)
+    Unique name M_Bloomberglp_Blpapi_Message_HasElement_3 generated for M:Bloomberglp.Blpapi.Message.HasElement(System.String,System.Boolean)
+    Unique name P_Bloomberglp_Blpapi_Message_Item_1 generated for P:Bloomberglp.Blpapi.Message.Item(System.String,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Message_Print_1 generated for M:Bloomberglp.Blpapi.Message.Print(System.IO.TextWriter)
+    Unique name M_Bloomberglp_Blpapi_Name__ctor_1 generated for M:Bloomberglp.Blpapi.Name.#ctor(System.String)
+    Unique name M_Bloomberglp_Blpapi_NotFoundException__ctor_1 generated for M:Bloomberglp.Blpapi.NotFoundException.#ctor(System.String)
+    Unique name M_Bloomberglp_Blpapi_NotFoundException__ctor_2 generated for M:Bloomberglp.Blpapi.NotFoundException.#ctor(System.String,System.Exception)
+    Unique name M_Bloomberglp_Blpapi_ProviderSession__ctor_1 generated for M:Bloomberglp.Blpapi.ProviderSession.#ctor(Bloomberglp.Blpapi.SessionOptions)
+    Unique name M_Bloomberglp_Blpapi_ProviderSession__ctor_2 generated for M:Bloomberglp.Blpapi.ProviderSession.#ctor(Bloomberglp.Blpapi.SessionOptions,Bloomberglp.Blpapi.ProviderEventHandler)
+    Unique name M_Bloomberglp_Blpapi_ProviderSession__ctor_3 generated for M:Bloomberglp.Blpapi.ProviderSession.#ctor(Bloomberglp.Blpapi.SessionOptions,Bloomberglp.Blpapi.ProviderEventHandler,Bloomberglp.Blpapi.EventDispatcher)
+    Unique name M_Bloomberglp_Blpapi_ProviderSession_CreateTopics_1 generated for M:Bloomberglp.Blpapi.ProviderSession.CreateTopics(Bloomberglp.Blpapi.TopicList,Bloomberglp.Blpapi.ResolveMode)
+    Unique name M_Bloomberglp_Blpapi_ProviderSession_CreateTopics_2 generated for M:Bloomberglp.Blpapi.ProviderSession.CreateTopics(Bloomberglp.Blpapi.TopicList,Bloomberglp.Blpapi.ResolveMode,Bloomberglp.Blpapi.Identity)
+    Unique name M_Bloomberglp_Blpapi_ProviderSession_CreateTopicsAsync_1 generated for M:Bloomberglp.Blpapi.ProviderSession.CreateTopicsAsync(Bloomberglp.Blpapi.TopicList,Bloomberglp.Blpapi.ResolveMode)
+    Unique name M_Bloomberglp_Blpapi_ProviderSession_CreateTopicsAsync_2 generated for M:Bloomberglp.Blpapi.ProviderSession.CreateTopicsAsync(Bloomberglp.Blpapi.TopicList,Bloomberglp.Blpapi.ResolveMode,Bloomberglp.Blpapi.Identity)
+    Unique name M_Bloomberglp_Blpapi_ProviderSession_RegisterService_1 generated for M:Bloomberglp.Blpapi.ProviderSession.RegisterService(System.String,Bloomberglp.Blpapi.Identity,Bloomberglp.Blpapi.ServiceRegistrationOptions)
+    Unique name M_Bloomberglp_Blpapi_ProviderSession_RegisterServiceAsync_1 generated for M:Bloomberglp.Blpapi.ProviderSession.RegisterServiceAsync(System.String,Bloomberglp.Blpapi.Identity,Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_ProviderSession_RegisterServiceAsync_2 generated for M:Bloomberglp.Blpapi.ProviderSession.RegisterServiceAsync(System.String,Bloomberglp.Blpapi.Identity,Bloomberglp.Blpapi.CorrelationID,Bloomberglp.Blpapi.ServiceRegistrationOptions)
+    Unique name M_Bloomberglp_Blpapi_ProviderSession_RegisterServiceAsync_3 generated for M:Bloomberglp.Blpapi.ProviderSession.RegisterServiceAsync(System.String,Bloomberglp.Blpapi.Identity,Bloomberglp.Blpapi.ServiceRegistrationOptions)
+    Unique name M_Bloomberglp_Blpapi_ProviderSession_Resolve_1 generated for M:Bloomberglp.Blpapi.ProviderSession.Resolve(Bloomberglp.Blpapi.ResolutionList,Bloomberglp.Blpapi.ResolveMode)
+    Unique name M_Bloomberglp_Blpapi_ProviderSession_Resolve_2 generated for M:Bloomberglp.Blpapi.ProviderSession.Resolve(Bloomberglp.Blpapi.ResolutionList,Bloomberglp.Blpapi.ResolveMode,Bloomberglp.Blpapi.Identity)
+    Unique name M_Bloomberglp_Blpapi_ProviderSession_ResolveAsync_1 generated for M:Bloomberglp.Blpapi.ProviderSession.ResolveAsync(Bloomberglp.Blpapi.ResolutionList,Bloomberglp.Blpapi.ResolveMode)
+    Unique name M_Bloomberglp_Blpapi_ProviderSession_ResolveAsync_2 generated for M:Bloomberglp.Blpapi.ProviderSession.ResolveAsync(Bloomberglp.Blpapi.ResolutionList,Bloomberglp.Blpapi.ResolveMode,Bloomberglp.Blpapi.Identity)
+    Unique name M_Bloomberglp_Blpapi_ProviderSession_SendResponse_1 generated for M:Bloomberglp.Blpapi.ProviderSession.SendResponse(Bloomberglp.Blpapi.Event,System.Boolean)
+    Unique name M_Bloomberglp_Blpapi_Request_Append_1 generated for M:Bloomberglp.Blpapi.Request.Append(Bloomberglp.Blpapi.Name,Bloomberglp.Blpapi.Datetime)
+    Unique name M_Bloomberglp_Blpapi_Request_Append_2 generated for M:Bloomberglp.Blpapi.Request.Append(Bloomberglp.Blpapi.Name,Bloomberglp.Blpapi.Name)
+    Unique name M_Bloomberglp_Blpapi_Request_Append_3 generated for M:Bloomberglp.Blpapi.Request.Append(Bloomberglp.Blpapi.Name,System.Boolean)
+    Unique name M_Bloomberglp_Blpapi_Request_Append_4 generated for M:Bloomberglp.Blpapi.Request.Append(Bloomberglp.Blpapi.Name,System.Byte[])
+    Unique name M_Bloomberglp_Blpapi_Request_Append_5 generated for M:Bloomberglp.Blpapi.Request.Append(Bloomberglp.Blpapi.Name,System.Char)
+    Unique name M_Bloomberglp_Blpapi_Request_Append_6 generated for M:Bloomberglp.Blpapi.Request.Append(Bloomberglp.Blpapi.Name,System.Double)
+    Unique name M_Bloomberglp_Blpapi_Request_Append_7 generated for M:Bloomberglp.Blpapi.Request.Append(Bloomberglp.Blpapi.Name,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Request_Append_8 generated for M:Bloomberglp.Blpapi.Request.Append(Bloomberglp.Blpapi.Name,System.Int64)
+    Unique name M_Bloomberglp_Blpapi_Request_Append_9 generated for M:Bloomberglp.Blpapi.Request.Append(Bloomberglp.Blpapi.Name,System.Single)
+    Unique name M_Bloomberglp_Blpapi_Request_Append_10 generated for M:Bloomberglp.Blpapi.Request.Append(Bloomberglp.Blpapi.Name,System.String)
+    Unique name M_Bloomberglp_Blpapi_Request_Append_11 generated for M:Bloomberglp.Blpapi.Request.Append(System.String,Bloomberglp.Blpapi.Constant)
+    Unique name M_Bloomberglp_Blpapi_Request_Append_12 generated for M:Bloomberglp.Blpapi.Request.Append(System.String,Bloomberglp.Blpapi.Datetime)
+    Unique name M_Bloomberglp_Blpapi_Request_Append_13 generated for M:Bloomberglp.Blpapi.Request.Append(System.String,Bloomberglp.Blpapi.Name)
+    Unique name M_Bloomberglp_Blpapi_Request_Append_14 generated for M:Bloomberglp.Blpapi.Request.Append(System.String,System.Boolean)
+    Unique name M_Bloomberglp_Blpapi_Request_Append_15 generated for M:Bloomberglp.Blpapi.Request.Append(System.String,System.Byte[])
+    Unique name M_Bloomberglp_Blpapi_Request_Append_16 generated for M:Bloomberglp.Blpapi.Request.Append(System.String,System.Char)
+    Unique name M_Bloomberglp_Blpapi_Request_Append_17 generated for M:Bloomberglp.Blpapi.Request.Append(System.String,System.Double)
+    Unique name M_Bloomberglp_Blpapi_Request_Append_18 generated for M:Bloomberglp.Blpapi.Request.Append(System.String,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Request_Append_19 generated for M:Bloomberglp.Blpapi.Request.Append(System.String,System.Int64)
+    Unique name M_Bloomberglp_Blpapi_Request_Append_20 generated for M:Bloomberglp.Blpapi.Request.Append(System.String,System.Single)
+    Unique name M_Bloomberglp_Blpapi_Request_Append_21 generated for M:Bloomberglp.Blpapi.Request.Append(System.String,System.String)
+    Unique name M_Bloomberglp_Blpapi_Request_GetElement_1 generated for M:Bloomberglp.Blpapi.Request.GetElement(System.String)
+    Unique name M_Bloomberglp_Blpapi_Request_HasElement_1 generated for M:Bloomberglp.Blpapi.Request.HasElement(System.String)
+    Unique name P_Bloomberglp_Blpapi_Request_Item_1 generated for P:Bloomberglp.Blpapi.Request.Item(System.String)
+    Unique name M_Bloomberglp_Blpapi_Request_Print_1 generated for M:Bloomberglp.Blpapi.Request.Print(System.IO.TextWriter)
+    Unique name M_Bloomberglp_Blpapi_Request_Set_1 generated for M:Bloomberglp.Blpapi.Request.Set(Bloomberglp.Blpapi.Name,Bloomberglp.Blpapi.Datetime)
+    Unique name M_Bloomberglp_Blpapi_Request_Set_2 generated for M:Bloomberglp.Blpapi.Request.Set(Bloomberglp.Blpapi.Name,Bloomberglp.Blpapi.Name)
+    Unique name M_Bloomberglp_Blpapi_Request_Set_3 generated for M:Bloomberglp.Blpapi.Request.Set(Bloomberglp.Blpapi.Name,System.Boolean)
+    Unique name M_Bloomberglp_Blpapi_Request_Set_4 generated for M:Bloomberglp.Blpapi.Request.Set(Bloomberglp.Blpapi.Name,System.Byte[])
+    Unique name M_Bloomberglp_Blpapi_Request_Set_5 generated for M:Bloomberglp.Blpapi.Request.Set(Bloomberglp.Blpapi.Name,System.Char)
+    Unique name M_Bloomberglp_Blpapi_Request_Set_6 generated for M:Bloomberglp.Blpapi.Request.Set(Bloomberglp.Blpapi.Name,System.Double)
+    Unique name M_Bloomberglp_Blpapi_Request_Set_7 generated for M:Bloomberglp.Blpapi.Request.Set(Bloomberglp.Blpapi.Name,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Request_Set_8 generated for M:Bloomberglp.Blpapi.Request.Set(Bloomberglp.Blpapi.Name,System.Int64)
+    Unique name M_Bloomberglp_Blpapi_Request_Set_9 generated for M:Bloomberglp.Blpapi.Request.Set(Bloomberglp.Blpapi.Name,System.Single)
+    Unique name M_Bloomberglp_Blpapi_Request_Set_10 generated for M:Bloomberglp.Blpapi.Request.Set(Bloomberglp.Blpapi.Name,System.String)
+    Unique name M_Bloomberglp_Blpapi_Request_Set_11 generated for M:Bloomberglp.Blpapi.Request.Set(System.String,Bloomberglp.Blpapi.Constant)
+    Unique name M_Bloomberglp_Blpapi_Request_Set_12 generated for M:Bloomberglp.Blpapi.Request.Set(System.String,Bloomberglp.Blpapi.Datetime)
+    Unique name M_Bloomberglp_Blpapi_Request_Set_13 generated for M:Bloomberglp.Blpapi.Request.Set(System.String,Bloomberglp.Blpapi.Name)
+    Unique name M_Bloomberglp_Blpapi_Request_Set_14 generated for M:Bloomberglp.Blpapi.Request.Set(System.String,System.Boolean)
+    Unique name M_Bloomberglp_Blpapi_Request_Set_15 generated for M:Bloomberglp.Blpapi.Request.Set(System.String,System.Byte[])
+    Unique name M_Bloomberglp_Blpapi_Request_Set_16 generated for M:Bloomberglp.Blpapi.Request.Set(System.String,System.Char)
+    Unique name M_Bloomberglp_Blpapi_Request_Set_17 generated for M:Bloomberglp.Blpapi.Request.Set(System.String,System.Double)
+    Unique name M_Bloomberglp_Blpapi_Request_Set_18 generated for M:Bloomberglp.Blpapi.Request.Set(System.String,System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Request_Set_19 generated for M:Bloomberglp.Blpapi.Request.Set(System.String,System.Int64)
+    Unique name M_Bloomberglp_Blpapi_Request_Set_20 generated for M:Bloomberglp.Blpapi.Request.Set(System.String,System.Single)
+    Unique name M_Bloomberglp_Blpapi_Request_Set_21 generated for M:Bloomberglp.Blpapi.Request.Set(System.String,System.String)
+    Unique name M_Bloomberglp_Blpapi_RequestQueueOverflowException__ctor_1 generated for M:Bloomberglp.Blpapi.RequestQueueOverflowException.#ctor(System.String)
+    Unique name M_Bloomberglp_Blpapi_RequestQueueOverflowException__ctor_2 generated for M:Bloomberglp.Blpapi.RequestQueueOverflowException.#ctor(System.String,System.Exception)
+    Unique name M_Bloomberglp_Blpapi_ResolutionList_Add_1 generated for M:Bloomberglp.Blpapi.ResolutionList.Add(Bloomberglp.Blpapi.Message,Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_ResolutionList_Add_2 generated for M:Bloomberglp.Blpapi.ResolutionList.Add(System.String)
+    Unique name M_Bloomberglp_Blpapi_ResolutionList_Add_3 generated for M:Bloomberglp.Blpapi.ResolutionList.Add(System.String,Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_SchemaTypeDefinition_GetElementDefinition_1 generated for M:Bloomberglp.Blpapi.SchemaTypeDefinition.GetElementDefinition(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_SchemaTypeDefinition_GetElementDefinition_2 generated for M:Bloomberglp.Blpapi.SchemaTypeDefinition.GetElementDefinition(System.String)
+    Unique name P_Bloomberglp_Blpapi_SchemaTypeDefinition_Item_1 generated for P:Bloomberglp.Blpapi.SchemaTypeDefinition.Item(System.Int32)
+    Unique name P_Bloomberglp_Blpapi_SchemaTypeDefinition_Item_2 generated for P:Bloomberglp.Blpapi.SchemaTypeDefinition.Item(System.String)
+    Unique name M_Bloomberglp_Blpapi_Service_GetEventDefinition_1 generated for M:Bloomberglp.Blpapi.Service.GetEventDefinition(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Service_GetEventDefinition_2 generated for M:Bloomberglp.Blpapi.Service.GetEventDefinition(System.String)
+    Unique name M_Bloomberglp_Blpapi_Service_GetOperation_1 generated for M:Bloomberglp.Blpapi.Service.GetOperation(System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Service_GetOperation_2 generated for M:Bloomberglp.Blpapi.Service.GetOperation(System.String)
+    Unique name M_Bloomberglp_Blpapi_Service_Print_1 generated for M:Bloomberglp.Blpapi.Service.Print(System.IO.TextWriter)
+    Unique name M_Bloomberglp_Blpapi_Session__ctor_1 generated for M:Bloomberglp.Blpapi.Session.#ctor(Bloomberglp.Blpapi.SessionOptions)
+    Unique name M_Bloomberglp_Blpapi_Session__ctor_2 generated for M:Bloomberglp.Blpapi.Session.#ctor(Bloomberglp.Blpapi.SessionOptions,Bloomberglp.Blpapi.EventHandler)
+    Unique name M_Bloomberglp_Blpapi_Session__ctor_3 generated for M:Bloomberglp.Blpapi.Session.#ctor(Bloomberglp.Blpapi.SessionOptions,Bloomberglp.Blpapi.EventHandler,Bloomberglp.Blpapi.EventDispatcher)
+    Unique name M_Bloomberglp_Blpapi_Session_createSnapshotRequestTemplate_1 generated for M:Bloomberglp.Blpapi.Session.createSnapshotRequestTemplate(System.String,Bloomberglp.Blpapi.CorrelationID,Bloomberglp.Blpapi.Identity)
+    Unique name M_Bloomberglp_Blpapi_Session_Resubscribe_1 generated for M:Bloomberglp.Blpapi.Session.Resubscribe(System.Collections.Generic.IList{Bloomberglp.Blpapi.Subscription},System.Int32)
+    Unique name M_Bloomberglp_Blpapi_Session_Resubscribe_2 generated for M:Bloomberglp.Blpapi.Session.Resubscribe(System.Collections.Generic.IList{Bloomberglp.Blpapi.Subscription},System.Int32,System.String)
+    Unique name M_Bloomberglp_Blpapi_Session_Resubscribe_3 generated for M:Bloomberglp.Blpapi.Session.Resubscribe(System.Collections.Generic.IList{Bloomberglp.Blpapi.Subscription},System.String)
+    Unique name M_Bloomberglp_Blpapi_Session_SendRequest_1 generated for M:Bloomberglp.Blpapi.Session.SendRequest(Bloomberglp.Blpapi.Request,Bloomberglp.Blpapi.CorrelationID,System.String)
+    Unique name M_Bloomberglp_Blpapi_Session_SendRequest_2 generated for M:Bloomberglp.Blpapi.Session.SendRequest(Bloomberglp.Blpapi.Request,Bloomberglp.Blpapi.EventQueue,Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_Session_SendRequest_3 generated for M:Bloomberglp.Blpapi.Session.SendRequest(Bloomberglp.Blpapi.Request,Bloomberglp.Blpapi.EventQueue,Bloomberglp.Blpapi.CorrelationID,System.String)
+    Unique name M_Bloomberglp_Blpapi_Session_SendRequest_4 generated for M:Bloomberglp.Blpapi.Session.SendRequest(Bloomberglp.Blpapi.Request,Bloomberglp.Blpapi.Identity,Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_Session_SendRequest_5 generated for M:Bloomberglp.Blpapi.Session.SendRequest(Bloomberglp.Blpapi.Request,Bloomberglp.Blpapi.Identity,Bloomberglp.Blpapi.CorrelationID,System.String)
+    Unique name M_Bloomberglp_Blpapi_Session_SendRequest_6 generated for M:Bloomberglp.Blpapi.Session.SendRequest(Bloomberglp.Blpapi.Request,Bloomberglp.Blpapi.Identity,Bloomberglp.Blpapi.EventQueue,Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_Session_SendRequest_7 generated for M:Bloomberglp.Blpapi.Session.SendRequest(Bloomberglp.Blpapi.Request,Bloomberglp.Blpapi.Identity,Bloomberglp.Blpapi.EventQueue,Bloomberglp.Blpapi.CorrelationID,System.String)
+    Unique name M_Bloomberglp_Blpapi_Session_SendRequest_8 generated for M:Bloomberglp.Blpapi.Session.SendRequest(Bloomberglp.Blpapi.Request,Bloomberglp.Blpapi.UserHandle,Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_Session_SendRequest_9 generated for M:Bloomberglp.Blpapi.Session.SendRequest(Bloomberglp.Blpapi.Request,Bloomberglp.Blpapi.UserHandle,Bloomberglp.Blpapi.CorrelationID,System.String)
+    Unique name M_Bloomberglp_Blpapi_Session_SendRequest_10 generated for M:Bloomberglp.Blpapi.Session.SendRequest(Bloomberglp.Blpapi.Request,Bloomberglp.Blpapi.UserHandle,Bloomberglp.Blpapi.EventQueue,Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_Session_SendRequest_11 generated for M:Bloomberglp.Blpapi.Session.SendRequest(Bloomberglp.Blpapi.Request,Bloomberglp.Blpapi.UserHandle,Bloomberglp.Blpapi.EventQueue,Bloomberglp.Blpapi.CorrelationID,System.String)
+    Unique name M_Bloomberglp_Blpapi_Session_SendRequest_12 generated for M:Bloomberglp.Blpapi.Session.SendRequest(Bloomberglp.Blpapi.RequestTemplate)
+    Unique name M_Bloomberglp_Blpapi_Session_SendRequest_13 generated for M:Bloomberglp.Blpapi.Session.SendRequest(Bloomberglp.Blpapi.RequestTemplate,Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_Session_Subscribe_1 generated for M:Bloomberglp.Blpapi.Session.Subscribe(System.Collections.Generic.IList{Bloomberglp.Blpapi.Subscription},Bloomberglp.Blpapi.Identity)
+    Unique name M_Bloomberglp_Blpapi_Session_Subscribe_2 generated for M:Bloomberglp.Blpapi.Session.Subscribe(System.Collections.Generic.IList{Bloomberglp.Blpapi.Subscription},Bloomberglp.Blpapi.Identity,System.String)
+    Unique name M_Bloomberglp_Blpapi_Session_Subscribe_3 generated for M:Bloomberglp.Blpapi.Session.Subscribe(System.Collections.Generic.IList{Bloomberglp.Blpapi.Subscription},Bloomberglp.Blpapi.UserHandle)
+    Unique name M_Bloomberglp_Blpapi_Session_Subscribe_4 generated for M:Bloomberglp.Blpapi.Session.Subscribe(System.Collections.Generic.IList{Bloomberglp.Blpapi.Subscription},Bloomberglp.Blpapi.UserHandle,System.String)
+    Unique name M_Bloomberglp_Blpapi_Session_Subscribe_5 generated for M:Bloomberglp.Blpapi.Session.Subscribe(System.Collections.Generic.IList{Bloomberglp.Blpapi.Subscription},System.String)
+    Unique name M_Bloomberglp_Blpapi_Session_Unsubscribe_1 generated for M:Bloomberglp.Blpapi.Session.Unsubscribe(System.Collections.Generic.IList{Bloomberglp.Blpapi.Subscription})
+    Unique name M_Bloomberglp_Blpapi_Session_Unsubscribe_2 generated for M:Bloomberglp.Blpapi.Session.Unsubscribe(System.Collections.Generic.IList{Bloomberglp.Blpapi.Subscription},System.String)
+    Unique name M_Bloomberglp_Blpapi_Subscription__ctor_1 generated for M:Bloomberglp.Blpapi.Subscription.#ctor(System.String,Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_Subscription__ctor_2 generated for M:Bloomberglp.Blpapi.Subscription.#ctor(System.String,Bloomberglp.Blpapi.CorrelationID,System.Boolean)
+    Unique name M_Bloomberglp_Blpapi_Subscription__ctor_3 generated for M:Bloomberglp.Blpapi.Subscription.#ctor(System.String,System.Boolean)
+    Unique name M_Bloomberglp_Blpapi_Subscription__ctor_4 generated for M:Bloomberglp.Blpapi.Subscription.#ctor(System.String,System.Collections.Generic.IList{System.String})
+    Unique name M_Bloomberglp_Blpapi_Subscription__ctor_5 generated for M:Bloomberglp.Blpapi.Subscription.#ctor(System.String,System.Collections.Generic.IList{System.String},Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_Subscription__ctor_6 generated for M:Bloomberglp.Blpapi.Subscription.#ctor(System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String})
+    Unique name M_Bloomberglp_Blpapi_Subscription__ctor_7 generated for M:Bloomberglp.Blpapi.Subscription.#ctor(System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String},Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_Subscription__ctor_8 generated for M:Bloomberglp.Blpapi.Subscription.#ctor(System.String,System.String)
+    Unique name M_Bloomberglp_Blpapi_Subscription__ctor_9 generated for M:Bloomberglp.Blpapi.Subscription.#ctor(System.String,System.String,Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_Subscription__ctor_10 generated for M:Bloomberglp.Blpapi.Subscription.#ctor(System.String,System.String,System.String)
+    Unique name M_Bloomberglp_Blpapi_Subscription__ctor_11 generated for M:Bloomberglp.Blpapi.Subscription.#ctor(System.String,System.String,System.String,Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_TopicList_Add_1 generated for M:Bloomberglp.Blpapi.TopicList.Add(Bloomberglp.Blpapi.Message,Bloomberglp.Blpapi.CorrelationID)
+    Unique name M_Bloomberglp_Blpapi_TopicList_Add_2 generated for M:Bloomberglp.Blpapi.TopicList.Add(System.String)
+    Unique name M_Bloomberglp_Blpapi_TopicList_Add_3 generated for M:Bloomberglp.Blpapi.TopicList.Add(System.String,Bloomberglp.Blpapi.CorrelationID)
+  XslTransform (v2016.9.17.0)
+  Copyright c 2006-2016, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
+Done Building Project &quot;E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\TransformManifest.proj&quot; (default targets).
+    Last step completed in 00:00:03.4178
+</buildStep>
+<buildStep step="GenerateNamespaceSummaries">
+Generating namespace summary information...
+    Last step completed in 00:00:00.0951
+</buildStep>
+<buildStep step="CopyAdditionalContent">
+Copying additional content files...
+No additional content to copy
+    Last step completed in 00:00:00.0030
+</buildStep>
+<buildStep step="MergeTablesOfContents">
+Merging conceptual and additional tables of contents...
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateIntermediateTableOfContents">
+Generating intermediate table of contents file...
+[C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\MSBuild.exe - GenerateIntermediateTOC.proj]
+Build started 12/4/2019 4:47:55 PM.
+Project &quot;E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
+GenerateIntermediateTOC:
+  XslTransform (v2016.9.17.0)
+  Copyright c 2006-2016, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
+Done Building Project &quot;E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\GenerateIntermediateTOC.proj&quot; (default targets).
+Generating conceptual content intermediate TOC file...
+    Last step completed in 00:00:01.2890
+</buildStep>
+<buildStep step="CreateBuildAssemblerConfigs">
+Creating Sandcastle configuration files...
+    sandcastle.config
+    Last step completed in 00:00:00.2242
+</buildStep>
+<buildStep step="MergeCustomConfigs">
+Merging custom build component configurations
+E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\sandcastle.config
+  Updating reference topic configurations.
+    Added configuration for &#39;IntelliSense Component&#39; after &#39;Show Missing Documentation Component&#39; (instance 1)
+  No conceptual content.  Removing conceptual content components.
+    Last step completed in 00:00:00.0140
+</buildStep>
+<buildStep step="BuildTopics">
+Building help topics...
+[C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\MSBuild.exe - BuildTopics.proj]
+Build started 12/4/2019 4:47:57 PM.
+Project &quot;E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\BuildTopics.proj&quot; on node 1 (default targets).
+BuildTopics:
+  BuildAssembler (v2016.9.17.0)
+  Copyright c 2006-2016, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2016, Eric Woodruff, All Rights Reserved.
+  Loading configuration...
+  Processing topics...
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Bloomberglp.Blpapi.AbstractSession] Unknown reference link target &#39;M:Bloomberglp.Blpapi.AbstractSession.SetEventHandler(Bloomberglp.Blpapi.Internal.SessionImpl.SessionEventHandler)&#39;. [E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Bloomberglp.Blpapi.AbstractSession] Unknown reference link target &#39;M:Bloomberglp.Blpapi.AbstractSession.SetEventHandler(Bloomberglp.Blpapi.Internal.SessionImpl.SessionEventHandler,Bloomberglp.Blpapi.Event.EventType)&#39;. [E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Bloomberglp.Blpapi.AbstractSession] Unknown reference link target &#39;M:Bloomberglp.Blpapi.AbstractSession.SetEventHandler(Bloomberglp.Blpapi.Internal.SessionImpl.SessionEventHandler)&#39;. [E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Bloomberglp.Blpapi.AbstractSession] Unknown reference link target &#39;M:Bloomberglp.Blpapi.AbstractSession.SetEventHandler(Bloomberglp.Blpapi.Internal.SessionImpl.SessionEventHandler,Bloomberglp.Blpapi.Event.EventType)&#39;. [E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Bloomberglp.Blpapi.AbstractSession.DispatchEvent(Bloomberglp.Blpapi.Event)] Unknown reference link target &#39;M:Bloomberglp.Blpapi.AbstractSession.SetEventHandler(Bloomberglp.Blpapi.Internal.SessionImpl.SessionEventHandler)&#39;. [E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Bloomberglp.Blpapi.AbstractSession.DispatchEvent(Bloomberglp.Blpapi.Event)] Unknown reference link target &#39;M:Bloomberglp.Blpapi.AbstractSession.SetEventHandler(Bloomberglp.Blpapi.Internal.SessionImpl.SessionEventHandler,Bloomberglp.Blpapi.Event.EventType)&#39;. [E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Bloomberglp.Blpapi.Session] Unknown reference link target &#39;M:Bloomberglp.Blpapi.AbstractSession.SetEventHandler(Bloomberglp.Blpapi.Internal.SessionImpl.SessionEventHandler)&#39;. [E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Bloomberglp.Blpapi.Session] Unknown reference link target &#39;M:Bloomberglp.Blpapi.AbstractSession.SetEventHandler(Bloomberglp.Blpapi.Internal.SessionImpl.SessionEventHandler,Bloomberglp.Blpapi.Event.EventType)&#39;. [E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Bloomberglp.Blpapi.Session] Unknown reference link target &#39;M:Bloomberglp.Blpapi.AbstractSession.SetEventHandler(Bloomberglp.Blpapi.Internal.SessionImpl.SessionEventHandler)&#39;. [E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Bloomberglp.Blpapi.Session] Unknown reference link target &#39;M:Bloomberglp.Blpapi.AbstractSession.SetEventHandler(Bloomberglp.Blpapi.Internal.SessionImpl.SessionEventHandler,Bloomberglp.Blpapi.Event.EventType)&#39;. [E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\BuildTopics.proj]
+  Processed 975 topic(s)
+  10 warning(s)
+  CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 8 of 15.
+  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 2 of 30.
+Done Building Project &quot;E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\BuildTopics.proj&quot; (default targets).
+    Last step completed in 00:00:12.6712
+</buildStep>
+<buildStep step="CombiningIntermediateTocFiles">
+Combining conceptual and API intermediate TOC files...
+    Last step completed in 00:00:00.0060
+</buildStep>
+<buildStep step="ExtractingHtmlInfo">
+Extracting HTML info for HTML Help 1 and/or website...
+[C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\MSBuild.exe - ExtractHtmlInfo.proj]
+Sandcastle Help File Builder and Tools, version 2016.9.17.0
+Copyright c 2006-2016, Eric Woodruff, All Rights Reserved
+E-Mail: Eric@EWoodruff.us
+
+Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
+
+Processing website files in E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website
+Processed 975 HTML files
+Sorting keywords and generating See Also indices
+Saving website keyword index to E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\WebKI.xml
+Saving website table of contents to E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\WebTOC.xml
+    Last step completed in 00:00:00.9388
+</buildStep>
+<buildStep step="CopyStandardHelpContent">
+Copying standard help content...
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertCaution.png -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\AlertCaution.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertNote.png -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\AlertNote.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertSecurity.png -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\AlertSecurity.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CFW.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\CFW.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CodeExample.png -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\CodeExample.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\favicon.ico -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\favicon.ico
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privclass.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\privclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privdelegate.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\privdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privenumeration.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\privenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privevent.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\privevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privextension.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\privextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privfield.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\privfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privinterface.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\privinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privmethod.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\privmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privproperty.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\privproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privstructure.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\privstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protclass.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\protclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protdelegate.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\protdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protenumeration.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\protenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protevent.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\protevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protextension.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\protextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protfield.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\protfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protinterface.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\protinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protmethod.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\protmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protoperator.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\protoperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protproperty.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\protproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protstructure.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\protstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubclass.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\pubclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubdelegate.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\pubdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubenumeration.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\pubenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubevent.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\pubevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubextension.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\pubextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubfield.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\pubfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubinterface.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\pubinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubmethod.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\pubmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\puboperator.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\puboperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubproperty.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\pubproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubstructure.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\pubstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionCollapsed.png -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\SectionCollapsed.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionExpanded.png -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\SectionExpanded.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\slMobile.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\slMobile.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\static.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\static.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\xna.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\xna.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\scripts\branding.js -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\scripts\branding.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-cs-CZ.css -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\styles\branding-cs-CZ.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-de-DE.css -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\styles\branding-de-DE.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-en-US.css -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\styles\branding-en-US.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-es-ES.css -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\styles\branding-es-ES.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-fr-FR.css -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\styles\branding-fr-FR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help1.css -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\styles\branding-Help1.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-HelpViewer.css -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\styles\branding-HelpViewer.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-it-IT.css -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\styles\branding-it-IT.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ja-JP.css -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\styles\branding-ja-JP.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ko-KR.css -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\styles\branding-ko-KR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pl-PL.css -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\styles\branding-pl-PL.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pt-BR.css -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\styles\branding-pt-BR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ru-RU.css -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\styles\branding-ru-RU.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-tr-TR.css -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\styles\branding-tr-TR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Website.css -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\styles\branding-Website.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-CN.css -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\styles\branding-zh-CN.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-TW.css -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\styles\branding-zh-TW.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding.css -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\styles\branding.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\index.html -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\index.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\search.html -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\search.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.aspx -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\SearchHelp.aspx
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.inc.php -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\SearchHelp.inc.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.php -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\SearchHelp.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\Web.Config -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\Web.Config
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\Search.png -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\Search.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocClose.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\TocClose.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocCollapsed.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\TocCollapsed.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocExpanded.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\TocExpanded.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocOpen.gif -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\icons\TocOpen.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\scripts\branding-Website.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\clipboard.min.js -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\scripts\clipboard.min.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; E:\blpapi\builds\BLPAPI_CSHARP\v3.14.3.1\blpapi-csharp\doc\Working\Output\Website\scripts\jquery-1.11.0.min.js
+    Last step completed in 00:00:00.3673
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Generating website table of contents file...
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateFullTextIndex">
+Generating full-text index for the website...
+
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+Adding lightweight search and TOC elements to each topic...
+</plugIn>    Last step completed in 00:00:00.6115
+</buildStep>
+<buildStep step="CopyingWebsiteFiles">
+Copying website files to output folder...
+
+Copied 500 files
+Copied 1000 files
+Copied 1307 files for the website content
+    Last step completed in 00:00:00.6565
+</buildStep>
+<buildStep step="CleanIntermediates">
+Removing intermediate files...
+    Last step completed in 00:00:00.2203
+</buildStep>
+<buildStep step="Completed">
+
+Build completed successfully at 12/4/2019 4:48:12 PM.  Total time: 00:00:26.1212
+
+</buildStep>
+</shfbBuild>

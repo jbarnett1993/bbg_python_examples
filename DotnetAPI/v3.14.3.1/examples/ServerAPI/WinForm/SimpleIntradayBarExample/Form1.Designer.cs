@@ -1,0 +1,384 @@
+namespace Bloomberglp.Blpapi.Examples
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.splitContainerIRView = new System.Windows.Forms.SplitContainer();
+            this.listBoxSecurities = new System.Windows.Forms.ListBox();
+            this.dataGridViewData = new System.Windows.Forms.DataGridView();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.panelIRTopView = new System.Windows.Forms.Panel();
+            this.checkBoxGapFill = new System.Windows.Forms.CheckBox();
+            this.labelMinutes = new System.Windows.Forms.Label();
+            this.numericUpDownInterval = new System.Windows.Forms.NumericUpDown();
+            this.labelBarSize = new System.Windows.Forms.Label();
+            this.radioButtonSynch = new System.Windows.Forms.RadioButton();
+            this.radioButtonAsynch = new System.Windows.Forms.RadioButton();
+            this.buttonClearAll = new System.Windows.Forms.Button();
+            this.buttonSendRequest = new System.Windows.Forms.Button();
+            this.labelEventTypes = new System.Windows.Forms.Label();
+            this.checkedListBoxEventTypes = new System.Windows.Forms.CheckedListBox();
+            this.dateTimePickerEndDate = new System.Windows.Forms.DateTimePicker();
+            this.labelIREndDate = new System.Windows.Forms.Label();
+            this.dateTimePickerStartDate = new System.Windows.Forms.DateTimePicker();
+            this.labelIRStartDate = new System.Windows.Forms.Label();
+            this.textBoxSecurity = new System.Windows.Forms.TextBox();
+            this.labelIRSecurity = new System.Windows.Forms.Label();
+            this.splitContainerIRView.Panel1.SuspendLayout();
+            this.splitContainerIRView.Panel2.SuspendLayout();
+            this.splitContainerIRView.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).BeginInit();
+            this.statusStrip1.SuspendLayout();
+            this.panelIRTopView.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownInterval)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // splitContainerIRView
+            // 
+            this.splitContainerIRView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerIRView.Location = new System.Drawing.Point(0, 112);
+            this.splitContainerIRView.Name = "splitContainerIRView";
+            // 
+            // splitContainerIRView.Panel1
+            // 
+            this.splitContainerIRView.Panel1.Controls.Add(this.listBoxSecurities);
+            // 
+            // splitContainerIRView.Panel2
+            // 
+            this.splitContainerIRView.Panel2.Controls.Add(this.dataGridViewData);
+            this.splitContainerIRView.Size = new System.Drawing.Size(788, 367);
+            this.splitContainerIRView.SplitterDistance = 185;
+            this.splitContainerIRView.TabIndex = 34;
+            // 
+            // listBoxSecurities
+            // 
+            this.listBoxSecurities.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBoxSecurities.FormattingEnabled = true;
+            this.listBoxSecurities.Location = new System.Drawing.Point(0, 0);
+            this.listBoxSecurities.Name = "listBoxSecurities";
+            this.listBoxSecurities.Size = new System.Drawing.Size(185, 355);
+            this.listBoxSecurities.TabIndex = 16;
+            this.listBoxSecurities.SelectedIndexChanged += new System.EventHandler(this.listBoxSecurities_SelectedIndexChanged);
+            // 
+            // dataGridViewData
+            // 
+            this.dataGridViewData.AllowUserToAddRows = false;
+            this.dataGridViewData.AllowUserToDeleteRows = false;
+            this.dataGridViewData.AllowUserToResizeRows = false;
+            this.dataGridViewData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewData.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewData.MultiSelect = false;
+            this.dataGridViewData.Name = "dataGridViewData";
+            this.dataGridViewData.ReadOnly = true;
+            this.dataGridViewData.RowHeadersVisible = false;
+            this.dataGridViewData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dataGridViewData.Size = new System.Drawing.Size(599, 367);
+            this.dataGridViewData.TabIndex = 17;
+            this.dataGridViewData.TabStop = false;
+            this.dataGridViewData.Tag = "HD";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 479);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(788, 22);
+            this.statusStrip1.TabIndex = 33;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
+            // 
+            // panelIRTopView
+            // 
+            this.panelIRTopView.Controls.Add(this.checkBoxGapFill);
+            this.panelIRTopView.Controls.Add(this.labelMinutes);
+            this.panelIRTopView.Controls.Add(this.numericUpDownInterval);
+            this.panelIRTopView.Controls.Add(this.labelBarSize);
+            this.panelIRTopView.Controls.Add(this.radioButtonSynch);
+            this.panelIRTopView.Controls.Add(this.radioButtonAsynch);
+            this.panelIRTopView.Controls.Add(this.buttonClearAll);
+            this.panelIRTopView.Controls.Add(this.buttonSendRequest);
+            this.panelIRTopView.Controls.Add(this.labelEventTypes);
+            this.panelIRTopView.Controls.Add(this.checkedListBoxEventTypes);
+            this.panelIRTopView.Controls.Add(this.dateTimePickerEndDate);
+            this.panelIRTopView.Controls.Add(this.labelIREndDate);
+            this.panelIRTopView.Controls.Add(this.dateTimePickerStartDate);
+            this.panelIRTopView.Controls.Add(this.labelIRStartDate);
+            this.panelIRTopView.Controls.Add(this.textBoxSecurity);
+            this.panelIRTopView.Controls.Add(this.labelIRSecurity);
+            this.panelIRTopView.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelIRTopView.Location = new System.Drawing.Point(0, 0);
+            this.panelIRTopView.Name = "panelIRTopView";
+            this.panelIRTopView.Size = new System.Drawing.Size(788, 112);
+            this.panelIRTopView.TabIndex = 32;
+            // 
+            // checkBoxGapFill
+            // 
+            this.checkBoxGapFill.AutoSize = true;
+            this.checkBoxGapFill.Location = new System.Drawing.Point(240, 88);
+            this.checkBoxGapFill.Name = "checkBoxGapFill";
+            this.checkBoxGapFill.Size = new System.Drawing.Size(61, 17);
+            this.checkBoxGapFill.TabIndex = 9;
+            this.checkBoxGapFill.Text = "Gap Fill";
+            this.checkBoxGapFill.UseVisualStyleBackColor = true;
+            // 
+            // labelMinutes
+            // 
+            this.labelMinutes.AutoSize = true;
+            this.labelMinutes.Location = new System.Drawing.Point(186, 89);
+            this.labelMinutes.Name = "labelMinutes";
+            this.labelMinutes.Size = new System.Drawing.Size(38, 13);
+            this.labelMinutes.TabIndex = 8;
+            this.labelMinutes.Text = "minute";
+            // 
+            // numericUpDownInterval
+            // 
+            this.numericUpDownInterval.Location = new System.Drawing.Point(136, 85);
+            this.numericUpDownInterval.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownInterval.Name = "numericUpDownInterval";
+            this.numericUpDownInterval.Size = new System.Drawing.Size(44, 20);
+            this.numericUpDownInterval.TabIndex = 7;
+            this.numericUpDownInterval.Value = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            // 
+            // labelBarSize
+            // 
+            this.labelBarSize.AutoSize = true;
+            this.labelBarSize.Location = new System.Drawing.Point(22, 89);
+            this.labelBarSize.Name = "labelBarSize";
+            this.labelBarSize.Size = new System.Drawing.Size(113, 13);
+            this.labelBarSize.TabIndex = 6;
+            this.labelBarSize.Text = "Time Bar Interval Size:";
+            // 
+            // radioButtonSynch
+            // 
+            this.radioButtonSynch.AutoSize = true;
+            this.radioButtonSynch.Location = new System.Drawing.Point(483, 31);
+            this.radioButtonSynch.Name = "radioButtonSynch";
+            this.radioButtonSynch.Size = new System.Drawing.Size(87, 17);
+            this.radioButtonSynch.TabIndex = 15;
+            this.radioButtonSynch.Text = "Synchronous";
+            this.radioButtonSynch.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonAsynch
+            // 
+            this.radioButtonAsynch.AutoSize = true;
+            this.radioButtonAsynch.Checked = true;
+            this.radioButtonAsynch.Location = new System.Drawing.Point(385, 31);
+            this.radioButtonAsynch.Name = "radioButtonAsynch";
+            this.radioButtonAsynch.Size = new System.Drawing.Size(92, 17);
+            this.radioButtonAsynch.TabIndex = 14;
+            this.radioButtonAsynch.TabStop = true;
+            this.radioButtonAsynch.Text = "Asynchronous";
+            this.radioButtonAsynch.UseVisualStyleBackColor = true;
+            // 
+            // buttonClearAll
+            // 
+            this.buttonClearAll.Enabled = false;
+            this.buttonClearAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonClearAll.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonClearAll.ImageIndex = 3;
+            this.buttonClearAll.Location = new System.Drawing.Point(471, 3);
+            this.buttonClearAll.Name = "buttonClearAll";
+            this.buttonClearAll.Size = new System.Drawing.Size(81, 23);
+            this.buttonClearAll.TabIndex = 13;
+            this.buttonClearAll.Tag = "RD";
+            this.buttonClearAll.Text = "Clear All";
+            this.buttonClearAll.UseVisualStyleBackColor = true;
+            this.buttonClearAll.Click += new System.EventHandler(this.buttonClearAll_Click);
+            // 
+            // buttonSendRequest
+            // 
+            this.buttonSendRequest.Enabled = false;
+            this.buttonSendRequest.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSendRequest.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonSendRequest.Location = new System.Drawing.Point(384, 3);
+            this.buttonSendRequest.Name = "buttonSendRequest";
+            this.buttonSendRequest.Size = new System.Drawing.Size(81, 23);
+            this.buttonSendRequest.TabIndex = 12;
+            this.buttonSendRequest.Tag = "RD";
+            this.buttonSendRequest.Text = "Submit";
+            this.buttonSendRequest.UseVisualStyleBackColor = true;
+            this.buttonSendRequest.Click += new System.EventHandler(this.buttonSendRequest_Click);
+            // 
+            // labelEventTypes
+            // 
+            this.labelEventTypes.AutoSize = true;
+            this.labelEventTypes.Location = new System.Drawing.Point(383, 58);
+            this.labelEventTypes.Name = "labelEventTypes";
+            this.labelEventTypes.Size = new System.Drawing.Size(70, 13);
+            this.labelEventTypes.TabIndex = 10;
+            this.labelEventTypes.Text = "Event Types:";
+            // 
+            // checkedListBoxEventTypes
+            // 
+            this.checkedListBoxEventTypes.BackColor = System.Drawing.SystemColors.Control;
+            this.checkedListBoxEventTypes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.checkedListBoxEventTypes.CheckOnClick = true;
+            this.checkedListBoxEventTypes.FormattingEnabled = true;
+            this.checkedListBoxEventTypes.Items.AddRange(new object[] {
+            "TRADE",
+            "BID",
+            "ASK",
+            "BID_BEST",
+            "ASK_BEST"});
+            this.checkedListBoxEventTypes.Location = new System.Drawing.Point(385, 74);
+            this.checkedListBoxEventTypes.MultiColumn = true;
+            this.checkedListBoxEventTypes.Name = "checkedListBoxEventTypes";
+            this.checkedListBoxEventTypes.Size = new System.Drawing.Size(376, 32);
+            this.checkedListBoxEventTypes.TabIndex = 11;
+            this.checkedListBoxEventTypes.ThreeDCheckBoxes = true;
+            this.checkedListBoxEventTypes.SelectedIndexChanged += new System.EventHandler(this.checkedListBoxEventTypes_SelectedIndexChanged);
+            this.checkedListBoxEventTypes.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBoxEventTypes_ItemCheck);
+            // 
+            // dateTimePickerEndDate
+            // 
+            this.dateTimePickerEndDate.CustomFormat = "dddd, MMMM dd, yyyy - HH:mm";
+            this.dateTimePickerEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerEndDate.Location = new System.Drawing.Point(78, 59);
+            this.dateTimePickerEndDate.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dateTimePickerEndDate.Name = "dateTimePickerEndDate";
+            this.dateTimePickerEndDate.Size = new System.Drawing.Size(294, 20);
+            this.dateTimePickerEndDate.TabIndex = 5;
+            this.dateTimePickerEndDate.Tag = "IBAR";
+            this.dateTimePickerEndDate.ValueChanged += new System.EventHandler(this.dateTimePickerEndDate_ValueChanged);
+            // 
+            // labelIREndDate
+            // 
+            this.labelIREndDate.AutoSize = true;
+            this.labelIREndDate.Location = new System.Drawing.Point(21, 63);
+            this.labelIREndDate.Name = "labelIREndDate";
+            this.labelIREndDate.Size = new System.Drawing.Size(55, 13);
+            this.labelIREndDate.TabIndex = 4;
+            this.labelIREndDate.Text = "End Date:";
+            // 
+            // dateTimePickerStartDate
+            // 
+            this.dateTimePickerStartDate.CustomFormat = "dddd, MMMM dd, yyyy - HH:mm";
+            this.dateTimePickerStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerStartDate.Location = new System.Drawing.Point(78, 31);
+            this.dateTimePickerStartDate.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dateTimePickerStartDate.Name = "dateTimePickerStartDate";
+            this.dateTimePickerStartDate.Size = new System.Drawing.Size(294, 20);
+            this.dateTimePickerStartDate.TabIndex = 3;
+            this.dateTimePickerStartDate.Tag = "IBAR";
+            this.dateTimePickerStartDate.ValueChanged += new System.EventHandler(this.dateTimePickerEndDate_ValueChanged);
+            // 
+            // labelIRStartDate
+            // 
+            this.labelIRStartDate.AutoSize = true;
+            this.labelIRStartDate.Location = new System.Drawing.Point(18, 35);
+            this.labelIRStartDate.Name = "labelIRStartDate";
+            this.labelIRStartDate.Size = new System.Drawing.Size(58, 13);
+            this.labelIRStartDate.TabIndex = 2;
+            this.labelIRStartDate.Text = "Start Date:";
+            // 
+            // textBoxSecurity
+            // 
+            this.textBoxSecurity.Location = new System.Drawing.Point(78, 5);
+            this.textBoxSecurity.Name = "textBoxSecurity";
+            this.textBoxSecurity.Size = new System.Drawing.Size(294, 20);
+            this.textBoxSecurity.TabIndex = 1;
+            this.textBoxSecurity.Tag = "IBAR";
+            this.textBoxSecurity.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxSecurity_KeyDown);
+            // 
+            // labelIRSecurity
+            // 
+            this.labelIRSecurity.AutoSize = true;
+            this.labelIRSecurity.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIRSecurity.Location = new System.Drawing.Point(28, 8);
+            this.labelIRSecurity.Name = "labelIRSecurity";
+            this.labelIRSecurity.Size = new System.Drawing.Size(48, 13);
+            this.labelIRSecurity.TabIndex = 0;
+            this.labelIRSecurity.Text = "Security:";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(788, 501);
+            this.Controls.Add(this.splitContainerIRView);
+            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.panelIRTopView);
+            this.MinimumSize = new System.Drawing.Size(796, 528);
+            this.Name = "Form1";
+            this.Text = "Simple Intraday Bar Example";
+            this.splitContainerIRView.Panel1.ResumeLayout(false);
+            this.splitContainerIRView.Panel2.ResumeLayout(false);
+            this.splitContainerIRView.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).EndInit();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            this.panelIRTopView.ResumeLayout(false);
+            this.panelIRTopView.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownInterval)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.SplitContainer splitContainerIRView;
+        private System.Windows.Forms.ListBox listBoxSecurities;
+        private System.Windows.Forms.DataGridView dataGridViewData;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.Panel panelIRTopView;
+        private System.Windows.Forms.RadioButton radioButtonSynch;
+        private System.Windows.Forms.RadioButton radioButtonAsynch;
+        private System.Windows.Forms.Button buttonClearAll;
+        private System.Windows.Forms.Button buttonSendRequest;
+        private System.Windows.Forms.Label labelEventTypes;
+        private System.Windows.Forms.CheckedListBox checkedListBoxEventTypes;
+        private System.Windows.Forms.DateTimePicker dateTimePickerEndDate;
+        private System.Windows.Forms.Label labelIREndDate;
+        private System.Windows.Forms.DateTimePicker dateTimePickerStartDate;
+        private System.Windows.Forms.Label labelIRStartDate;
+        private System.Windows.Forms.TextBox textBoxSecurity;
+        private System.Windows.Forms.Label labelIRSecurity;
+        private System.Windows.Forms.CheckBox checkBoxGapFill;
+        private System.Windows.Forms.Label labelMinutes;
+        private System.Windows.Forms.NumericUpDown numericUpDownInterval;
+        private System.Windows.Forms.Label labelBarSize;
+    }
+}
+

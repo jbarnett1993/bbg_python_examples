@@ -1,0 +1,83 @@
+===========================================================================
+Release Date: February 11, 2020
+Version: 3.0.3.14
+BLPAPI Version: 3.14.3.1
+===========================================================================
+New features and bug fixes:
+
+    -Added code generation to "Generic Request" tab
+    -Fixed "Generic Request" tab missing properties issue
+    -API Demo Tool is now Digitally Signed
+
+===========================================================================
+Release Date: December 19, 2019
+Version: 3.0.3.11
+BLPAPI Version: 3.14.3.1
+===========================================================================
+New features and bug fixes:
+
+    -Added ZFP Leased Line support
+    -Added code generation to "Reference Data" tab
+    -Update "Generic Request" tab to use TreeView for the request properties
+    -Removed Newtonsoft.Json.dll dependency for BEAP
+    -Fix security/fields load from file and drag/drop to follow source file order
+
+===========================================================================
+Release Date: January 07, 2019
+Version: 3.0.3.5
+BLPAPI Version: 3.12.5.1
+===========================================================================
+Bug fixes:
+
+    -Fix BPipe and Server API not using connection credential for all subscriptions and requests
+    -Fix BPipe and Server API Streaming tab code generation to use correct Identity
+
+===========================================================================
+Release Date: December 28, 2018
+Version: 3.0.3.4
+BLPAPI Version: 3.12.5.1
+===========================================================================
+New features and bug fixes:
+
+    -Fix "Save To File Path" in "Application Settings" to apply to tabs with "Output to File" feature
+    -Added ZFP support to Python code generation in "Streaming" tab
+    -Apply TLS1.2 support for BEAP
+    -Added support for custom delimitor character when "Streaming Output Format" is set to "Delimited". Comma will be used by default.
+
+===========================================================================
+Release Date: October 22, 2018
+Version: 3.0.3.1
+BLPAPI Version: 3.11.5.1
+===========================================================================
+New Features:
+
+    -Bloomberg Enterprise Access Point (BEAP) support.
+    -BPipe Vol Data support.
+    -Streaming tab code generation feature.
+    -Authorized credential entitlements (EIDs) export feature."
+
+===========================================================================
+Release Date: March 2, 2018
+Version: 3.0.1.17
+BLPAPI Version: 3.11.3.1
+===========================================================================
+New Features:
+
+    -Zero Foot Print support.
+    -Adjustable font size.
+    -Fix export to CSV file for Market List data viewer.
+    -Change "MSG Scrape" tab name to "Broadcast Services."
+    -Fix streaming tab bug where removing field will prevent update to grid.
+ 
+===========================================================================
+Release Date: April 20, 2017
+Version: 3.0.1.3
+===========================================================================
+New Features:
+
+    -New GUI design (Read "Bloomberg API Demo Tool User Guide.pdf").
+    -Can be use with B-Pipe, Server API and Desktop API with out running different applications.
+    -Data will persist upon product selection change and application shutdown.
+    -Allow generic request/response on most services not supported on the Demo Tool.
+    -Dynamic enabling/disabling of BLPAPI log.
+ 

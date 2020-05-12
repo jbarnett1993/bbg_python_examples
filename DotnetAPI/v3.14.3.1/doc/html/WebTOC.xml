@@ -1,0 +1,1205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="e4b53a25-465b-48a3-8210-d0dfd8ff6382" Title="Bloomberglp.Blpapi" Url="html/N_Bloomberglp_Blpapi.htm">
+    <HelpTOCNode Id="393a5747-ee3b-42ff-9a12-48df27715cb8" Title="AbstractSession Class" Url="html/T_Bloomberglp_Blpapi_AbstractSession.htm">
+      <HelpTOCNode Title="AbstractSession Constructor " Url="html/M_Bloomberglp_Blpapi_AbstractSession__ctor.htm" />
+      <HelpTOCNode Id="a72d950d-cc82-480a-a413-2a33a1e01f0a" Title="AbstractSession Methods" Url="html/Methods_T_Bloomberglp_Blpapi_AbstractSession.htm">
+        <HelpTOCNode Title="IDisposable.Dispose Method " Url="html/M_Bloomberglp_Blpapi_AbstractSession_System_IDisposable_Dispose.htm" />
+        <HelpTOCNode Id="285910e5-f3f2-4f0f-807e-f69e33f0f5eb" Title="Cancel Method " Url="html/Overload_Bloomberglp_Blpapi_AbstractSession_Cancel.htm">
+          <HelpTOCNode Title="Cancel Method (CorrelationID)" Url="html/M_Bloomberglp_Blpapi_AbstractSession_Cancel.htm" />
+          <HelpTOCNode Title="Cancel Method (IList(CorrelationID))" Url="html/M_Bloomberglp_Blpapi_AbstractSession_Cancel_2.htm" />
+          <HelpTOCNode Title="Cancel Method (CorrelationID, String)" Url="html/M_Bloomberglp_Blpapi_AbstractSession_Cancel_1.htm" />
+          <HelpTOCNode Title="Cancel Method (IList(CorrelationID), String)" Url="html/M_Bloomberglp_Blpapi_AbstractSession_Cancel_3.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="CreateIdentity Method " Url="html/M_Bloomberglp_Blpapi_AbstractSession_CreateIdentity.htm" />
+        <HelpTOCNode Title="CreateUserHandle Method " Url="html/M_Bloomberglp_Blpapi_AbstractSession_CreateUserHandle.htm" />
+        <HelpTOCNode Title="DispatchEvent Method " Url="html/M_Bloomberglp_Blpapi_AbstractSession_DispatchEvent.htm" />
+        <HelpTOCNode Id="5bfb3326-771f-4f1e-8a9f-c53e1c39db1a" Title="GenerateToken Method " Url="html/Overload_Bloomberglp_Blpapi_AbstractSession_GenerateToken.htm">
+          <HelpTOCNode Title="GenerateToken Method " Url="html/M_Bloomberglp_Blpapi_AbstractSession_GenerateToken.htm" />
+          <HelpTOCNode Title="GenerateToken Method (CorrelationID)" Url="html/M_Bloomberglp_Blpapi_AbstractSession_GenerateToken_1.htm" />
+          <HelpTOCNode Title="GenerateToken Method (CorrelationID, EventQueue)" Url="html/M_Bloomberglp_Blpapi_AbstractSession_GenerateToken_2.htm" />
+          <HelpTOCNode Title="GenerateToken Method (String, String, CorrelationID, EventQueue)" Url="html/M_Bloomberglp_Blpapi_AbstractSession_GenerateToken_3.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetService Method " Url="html/M_Bloomberglp_Blpapi_AbstractSession_GetService.htm" />
+        <HelpTOCNode Title="Init Method " Url="html/M_Bloomberglp_Blpapi_AbstractSession_Init.htm" />
+        <HelpTOCNode Id="9a008af7-cb0d-4fb6-9619-47937ab4ea97" Title="NextEvent Method " Url="html/Overload_Bloomberglp_Blpapi_AbstractSession_NextEvent.htm">
+          <HelpTOCNode Title="NextEvent Method " Url="html/M_Bloomberglp_Blpapi_AbstractSession_NextEvent.htm" />
+          <HelpTOCNode Title="NextEvent Method (Int64)" Url="html/M_Bloomberglp_Blpapi_AbstractSession_NextEvent_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="OpenService Method " Url="html/M_Bloomberglp_Blpapi_AbstractSession_OpenService.htm" />
+        <HelpTOCNode Id="c8f14315-cf93-4fc7-acbd-76221ae75e00" Title="OpenServiceAsync Method " Url="html/Overload_Bloomberglp_Blpapi_AbstractSession_OpenServiceAsync.htm">
+          <HelpTOCNode Title="OpenServiceAsync Method (String)" Url="html/M_Bloomberglp_Blpapi_AbstractSession_OpenServiceAsync.htm" />
+          <HelpTOCNode Title="OpenServiceAsync Method (String, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_AbstractSession_OpenServiceAsync_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="46f40ba9-4835-4f86-a6ec-af6c61cda097" Title="SendAuthorizationRequest Method " Url="html/Overload_Bloomberglp_Blpapi_AbstractSession_SendAuthorizationRequest.htm">
+          <HelpTOCNode Title="SendAuthorizationRequest Method (Request, Identity, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_AbstractSession_SendAuthorizationRequest.htm" />
+          <HelpTOCNode Title="SendAuthorizationRequest Method (Request, UserHandle, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_AbstractSession_SendAuthorizationRequest_4.htm" />
+          <HelpTOCNode Title="SendAuthorizationRequest Method (Request, Identity, CorrelationID, String)" Url="html/M_Bloomberglp_Blpapi_AbstractSession_SendAuthorizationRequest_1.htm" />
+          <HelpTOCNode Title="SendAuthorizationRequest Method (Request, Identity, EventQueue, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_AbstractSession_SendAuthorizationRequest_2.htm" />
+          <HelpTOCNode Title="SendAuthorizationRequest Method (Request, UserHandle, CorrelationID, String)" Url="html/M_Bloomberglp_Blpapi_AbstractSession_SendAuthorizationRequest_5.htm" />
+          <HelpTOCNode Title="SendAuthorizationRequest Method (Request, UserHandle, EventQueue, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_AbstractSession_SendAuthorizationRequest_6.htm" />
+          <HelpTOCNode Title="SendAuthorizationRequest Method (Request, Identity, EventQueue, CorrelationID, String)" Url="html/M_Bloomberglp_Blpapi_AbstractSession_SendAuthorizationRequest_3.htm" />
+          <HelpTOCNode Title="SendAuthorizationRequest Method (Request, UserHandle, EventQueue, CorrelationID, String)" Url="html/M_Bloomberglp_Blpapi_AbstractSession_SendAuthorizationRequest_7.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Start Method " Url="html/M_Bloomberglp_Blpapi_AbstractSession_Start.htm" />
+        <HelpTOCNode Title="StartAsync Method " Url="html/M_Bloomberglp_Blpapi_AbstractSession_StartAsync.htm" />
+        <HelpTOCNode Id="b7496aaa-3499-40c8-96f8-9a8b7b47fb2c" Title="Stop Method " Url="html/Overload_Bloomberglp_Blpapi_AbstractSession_Stop.htm">
+          <HelpTOCNode Title="Stop Method " Url="html/M_Bloomberglp_Blpapi_AbstractSession_Stop.htm" />
+          <HelpTOCNode Title="Stop Method (AbstractSession.StopOption)" Url="html/M_Bloomberglp_Blpapi_AbstractSession_Stop_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="TryNextEvent Method " Url="html/M_Bloomberglp_Blpapi_AbstractSession_TryNextEvent.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="AbstractSession.StopOption Enumeration" Url="html/T_Bloomberglp_Blpapi_AbstractSession_StopOption.htm" />
+    <HelpTOCNode Id="b1482a3f-e06c-4697-a994-93341c10c4cc" Title="Constant Class" Url="html/T_Bloomberglp_Blpapi_Constant.htm">
+      <HelpTOCNode Title="Constant Constructor " Url="html/M_Bloomberglp_Blpapi_Constant__ctor.htm" />
+      <HelpTOCNode Id="9958bbc4-dfb2-40e8-a25e-3b99d432f52e" Title="Constant Properties" Url="html/Properties_T_Bloomberglp_Blpapi_Constant.htm">
+        <HelpTOCNode Title="Datatype Property " Url="html/P_Bloomberglp_Blpapi_Constant_Datatype.htm" />
+        <HelpTOCNode Title="Description Property " Url="html/P_Bloomberglp_Blpapi_Constant_Description.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/P_Bloomberglp_Blpapi_Constant_Name.htm" />
+        <HelpTOCNode Title="Status Property " Url="html/P_Bloomberglp_Blpapi_Constant_Status.htm" />
+        <HelpTOCNode Title="UserData Property " Url="html/P_Bloomberglp_Blpapi_Constant_UserData.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b028e39b-6d5f-41ae-819f-350fa5497cd5" Title="Constant Methods" Url="html/Methods_T_Bloomberglp_Blpapi_Constant.htm">
+        <HelpTOCNode Title="GetValueAsChar Method " Url="html/M_Bloomberglp_Blpapi_Constant_GetValueAsChar.htm" />
+        <HelpTOCNode Title="GetValueAsDate Method " Url="html/M_Bloomberglp_Blpapi_Constant_GetValueAsDate.htm" />
+        <HelpTOCNode Title="GetValueAsDatetime Method " Url="html/M_Bloomberglp_Blpapi_Constant_GetValueAsDatetime.htm" />
+        <HelpTOCNode Title="GetValueAsFloat32 Method " Url="html/M_Bloomberglp_Blpapi_Constant_GetValueAsFloat32.htm" />
+        <HelpTOCNode Title="GetValueAsFloat64 Method " Url="html/M_Bloomberglp_Blpapi_Constant_GetValueAsFloat64.htm" />
+        <HelpTOCNode Title="GetValueAsInt32 Method " Url="html/M_Bloomberglp_Blpapi_Constant_GetValueAsInt32.htm" />
+        <HelpTOCNode Title="GetValueAsInt64 Method " Url="html/M_Bloomberglp_Blpapi_Constant_GetValueAsInt64.htm" />
+        <HelpTOCNode Title="GetValueAsString Method " Url="html/M_Bloomberglp_Blpapi_Constant_GetValueAsString.htm" />
+        <HelpTOCNode Title="GetValueAsTime Method " Url="html/M_Bloomberglp_Blpapi_Constant_GetValueAsTime.htm" />
+        <HelpTOCNode Id="244b442b-7edb-43d6-b047-d97894f48647" Title="Print Method " Url="html/Overload_Bloomberglp_Blpapi_Constant_Print.htm">
+          <HelpTOCNode Title="Print Method (Stream)" Url="html/M_Bloomberglp_Blpapi_Constant_Print.htm" />
+          <HelpTOCNode Title="Print Method (TextWriter)" Url="html/M_Bloomberglp_Blpapi_Constant_Print_1.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="7ccd7718-877a-43bf-b09d-f7c509131c8e" Title="ConstantsList Interface" Url="html/T_Bloomberglp_Blpapi_ConstantsList.htm">
+      <HelpTOCNode Id="779b07a8-dd4e-4065-9010-728fa9edb17c" Title="ConstantsList Properties" Url="html/Properties_T_Bloomberglp_Blpapi_ConstantsList.htm">
+        <HelpTOCNode Title="Datatype Property " Url="html/P_Bloomberglp_Blpapi_ConstantsList_Datatype.htm" />
+        <HelpTOCNode Title="Description Property " Url="html/P_Bloomberglp_Blpapi_ConstantsList_Description.htm" />
+        <HelpTOCNode Title="Item Property " Url="html/P_Bloomberglp_Blpapi_ConstantsList_Item.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/P_Bloomberglp_Blpapi_ConstantsList_Name.htm" />
+        <HelpTOCNode Title="Status Property " Url="html/P_Bloomberglp_Blpapi_ConstantsList_Status.htm" />
+        <HelpTOCNode Title="UserData Property " Url="html/P_Bloomberglp_Blpapi_ConstantsList_UserData.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d6fe5b8d-615a-484f-9beb-02363dbc3207" Title="ConstantsList Methods" Url="html/Methods_T_Bloomberglp_Blpapi_ConstantsList.htm">
+        <HelpTOCNode Title="ContainsKey Method " Url="html/M_Bloomberglp_Blpapi_ConstantsList_ContainsKey.htm" />
+        <HelpTOCNode Id="07314009-d3a1-4312-af00-ffe3443214b1" Title="Print Method " Url="html/Overload_Bloomberglp_Blpapi_ConstantsList_Print.htm">
+          <HelpTOCNode Title="Print Method (Stream)" Url="html/M_Bloomberglp_Blpapi_ConstantsList_Print.htm" />
+          <HelpTOCNode Title="Print Method (TextWriter)" Url="html/M_Bloomberglp_Blpapi_ConstantsList_Print_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="TryGetValue Method " Url="html/M_Bloomberglp_Blpapi_ConstantsList_TryGetValue.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d581d81d-5eb8-4f10-a067-82ddb1041433" Title="Constraint Class" Url="html/T_Bloomberglp_Blpapi_Constraint.htm">
+      <HelpTOCNode Title="Constraint Constructor " Url="html/M_Bloomberglp_Blpapi_Constraint__ctor.htm" />
+      <HelpTOCNode Id="8d5f8b82-85ab-4f1d-8734-942212a29b56" Title="Constraint Properties" Url="html/Properties_T_Bloomberglp_Blpapi_Constraint.htm">
+        <HelpTOCNode Title="ConstraintType Property " Url="html/P_Bloomberglp_Blpapi_Constraint_ConstraintType.htm" />
+        <HelpTOCNode Title="Values Property " Url="html/P_Bloomberglp_Blpapi_Constraint_Values.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="be043fd8-4e54-4c6d-8bcf-41dc5d8d695b" Title="Constraint Methods" Url="html/Methods_T_Bloomberglp_Blpapi_Constraint.htm">
+        <HelpTOCNode Id="8d8cd81f-c620-4ffb-9032-9c09e9b6d2da" Title="Print Method " Url="html/Overload_Bloomberglp_Blpapi_Constraint_Print.htm">
+          <HelpTOCNode Title="Print Method (Stream)" Url="html/M_Bloomberglp_Blpapi_Constraint_Print.htm" />
+          <HelpTOCNode Title="Print Method (TextWriter)" Url="html/M_Bloomberglp_Blpapi_Constraint_Print_1.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="17bb8fab-c106-4538-98f8-ff6f20129b12" Title="ConstraintsList Interface" Url="html/T_Bloomberglp_Blpapi_ConstraintsList.htm">
+      <HelpTOCNode Id="e71b103b-2530-43e2-b9cf-7075a1c06d52" Title="ConstraintsList Properties" Url="html/Properties_T_Bloomberglp_Blpapi_ConstraintsList.htm">
+        <HelpTOCNode Title="Item Property " Url="html/P_Bloomberglp_Blpapi_ConstraintsList_Item.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a3d94a5b-adc3-41d6-8ba0-fb68a0d44846" Title="ConstraintsList Methods" Url="html/Methods_T_Bloomberglp_Blpapi_ConstraintsList.htm">
+        <HelpTOCNode Title="ContainsKey Method " Url="html/M_Bloomberglp_Blpapi_ConstraintsList_ContainsKey.htm" />
+        <HelpTOCNode Title="TryGetValue Method " Url="html/M_Bloomberglp_Blpapi_ConstraintsList_TryGetValue.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="235339d8-76e7-4e57-a425-d9c4cbf346fc" Title="CorrelationID Class" Url="html/T_Bloomberglp_Blpapi_CorrelationID.htm">
+      <HelpTOCNode Id="75ea416d-3cd7-4cfe-89c0-4bfdad0aa90a" Title="CorrelationID Constructor " Url="html/Overload_Bloomberglp_Blpapi_CorrelationID__ctor.htm">
+        <HelpTOCNode Title="CorrelationID Constructor " Url="html/M_Bloomberglp_Blpapi_CorrelationID__ctor.htm" />
+        <HelpTOCNode Title="CorrelationID Constructor (Int64)" Url="html/M_Bloomberglp_Blpapi_CorrelationID__ctor_2.htm" />
+        <HelpTOCNode Title="CorrelationID Constructor (Object)" Url="html/M_Bloomberglp_Blpapi_CorrelationID__ctor_3.htm" />
+        <HelpTOCNode Title="CorrelationID Constructor (CorrelationID)" Url="html/M_Bloomberglp_Blpapi_CorrelationID__ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2b60c479-4cf8-4e02-a193-e59918136a1e" Title="CorrelationID Properties" Url="html/Properties_T_Bloomberglp_Blpapi_CorrelationID.htm">
+        <HelpTOCNode Title="IsInternal Property " Url="html/P_Bloomberglp_Blpapi_CorrelationID_IsInternal.htm" />
+        <HelpTOCNode Title="IsObject Property " Url="html/P_Bloomberglp_Blpapi_CorrelationID_IsObject.htm" />
+        <HelpTOCNode Title="IsValue Property " Url="html/P_Bloomberglp_Blpapi_CorrelationID_IsValue.htm" />
+        <HelpTOCNode Title="Object Property " Url="html/P_Bloomberglp_Blpapi_CorrelationID_Object.htm" />
+        <HelpTOCNode Title="Value Property " Url="html/P_Bloomberglp_Blpapi_CorrelationID_Value.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="fd490980-986c-453d-b03e-2672f5d76afb" Title="CorrelationID Methods" Url="html/Methods_T_Bloomberglp_Blpapi_CorrelationID.htm">
+        <HelpTOCNode Title="Equals Method " Url="html/M_Bloomberglp_Blpapi_CorrelationID_Equals.htm" />
+        <HelpTOCNode Title="GetHashCode Method " Url="html/M_Bloomberglp_Blpapi_CorrelationID_GetHashCode.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/M_Bloomberglp_Blpapi_CorrelationID_ToString.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ee219b8f-debd-4bec-b86d-373172a579c7" Title="Datetime Class" Url="html/T_Bloomberglp_Blpapi_Datetime.htm">
+      <HelpTOCNode Id="26bfbb25-db51-41b7-a2f1-d3a2a70968e6" Title="Datetime Constructor " Url="html/Overload_Bloomberglp_Blpapi_Datetime__ctor.htm">
+        <HelpTOCNode Title="Datetime Constructor " Url="html/M_Bloomberglp_Blpapi_Datetime__ctor.htm" />
+        <HelpTOCNode Title="Datetime Constructor (DateTime)" Url="html/M_Bloomberglp_Blpapi_Datetime__ctor_2.htm" />
+        <HelpTOCNode Title="Datetime Constructor (Datetime)" Url="html/M_Bloomberglp_Blpapi_Datetime__ctor_1.htm" />
+        <HelpTOCNode Title="Datetime Constructor (Int32, Int32, Int32)" Url="html/M_Bloomberglp_Blpapi_Datetime__ctor_3.htm" />
+        <HelpTOCNode Title="Datetime Constructor (Int32, Int32, Int32, Int32)" Url="html/M_Bloomberglp_Blpapi_Datetime__ctor_4.htm" />
+        <HelpTOCNode Title="Datetime Constructor (Int32, Int32, Int32, Int32, Int32, Int32, Int32)" Url="html/M_Bloomberglp_Blpapi_Datetime__ctor_5.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6559b355-a559-454a-831c-2acc9028a75a" Title="Datetime Properties" Url="html/Properties_T_Bloomberglp_Blpapi_Datetime.htm">
+        <HelpTOCNode Title="DayOfMonth Property " Url="html/P_Bloomberglp_Blpapi_Datetime_DayOfMonth.htm" />
+        <HelpTOCNode Title="Hour Property " Url="html/P_Bloomberglp_Blpapi_Datetime_Hour.htm" />
+        <HelpTOCNode Title="MicroSecond Property " Url="html/P_Bloomberglp_Blpapi_Datetime_MicroSecond.htm" />
+        <HelpTOCNode Title="MilliSecond Property " Url="html/P_Bloomberglp_Blpapi_Datetime_MilliSecond.htm" />
+        <HelpTOCNode Title="Minute Property " Url="html/P_Bloomberglp_Blpapi_Datetime_Minute.htm" />
+        <HelpTOCNode Title="Month Property " Url="html/P_Bloomberglp_Blpapi_Datetime_Month.htm" />
+        <HelpTOCNode Title="NanoSecond Property " Url="html/P_Bloomberglp_Blpapi_Datetime_NanoSecond.htm" />
+        <HelpTOCNode Title="Parts Property " Url="html/P_Bloomberglp_Blpapi_Datetime_Parts.htm" />
+        <HelpTOCNode Title="PicoSecond Property " Url="html/P_Bloomberglp_Blpapi_Datetime_PicoSecond.htm" />
+        <HelpTOCNode Title="Second Property " Url="html/P_Bloomberglp_Blpapi_Datetime_Second.htm" />
+        <HelpTOCNode Title="TimezoneOffsetMinutes Property " Url="html/P_Bloomberglp_Blpapi_Datetime_TimezoneOffsetMinutes.htm" />
+        <HelpTOCNode Title="Year Property " Url="html/P_Bloomberglp_Blpapi_Datetime_Year.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="75788f4c-0276-4fa8-8987-68f172e08f61" Title="Datetime Methods" Url="html/Methods_T_Bloomberglp_Blpapi_Datetime.htm">
+        <HelpTOCNode Title="Clear Method " Url="html/M_Bloomberglp_Blpapi_Datetime_Clear.htm" />
+        <HelpTOCNode Title="Clone Method " Url="html/M_Bloomberglp_Blpapi_Datetime_Clone.htm" />
+        <HelpTOCNode Title="Equals Method " Url="html/M_Bloomberglp_Blpapi_Datetime_Equals.htm" />
+        <HelpTOCNode Title="GetHashCode Method " Url="html/M_Bloomberglp_Blpapi_Datetime_GetHashCode.htm" />
+        <HelpTOCNode Title="HasParts Method " Url="html/M_Bloomberglp_Blpapi_Datetime_HasParts.htm" />
+        <HelpTOCNode Title="IsValid Method " Url="html/M_Bloomberglp_Blpapi_Datetime_IsValid.htm" />
+        <HelpTOCNode Title="IsValidField Method " Url="html/M_Bloomberglp_Blpapi_Datetime_IsValidField.htm" />
+        <HelpTOCNode Title="SetDate Method " Url="html/M_Bloomberglp_Blpapi_Datetime_SetDate.htm" />
+        <HelpTOCNode Id="ffed97f7-8140-46c7-81f6-8b9988539607" Title="SetDatetime Method " Url="html/Overload_Bloomberglp_Blpapi_Datetime_SetDatetime.htm">
+          <HelpTOCNode Title="SetDatetime Method (DateTime)" Url="html/M_Bloomberglp_Blpapi_Datetime_SetDatetime.htm" />
+          <HelpTOCNode Title="SetDatetime Method (Int32, Int32, Int32, Int32, Int32, Int32, Int32)" Url="html/M_Bloomberglp_Blpapi_Datetime_SetDatetime_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="SetDatetimeTz Method " Url="html/M_Bloomberglp_Blpapi_Datetime_SetDatetimeTz.htm" />
+        <HelpTOCNode Title="SetDateTz Method " Url="html/M_Bloomberglp_Blpapi_Datetime_SetDateTz.htm" />
+        <HelpTOCNode Title="SetTime Method " Url="html/M_Bloomberglp_Blpapi_Datetime_SetTime.htm" />
+        <HelpTOCNode Title="SetTimeTz Method " Url="html/M_Bloomberglp_Blpapi_Datetime_SetTimeTz.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/M_Bloomberglp_Blpapi_Datetime_ToString.htm" />
+        <HelpTOCNode Title="ToSystemDateTime Method " Url="html/M_Bloomberglp_Blpapi_Datetime_ToSystemDateTime.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="88edee8f-b357-4ec4-a12f-b614f99ed301" Title="Datetime Fields" Url="html/Fields_T_Bloomberglp_Blpapi_Datetime.htm">
+        <HelpTOCNode Title="DATE Field" Url="html/F_Bloomberglp_Blpapi_Datetime_DATE.htm" />
+        <HelpTOCNode Title="DAY_OF_MONTH_PART Field" Url="html/F_Bloomberglp_Blpapi_Datetime_DAY_OF_MONTH_PART.htm" />
+        <HelpTOCNode Title="HOUR_PART Field" Url="html/F_Bloomberglp_Blpapi_Datetime_HOUR_PART.htm" />
+        <HelpTOCNode Title="MICROSECOND_PART Field" Url="html/F_Bloomberglp_Blpapi_Datetime_MICROSECOND_PART.htm" />
+        <HelpTOCNode Title="MILLISECOND_PART Field" Url="html/F_Bloomberglp_Blpapi_Datetime_MILLISECOND_PART.htm" />
+        <HelpTOCNode Title="MINUTE_PART Field" Url="html/F_Bloomberglp_Blpapi_Datetime_MINUTE_PART.htm" />
+        <HelpTOCNode Title="MONTH_PART Field" Url="html/F_Bloomberglp_Blpapi_Datetime_MONTH_PART.htm" />
+        <HelpTOCNode Title="NANOSECOND_PART Field" Url="html/F_Bloomberglp_Blpapi_Datetime_NANOSECOND_PART.htm" />
+        <HelpTOCNode Title="PICOSECOND_PART Field" Url="html/F_Bloomberglp_Blpapi_Datetime_PICOSECOND_PART.htm" />
+        <HelpTOCNode Title="SECOND_PART Field" Url="html/F_Bloomberglp_Blpapi_Datetime_SECOND_PART.htm" />
+        <HelpTOCNode Title="TIME Field" Url="html/F_Bloomberglp_Blpapi_Datetime_TIME.htm" />
+        <HelpTOCNode Title="TIME_ZONE_OFFSET Field" Url="html/F_Bloomberglp_Blpapi_Datetime_TIME_ZONE_OFFSET.htm" />
+        <HelpTOCNode Title="TIMEMILLI Field" Url="html/F_Bloomberglp_Blpapi_Datetime_TIMEMILLI.htm" />
+        <HelpTOCNode Title="YEAR_PART Field" Url="html/F_Bloomberglp_Blpapi_Datetime_YEAR_PART.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5c1ddbea-a939-4d30-ae81-4bda8c04fb97" Title="DuplicateCorrelationIDException Class" Url="html/T_Bloomberglp_Blpapi_DuplicateCorrelationIDException.htm">
+      <HelpTOCNode Id="8456712b-07c6-4201-8076-36708f0c8ac4" Title="DuplicateCorrelationIDException Constructor " Url="html/Overload_Bloomberglp_Blpapi_DuplicateCorrelationIDException__ctor.htm">
+        <HelpTOCNode Title="DuplicateCorrelationIDException Constructor " Url="html/M_Bloomberglp_Blpapi_DuplicateCorrelationIDException__ctor.htm" />
+        <HelpTOCNode Title="DuplicateCorrelationIDException Constructor (String)" Url="html/M_Bloomberglp_Blpapi_DuplicateCorrelationIDException__ctor_1.htm" />
+        <HelpTOCNode Title="DuplicateCorrelationIDException Constructor (String, Exception)" Url="html/M_Bloomberglp_Blpapi_DuplicateCorrelationIDException__ctor_2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0aee65de-e6e6-45ff-a0a1-51661be400bb" Title="DuplicateCorrelationIDException Properties" Url="html/Properties_T_Bloomberglp_Blpapi_DuplicateCorrelationIDException.htm">
+        <HelpTOCNode Title="Description Property " Url="html/P_Bloomberglp_Blpapi_DuplicateCorrelationIDException_Description.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="94431b8f-aa76-4230-b568-2026a4e5d003" Title="Element Class" Url="html/T_Bloomberglp_Blpapi_Element.htm">
+      <HelpTOCNode Title="Element Constructor " Url="html/M_Bloomberglp_Blpapi_Element__ctor.htm" />
+      <HelpTOCNode Id="ddd155cf-596c-4dd7-b7db-d827f765108d" Title="Element Properties" Url="html/Properties_T_Bloomberglp_Blpapi_Element.htm">
+        <HelpTOCNode Title="Datatype Property " Url="html/P_Bloomberglp_Blpapi_Element_Datatype.htm" />
+        <HelpTOCNode Title="ElementDefinition Property " Url="html/P_Bloomberglp_Blpapi_Element_ElementDefinition.htm" />
+        <HelpTOCNode Title="Elements Property " Url="html/P_Bloomberglp_Blpapi_Element_Elements.htm" />
+        <HelpTOCNode Title="IsArray Property " Url="html/P_Bloomberglp_Blpapi_Element_IsArray.htm" />
+        <HelpTOCNode Title="IsComplexType Property " Url="html/P_Bloomberglp_Blpapi_Element_IsComplexType.htm" />
+        <HelpTOCNode Title="IsNull Property " Url="html/P_Bloomberglp_Blpapi_Element_IsNull.htm" />
+        <HelpTOCNode Title="IsReadOnly Property " Url="html/P_Bloomberglp_Blpapi_Element_IsReadOnly.htm" />
+        <HelpTOCNode Id="0b96461a-429e-4d1c-8c0c-9555623d7488" Title="Item Property " Url="html/Overload_Bloomberglp_Blpapi_Element_Item.htm">
+          <HelpTOCNode Title="Item Property (Int32)" Url="html/P_Bloomberglp_Blpapi_Element_Item_2.htm" />
+          <HelpTOCNode Title="Item Property (String)" Url="html/P_Bloomberglp_Blpapi_Element_Item_3.htm" />
+          <HelpTOCNode Title="Item Property (Name)" Url="html/P_Bloomberglp_Blpapi_Element_Item.htm" />
+          <HelpTOCNode Title="Item Property (String, Int32)" Url="html/P_Bloomberglp_Blpapi_Element_Item_4.htm" />
+          <HelpTOCNode Title="Item Property (Name, Int32)" Url="html/P_Bloomberglp_Blpapi_Element_Item_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Name Property " Url="html/P_Bloomberglp_Blpapi_Element_Name.htm" />
+        <HelpTOCNode Title="NumElements Property " Url="html/P_Bloomberglp_Blpapi_Element_NumElements.htm" />
+        <HelpTOCNode Title="NumValues Property " Url="html/P_Bloomberglp_Blpapi_Element_NumValues.htm" />
+        <HelpTOCNode Title="TypeDefinition Property " Url="html/P_Bloomberglp_Blpapi_Element_TypeDefinition.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d3cf34e6-b129-4611-9a3c-21118f57fb60" Title="Element Methods" Url="html/Methods_T_Bloomberglp_Blpapi_Element.htm">
+        <HelpTOCNode Title="AppendElement Method " Url="html/M_Bloomberglp_Blpapi_Element_AppendElement.htm" />
+        <HelpTOCNode Id="48a55a86-841d-4ec0-9f17-5fc97e79c451" Title="AppendValue Method " Url="html/Overload_Bloomberglp_Blpapi_Element_AppendValue.htm">
+          <HelpTOCNode Title="AppendValue Method (Boolean)" Url="html/M_Bloomberglp_Blpapi_Element_AppendValue_3.htm" />
+          <HelpTOCNode Title="AppendValue Method (Byte[])" Url="html/M_Bloomberglp_Blpapi_Element_AppendValue_4.htm" />
+          <HelpTOCNode Title="AppendValue Method (Char)" Url="html/M_Bloomberglp_Blpapi_Element_AppendValue_5.htm" />
+          <HelpTOCNode Title="AppendValue Method (Double)" Url="html/M_Bloomberglp_Blpapi_Element_AppendValue_6.htm" />
+          <HelpTOCNode Title="AppendValue Method (Int32)" Url="html/M_Bloomberglp_Blpapi_Element_AppendValue_7.htm" />
+          <HelpTOCNode Title="AppendValue Method (Int64)" Url="html/M_Bloomberglp_Blpapi_Element_AppendValue_8.htm" />
+          <HelpTOCNode Title="AppendValue Method (Single)" Url="html/M_Bloomberglp_Blpapi_Element_AppendValue_9.htm" />
+          <HelpTOCNode Title="AppendValue Method (String)" Url="html/M_Bloomberglp_Blpapi_Element_AppendValue_10.htm" />
+          <HelpTOCNode Title="AppendValue Method (Constant)" Url="html/M_Bloomberglp_Blpapi_Element_AppendValue.htm" />
+          <HelpTOCNode Title="AppendValue Method (Datetime)" Url="html/M_Bloomberglp_Blpapi_Element_AppendValue_1.htm" />
+          <HelpTOCNode Title="AppendValue Method (Name)" Url="html/M_Bloomberglp_Blpapi_Element_AppendValue_2.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Clone Method " Url="html/M_Bloomberglp_Blpapi_Element_Clone.htm" />
+        <HelpTOCNode Id="6762cc66-3969-4a9c-b8f5-9b5e5925f2cb" Title="FindConstant Method " Url="html/Overload_Bloomberglp_Blpapi_Element_FindConstant.htm">
+          <HelpTOCNode Title="FindConstant Method (ConstantsList)" Url="html/M_Bloomberglp_Blpapi_Element_FindConstant.htm" />
+          <HelpTOCNode Title="FindConstant Method (ConstantsList, Int32)" Url="html/M_Bloomberglp_Blpapi_Element_FindConstant_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetChoice Method " Url="html/M_Bloomberglp_Blpapi_Element_GetChoice.htm" />
+        <HelpTOCNode Id="67002436-9597-43d0-a490-8891258cf776" Title="GetElement Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetElement.htm">
+          <HelpTOCNode Title="GetElement Method (Int32)" Url="html/M_Bloomberglp_Blpapi_Element_GetElement_1.htm" />
+          <HelpTOCNode Title="GetElement Method (String)" Url="html/M_Bloomberglp_Blpapi_Element_GetElement_2.htm" />
+          <HelpTOCNode Title="GetElement Method (Name)" Url="html/M_Bloomberglp_Blpapi_Element_GetElement.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="1caf2cc9-f4bb-4bcb-9410-60a7e44677d6" Title="GetElementAsBool Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetElementAsBool.htm">
+          <HelpTOCNode Title="GetElementAsBool Method (String)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsBool_1.htm" />
+          <HelpTOCNode Title="GetElementAsBool Method (Name)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsBool.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="c21740ef-0701-46e0-8538-d684d3d760b3" Title="GetElementAsBytes Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetElementAsBytes.htm">
+          <HelpTOCNode Title="GetElementAsBytes Method (String)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsBytes_1.htm" />
+          <HelpTOCNode Title="GetElementAsBytes Method (Name)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsBytes.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="effa16f5-b72d-4890-9af5-e395b25afabd" Title="GetElementAsChar Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetElementAsChar.htm">
+          <HelpTOCNode Title="GetElementAsChar Method (String)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsChar_1.htm" />
+          <HelpTOCNode Title="GetElementAsChar Method (Name)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsChar.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="0a296c5c-ff74-4379-a280-45a9b2fa8a95" Title="GetElementAsDate Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetElementAsDate.htm">
+          <HelpTOCNode Title="GetElementAsDate Method (String)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsDate_1.htm" />
+          <HelpTOCNode Title="GetElementAsDate Method (Name)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsDate.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="8a02d509-3312-4548-bba3-7fd18ec0ab92" Title="GetElementAsDatetime Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetElementAsDatetime.htm">
+          <HelpTOCNode Title="GetElementAsDatetime Method (String)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsDatetime_1.htm" />
+          <HelpTOCNode Title="GetElementAsDatetime Method (Name)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsDatetime.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="95bcc2fd-61c6-4ab6-b7c4-265716e6a8d5" Title="GetElementAsFloat32 Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetElementAsFloat32.htm">
+          <HelpTOCNode Title="GetElementAsFloat32 Method (String)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsFloat32_1.htm" />
+          <HelpTOCNode Title="GetElementAsFloat32 Method (Name)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsFloat32.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="59591e44-1d8a-481b-8aff-f9a1f515ebb7" Title="GetElementAsFloat64 Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetElementAsFloat64.htm">
+          <HelpTOCNode Title="GetElementAsFloat64 Method (String)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsFloat64_1.htm" />
+          <HelpTOCNode Title="GetElementAsFloat64 Method (Name)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsFloat64.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="ae89295d-5e5c-4737-b189-8faebecf6172" Title="GetElementAsInt32 Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetElementAsInt32.htm">
+          <HelpTOCNode Title="GetElementAsInt32 Method (String)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsInt32_1.htm" />
+          <HelpTOCNode Title="GetElementAsInt32 Method (Name)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsInt32.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="4376acdc-e82d-43e5-af17-3e44e7b9f14e" Title="GetElementAsInt64 Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetElementAsInt64.htm">
+          <HelpTOCNode Title="GetElementAsInt64 Method (String)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsInt64_1.htm" />
+          <HelpTOCNode Title="GetElementAsInt64 Method (Name)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsInt64.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="a2962dac-8113-4e05-8168-4e31c92ac399" Title="GetElementAsName Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetElementAsName.htm">
+          <HelpTOCNode Title="GetElementAsName Method (String)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsName_1.htm" />
+          <HelpTOCNode Title="GetElementAsName Method (Name)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsName.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="b470bad2-8808-41e8-b9d4-c0889b9182e3" Title="GetElementAsString Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetElementAsString.htm">
+          <HelpTOCNode Title="GetElementAsString Method (String)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsString_1.htm" />
+          <HelpTOCNode Title="GetElementAsString Method (Name)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsString.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="80df26e0-e4b0-4b0f-a2a7-c3ced20e0780" Title="GetElementAsTime Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetElementAsTime.htm">
+          <HelpTOCNode Title="GetElementAsTime Method (String)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsTime_1.htm" />
+          <HelpTOCNode Title="GetElementAsTime Method (Name)" Url="html/M_Bloomberglp_Blpapi_Element_GetElementAsTime.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="2dfdd7ac-92ae-48b5-beee-e52b4bf445a3" Title="GetValue Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetValue.htm">
+          <HelpTOCNode Title="GetValue Method " Url="html/M_Bloomberglp_Blpapi_Element_GetValue.htm" />
+          <HelpTOCNode Title="GetValue Method (Int32)" Url="html/M_Bloomberglp_Blpapi_Element_GetValue_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="f66e391e-0960-4f14-bb8a-785815b6134b" Title="GetValueAsBool Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetValueAsBool.htm">
+          <HelpTOCNode Title="GetValueAsBool Method " Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsBool.htm" />
+          <HelpTOCNode Title="GetValueAsBool Method (Int32)" Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsBool_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="a1a17521-6722-4e03-a929-57092ad63341" Title="GetValueAsBytes Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetValueAsBytes.htm">
+          <HelpTOCNode Title="GetValueAsBytes Method " Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsBytes.htm" />
+          <HelpTOCNode Title="GetValueAsBytes Method (Int32)" Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsBytes_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="1f97e59d-1f23-45f0-96e3-34c3a1fb9404" Title="GetValueAsChar Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetValueAsChar.htm">
+          <HelpTOCNode Title="GetValueAsChar Method " Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsChar.htm" />
+          <HelpTOCNode Title="GetValueAsChar Method (Int32)" Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsChar_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="598b5d3b-269a-4908-aa0a-87bdbaa75a38" Title="GetValueAsDate Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetValueAsDate.htm">
+          <HelpTOCNode Title="GetValueAsDate Method " Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsDate.htm" />
+          <HelpTOCNode Title="GetValueAsDate Method (Int32)" Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsDate_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="2164b7eb-ee31-4d32-9741-ca2c4c7bc38b" Title="GetValueAsDatetime Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetValueAsDatetime.htm">
+          <HelpTOCNode Title="GetValueAsDatetime Method " Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsDatetime.htm" />
+          <HelpTOCNode Title="GetValueAsDatetime Method (Int32)" Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsDatetime_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="48a5b5df-cb1f-4507-8d5a-bd6596b8a266" Title="GetValueAsElement Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetValueAsElement.htm">
+          <HelpTOCNode Title="GetValueAsElement Method " Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsElement.htm" />
+          <HelpTOCNode Title="GetValueAsElement Method (Int32)" Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsElement_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="aee811f4-efa1-45b0-9b0b-01e5596e5f97" Title="GetValueAsEnumeration Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetValueAsEnumeration.htm">
+          <HelpTOCNode Title="GetValueAsEnumeration Method " Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsEnumeration.htm" />
+          <HelpTOCNode Title="GetValueAsEnumeration Method (Int32)" Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsEnumeration_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="5be38887-fceb-4045-9824-edf0670a2179" Title="GetValueAsFloat32 Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetValueAsFloat32.htm">
+          <HelpTOCNode Title="GetValueAsFloat32 Method " Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsFloat32.htm" />
+          <HelpTOCNode Title="GetValueAsFloat32 Method (Int32)" Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsFloat32_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="e03ff5d7-7a7b-4f53-b7ae-fd1f6cb5a60a" Title="GetValueAsFloat64 Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetValueAsFloat64.htm">
+          <HelpTOCNode Title="GetValueAsFloat64 Method " Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsFloat64.htm" />
+          <HelpTOCNode Title="GetValueAsFloat64 Method (Int32)" Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsFloat64_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="eed39ed6-3025-4b29-be3e-c032faa00827" Title="GetValueAsInt32 Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetValueAsInt32.htm">
+          <HelpTOCNode Title="GetValueAsInt32 Method " Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsInt32.htm" />
+          <HelpTOCNode Title="GetValueAsInt32 Method (Int32)" Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsInt32_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="c7246d10-f971-4c19-ba86-3e48b19d63d2" Title="GetValueAsInt64 Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetValueAsInt64.htm">
+          <HelpTOCNode Title="GetValueAsInt64 Method " Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsInt64.htm" />
+          <HelpTOCNode Title="GetValueAsInt64 Method (Int32)" Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsInt64_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="5b20c0f8-7579-47d1-adf0-4d3cbe5da6ef" Title="GetValueAsName Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetValueAsName.htm">
+          <HelpTOCNode Title="GetValueAsName Method " Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsName.htm" />
+          <HelpTOCNode Title="GetValueAsName Method (Int32)" Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsName_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="4f9b76d5-00f5-4e2e-8a39-dfc33a857366" Title="GetValueAsString Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetValueAsString.htm">
+          <HelpTOCNode Title="GetValueAsString Method " Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsString.htm" />
+          <HelpTOCNode Title="GetValueAsString Method (Int32)" Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsString_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="73c733e3-cc68-4683-9306-655c9ba525cd" Title="GetValueAsTime Method " Url="html/Overload_Bloomberglp_Blpapi_Element_GetValueAsTime.htm">
+          <HelpTOCNode Title="GetValueAsTime Method " Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsTime.htm" />
+          <HelpTOCNode Title="GetValueAsTime Method (Int32)" Url="html/M_Bloomberglp_Blpapi_Element_GetValueAsTime_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="570100b8-680c-40fe-9249-ba50970540e6" Title="HasElement Method " Url="html/Overload_Bloomberglp_Blpapi_Element_HasElement.htm">
+          <HelpTOCNode Title="HasElement Method (String)" Url="html/M_Bloomberglp_Blpapi_Element_HasElement_2.htm" />
+          <HelpTOCNode Title="HasElement Method (Name)" Url="html/M_Bloomberglp_Blpapi_Element_HasElement.htm" />
+          <HelpTOCNode Title="HasElement Method (String, Boolean)" Url="html/M_Bloomberglp_Blpapi_Element_HasElement_3.htm" />
+          <HelpTOCNode Title="HasElement Method (Name, Boolean)" Url="html/M_Bloomberglp_Blpapi_Element_HasElement_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="cc2c57ce-6269-40c0-9738-fec62d751e34" Title="IsEqualTo Method " Url="html/Overload_Bloomberglp_Blpapi_Element_IsEqualTo.htm">
+          <HelpTOCNode Title="IsEqualTo Method (Constant)" Url="html/M_Bloomberglp_Blpapi_Element_IsEqualTo.htm" />
+          <HelpTOCNode Title="IsEqualTo Method (Constant, Int32)" Url="html/M_Bloomberglp_Blpapi_Element_IsEqualTo_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="IsNullValue Method " Url="html/M_Bloomberglp_Blpapi_Element_IsNullValue.htm" />
+        <HelpTOCNode Id="548b8cae-47db-40be-9a14-6eeafbfcaff1" Title="Print Method " Url="html/Overload_Bloomberglp_Blpapi_Element_Print.htm">
+          <HelpTOCNode Title="Print Method (Stream)" Url="html/M_Bloomberglp_Blpapi_Element_Print.htm" />
+          <HelpTOCNode Title="Print Method (TextWriter)" Url="html/M_Bloomberglp_Blpapi_Element_Print_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="22787f29-b281-422b-9ff5-25c67d380467" Title="SetChoice Method " Url="html/Overload_Bloomberglp_Blpapi_Element_SetChoice.htm">
+          <HelpTOCNode Title="SetChoice Method (String)" Url="html/M_Bloomberglp_Blpapi_Element_SetChoice_1.htm" />
+          <HelpTOCNode Title="SetChoice Method (Name)" Url="html/M_Bloomberglp_Blpapi_Element_SetChoice.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="f034fb95-45ca-4e4e-ad6b-6c26316ac47b" Title="SetElement Method " Url="html/Overload_Bloomberglp_Blpapi_Element_SetElement.htm">
+          <HelpTOCNode Title="SetElement Method (String, Constant)" Url="html/M_Bloomberglp_Blpapi_Element_SetElement_11.htm" />
+          <HelpTOCNode Title="SetElement Method (String, Datetime)" Url="html/M_Bloomberglp_Blpapi_Element_SetElement_12.htm" />
+          <HelpTOCNode Title="SetElement Method (String, Name)" Url="html/M_Bloomberglp_Blpapi_Element_SetElement_13.htm" />
+          <HelpTOCNode Title="SetElement Method (String, Boolean)" Url="html/M_Bloomberglp_Blpapi_Element_SetElement_14.htm" />
+          <HelpTOCNode Title="SetElement Method (String, Byte[])" Url="html/M_Bloomberglp_Blpapi_Element_SetElement_15.htm" />
+          <HelpTOCNode Title="SetElement Method (String, Char)" Url="html/M_Bloomberglp_Blpapi_Element_SetElement_16.htm" />
+          <HelpTOCNode Title="SetElement Method (String, Double)" Url="html/M_Bloomberglp_Blpapi_Element_SetElement_17.htm" />
+          <HelpTOCNode Title="SetElement Method (String, Int32)" Url="html/M_Bloomberglp_Blpapi_Element_SetElement_18.htm" />
+          <HelpTOCNode Title="SetElement Method (String, Int64)" Url="html/M_Bloomberglp_Blpapi_Element_SetElement_19.htm" />
+          <HelpTOCNode Title="SetElement Method (String, Single)" Url="html/M_Bloomberglp_Blpapi_Element_SetElement_20.htm" />
+          <HelpTOCNode Title="SetElement Method (String, String)" Url="html/M_Bloomberglp_Blpapi_Element_SetElement_21.htm" />
+          <HelpTOCNode Title="SetElement Method (Name, Constant)" Url="html/M_Bloomberglp_Blpapi_Element_SetElement.htm" />
+          <HelpTOCNode Title="SetElement Method (Name, Datetime)" Url="html/M_Bloomberglp_Blpapi_Element_SetElement_1.htm" />
+          <HelpTOCNode Title="SetElement Method (Name, Name)" Url="html/M_Bloomberglp_Blpapi_Element_SetElement_2.htm" />
+          <HelpTOCNode Title="SetElement Method (Name, Boolean)" Url="html/M_Bloomberglp_Blpapi_Element_SetElement_3.htm" />
+          <HelpTOCNode Title="SetElement Method (Name, Byte[])" Url="html/M_Bloomberglp_Blpapi_Element_SetElement_4.htm" />
+          <HelpTOCNode Title="SetElement Method (Name, Char)" Url="html/M_Bloomberglp_Blpapi_Element_SetElement_5.htm" />
+          <HelpTOCNode Title="SetElement Method (Name, Double)" Url="html/M_Bloomberglp_Blpapi_Element_SetElement_6.htm" />
+          <HelpTOCNode Title="SetElement Method (Name, Int32)" Url="html/M_Bloomberglp_Blpapi_Element_SetElement_7.htm" />
+          <HelpTOCNode Title="SetElement Method (Name, Int64)" Url="html/M_Bloomberglp_Blpapi_Element_SetElement_8.htm" />
+          <HelpTOCNode Title="SetElement Method (Name, Single)" Url="html/M_Bloomberglp_Blpapi_Element_SetElement_9.htm" />
+          <HelpTOCNode Title="SetElement Method (Name, String)" Url="html/M_Bloomberglp_Blpapi_Element_SetElement_10.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="3c525a35-68b6-457e-a1dd-4af7937c9421" Title="SetValue Method " Url="html/Overload_Bloomberglp_Blpapi_Element_SetValue.htm">
+          <HelpTOCNode Title="SetValue Method (Boolean)" Url="html/M_Bloomberglp_Blpapi_Element_SetValue_6.htm" />
+          <HelpTOCNode Title="SetValue Method (Byte[])" Url="html/M_Bloomberglp_Blpapi_Element_SetValue_8.htm" />
+          <HelpTOCNode Title="SetValue Method (Char)" Url="html/M_Bloomberglp_Blpapi_Element_SetValue_10.htm" />
+          <HelpTOCNode Title="SetValue Method (Double)" Url="html/M_Bloomberglp_Blpapi_Element_SetValue_12.htm" />
+          <HelpTOCNode Title="SetValue Method (Int32)" Url="html/M_Bloomberglp_Blpapi_Element_SetValue_14.htm" />
+          <HelpTOCNode Title="SetValue Method (Int64)" Url="html/M_Bloomberglp_Blpapi_Element_SetValue_16.htm" />
+          <HelpTOCNode Title="SetValue Method (Single)" Url="html/M_Bloomberglp_Blpapi_Element_SetValue_18.htm" />
+          <HelpTOCNode Title="SetValue Method (String)" Url="html/M_Bloomberglp_Blpapi_Element_SetValue_20.htm" />
+          <HelpTOCNode Title="SetValue Method (Constant)" Url="html/M_Bloomberglp_Blpapi_Element_SetValue.htm" />
+          <HelpTOCNode Title="SetValue Method (Datetime)" Url="html/M_Bloomberglp_Blpapi_Element_SetValue_2.htm" />
+          <HelpTOCNode Title="SetValue Method (Name)" Url="html/M_Bloomberglp_Blpapi_Element_SetValue_4.htm" />
+          <HelpTOCNode Title="SetValue Method (Boolean, Int32)" Url="html/M_Bloomberglp_Blpapi_Element_SetValue_7.htm" />
+          <HelpTOCNode Title="SetValue Method (Byte[], Int32)" Url="html/M_Bloomberglp_Blpapi_Element_SetValue_9.htm" />
+          <HelpTOCNode Title="SetValue Method (Char, Int32)" Url="html/M_Bloomberglp_Blpapi_Element_SetValue_11.htm" />
+          <HelpTOCNode Title="SetValue Method (Double, Int32)" Url="html/M_Bloomberglp_Blpapi_Element_SetValue_13.htm" />
+          <HelpTOCNode Title="SetValue Method (Int32, Int32)" Url="html/M_Bloomberglp_Blpapi_Element_SetValue_15.htm" />
+          <HelpTOCNode Title="SetValue Method (Int64, Int32)" Url="html/M_Bloomberglp_Blpapi_Element_SetValue_17.htm" />
+          <HelpTOCNode Title="SetValue Method (Single, Int32)" Url="html/M_Bloomberglp_Blpapi_Element_SetValue_19.htm" />
+          <HelpTOCNode Title="SetValue Method (String, Int32)" Url="html/M_Bloomberglp_Blpapi_Element_SetValue_21.htm" />
+          <HelpTOCNode Title="SetValue Method (Constant, Int32)" Url="html/M_Bloomberglp_Blpapi_Element_SetValue_1.htm" />
+          <HelpTOCNode Title="SetValue Method (Datetime, Int32)" Url="html/M_Bloomberglp_Blpapi_Element_SetValue_3.htm" />
+          <HelpTOCNode Title="SetValue Method (Name, Int32)" Url="html/M_Bloomberglp_Blpapi_Element_SetValue_5.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="ToString Method " Url="html/M_Bloomberglp_Blpapi_Element_ToString.htm" />
+        <HelpTOCNode Title="ValueIsNull Method " Url="html/M_Bloomberglp_Blpapi_Element_ValueIsNull.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5d35c50e-c1c2-43a7-913b-d5d0e9caefd3" Title="Event Class" Url="html/T_Bloomberglp_Blpapi_Event.htm">
+      <HelpTOCNode Title="Event Constructor " Url="html/M_Bloomberglp_Blpapi_Event__ctor.htm" />
+      <HelpTOCNode Id="f84e3f03-3df0-446c-b589-af38dbe09949" Title="Event Properties" Url="html/Properties_T_Bloomberglp_Blpapi_Event.htm">
+        <HelpTOCNode Title="IsValid Property " Url="html/P_Bloomberglp_Blpapi_Event_IsValid.htm" />
+        <HelpTOCNode Title="Type Property " Url="html/P_Bloomberglp_Blpapi_Event_Type.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2ccdba3d-a0d0-431f-8a0f-9dd01c298161" Title="Event Methods" Url="html/Methods_T_Bloomberglp_Blpapi_Event.htm">
+        <HelpTOCNode Title="IEnumerable.GetEnumerator Method " Url="html/M_Bloomberglp_Blpapi_Event_System_Collections_IEnumerable_GetEnumerator.htm" />
+        <HelpTOCNode Title="GetEnumerator Method " Url="html/M_Bloomberglp_Blpapi_Event_GetEnumerator.htm" />
+        <HelpTOCNode Title="GetMessages Method " Url="html/M_Bloomberglp_Blpapi_Event_GetMessages.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="Event.EventType Enumeration" Url="html/T_Bloomberglp_Blpapi_Event_EventType.htm" />
+    <HelpTOCNode Id="e1accd1d-2309-4a81-8127-e98e82c4b97a" Title="EventDispatcher Class" Url="html/T_Bloomberglp_Blpapi_EventDispatcher.htm">
+      <HelpTOCNode Id="35d9279c-f5cf-49cc-a676-4dffa5cfba16" Title="EventDispatcher Constructor " Url="html/Overload_Bloomberglp_Blpapi_EventDispatcher__ctor.htm">
+        <HelpTOCNode Title="EventDispatcher Constructor " Url="html/M_Bloomberglp_Blpapi_EventDispatcher__ctor.htm" />
+        <HelpTOCNode Title="EventDispatcher Constructor (Int32)" Url="html/M_Bloomberglp_Blpapi_EventDispatcher__ctor_1.htm" />
+        <HelpTOCNode Title="EventDispatcher Constructor (Int32, Int32)" Url="html/M_Bloomberglp_Blpapi_EventDispatcher__ctor_2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="24432453-4b10-4755-9fe0-0be07bfb8e06" Title="EventDispatcher Properties" Url="html/Properties_T_Bloomberglp_Blpapi_EventDispatcher.htm">
+        <HelpTOCNode Title="NumActiveThreads Property " Url="html/P_Bloomberglp_Blpapi_EventDispatcher_NumActiveThreads.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="595ac822-6de1-4526-8886-ef589b81a607" Title="EventDispatcher Methods" Url="html/Methods_T_Bloomberglp_Blpapi_EventDispatcher.htm">
+        <HelpTOCNode Title="DispatcherThread Method " Url="html/M_Bloomberglp_Blpapi_EventDispatcher_DispatcherThread.htm" />
+        <HelpTOCNode Title="Start Method " Url="html/M_Bloomberglp_Blpapi_EventDispatcher_Start.htm" />
+        <HelpTOCNode Id="2c5bf811-cb96-43e6-ae7b-f4b6b226318e" Title="Stop Method " Url="html/Overload_Bloomberglp_Blpapi_EventDispatcher_Stop.htm">
+          <HelpTOCNode Title="Stop Method " Url="html/M_Bloomberglp_Blpapi_EventDispatcher_Stop.htm" />
+          <HelpTOCNode Title="Stop Method (EventDispatcher.StopOption)" Url="html/M_Bloomberglp_Blpapi_EventDispatcher_Stop_1.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="bf6738ed-ff27-49b6-b6bf-6059d5d4bfa4" Title="EventDispatcher.StopOption Class" Url="html/T_Bloomberglp_Blpapi_EventDispatcher_StopOption.htm">
+      <HelpTOCNode Id="f816a584-38d7-4642-ab03-334938138d6c" Title="StopOption Methods" Url="html/Methods_T_Bloomberglp_Blpapi_EventDispatcher_StopOption.htm">
+        <HelpTOCNode Title="ToString Method " Url="html/M_Bloomberglp_Blpapi_EventDispatcher_StopOption_ToString.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0456587a-0842-479c-b9e7-dc6d91fb7ccf" Title="StopOption Fields" Url="html/Fields_T_Bloomberglp_Blpapi_EventDispatcher_StopOption.htm">
+        <HelpTOCNode Title="ASYNC Field" Url="html/F_Bloomberglp_Blpapi_EventDispatcher_StopOption_ASYNC.htm" />
+        <HelpTOCNode Title="SYNC Field" Url="html/F_Bloomberglp_Blpapi_EventDispatcher_StopOption_SYNC.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="9faba46e-dd67-4b01-a73b-34f43ae0c32f" Title="EventFormatter Class" Url="html/T_Bloomberglp_Blpapi_EventFormatter.htm">
+      <HelpTOCNode Title="EventFormatter Constructor " Url="html/M_Bloomberglp_Blpapi_EventFormatter__ctor.htm" />
+      <HelpTOCNode Id="294c005b-f255-4fc8-a267-6b4d74e8d77a" Title="EventFormatter Methods" Url="html/Methods_T_Bloomberglp_Blpapi_EventFormatter.htm">
+        <HelpTOCNode Title="AppendElement Method " Url="html/M_Bloomberglp_Blpapi_EventFormatter_AppendElement.htm" />
+        <HelpTOCNode Id="75cdc381-8734-4477-836d-84e4d441a6b5" Title="AppendMessage Method " Url="html/Overload_Bloomberglp_Blpapi_EventFormatter_AppendMessage.htm">
+          <HelpTOCNode Title="AppendMessage Method (String, Topic)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_AppendMessage_2.htm" />
+          <HelpTOCNode Title="AppendMessage Method (Name, Topic)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_AppendMessage.htm" />
+          <HelpTOCNode Title="AppendMessage Method (String, Topic, Nullable(Int32))" Url="html/M_Bloomberglp_Blpapi_EventFormatter_AppendMessage_3.htm" />
+          <HelpTOCNode Title="AppendMessage Method (Name, Topic, Nullable(Int32))" Url="html/M_Bloomberglp_Blpapi_EventFormatter_AppendMessage_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="90c1c6de-ca2b-44e3-a322-578d2ab11caa" Title="AppendRecapMessage Method " Url="html/Overload_Bloomberglp_Blpapi_EventFormatter_AppendRecapMessage.htm">
+          <HelpTOCNode Title="AppendRecapMessage Method (Topic, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_AppendRecapMessage.htm" />
+          <HelpTOCNode Title="AppendRecapMessage Method (Topic, Nullable(Int32), CorrelationID)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_AppendRecapMessage_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="0cc05bd5-b8d7-495f-8397-659c2474a6b8" Title="AppendResponse Method " Url="html/Overload_Bloomberglp_Blpapi_EventFormatter_AppendResponse.htm">
+          <HelpTOCNode Title="AppendResponse Method (String)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_AppendResponse_1.htm" />
+          <HelpTOCNode Title="AppendResponse Method (Name)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_AppendResponse.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="1c16be83-cce5-4059-83b9-e340bbbba044" Title="AppendValue Method " Url="html/Overload_Bloomberglp_Blpapi_EventFormatter_AppendValue.htm">
+          <HelpTOCNode Title="AppendValue Method (Boolean)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_AppendValue_2.htm" />
+          <HelpTOCNode Title="AppendValue Method (Char)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_AppendValue_3.htm" />
+          <HelpTOCNode Title="AppendValue Method (Double)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_AppendValue_4.htm" />
+          <HelpTOCNode Title="AppendValue Method (Int32)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_AppendValue_5.htm" />
+          <HelpTOCNode Title="AppendValue Method (Int64)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_AppendValue_6.htm" />
+          <HelpTOCNode Title="AppendValue Method (Single)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_AppendValue_7.htm" />
+          <HelpTOCNode Title="AppendValue Method (String)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_AppendValue_8.htm" />
+          <HelpTOCNode Title="AppendValue Method (Datetime)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_AppendValue.htm" />
+          <HelpTOCNode Title="AppendValue Method (Name)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_AppendValue_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="PopElement Method " Url="html/M_Bloomberglp_Blpapi_EventFormatter_PopElement.htm" />
+        <HelpTOCNode Id="95b559cd-e1d0-4484-ae43-0402176b688c" Title="PushElement Method " Url="html/Overload_Bloomberglp_Blpapi_EventFormatter_PushElement.htm">
+          <HelpTOCNode Title="PushElement Method (String)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_PushElement_1.htm" />
+          <HelpTOCNode Title="PushElement Method (Name)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_PushElement.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="f4a5ae62-901e-4c6c-b073-d566138c9651" Title="SetElement Method " Url="html/Overload_Bloomberglp_Blpapi_EventFormatter_SetElement.htm">
+          <HelpTOCNode Title="SetElement Method (String, Datetime)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_SetElement_9.htm" />
+          <HelpTOCNode Title="SetElement Method (String, Name)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_SetElement_10.htm" />
+          <HelpTOCNode Title="SetElement Method (String, Boolean)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_SetElement_11.htm" />
+          <HelpTOCNode Title="SetElement Method (String, Char)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_SetElement_12.htm" />
+          <HelpTOCNode Title="SetElement Method (String, Double)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_SetElement_13.htm" />
+          <HelpTOCNode Title="SetElement Method (String, Int32)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_SetElement_14.htm" />
+          <HelpTOCNode Title="SetElement Method (String, Int64)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_SetElement_15.htm" />
+          <HelpTOCNode Title="SetElement Method (String, Single)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_SetElement_16.htm" />
+          <HelpTOCNode Title="SetElement Method (String, String)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_SetElement_17.htm" />
+          <HelpTOCNode Title="SetElement Method (Name, Datetime)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_SetElement.htm" />
+          <HelpTOCNode Title="SetElement Method (Name, Name)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_SetElement_1.htm" />
+          <HelpTOCNode Title="SetElement Method (Name, Boolean)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_SetElement_2.htm" />
+          <HelpTOCNode Title="SetElement Method (Name, Char)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_SetElement_3.htm" />
+          <HelpTOCNode Title="SetElement Method (Name, Double)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_SetElement_4.htm" />
+          <HelpTOCNode Title="SetElement Method (Name, Int32)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_SetElement_5.htm" />
+          <HelpTOCNode Title="SetElement Method (Name, Int64)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_SetElement_6.htm" />
+          <HelpTOCNode Title="SetElement Method (Name, Single)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_SetElement_7.htm" />
+          <HelpTOCNode Title="SetElement Method (Name, String)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_SetElement_8.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="9c48df89-26b2-4a96-83da-5528db696280" Title="SetElementNull Method " Url="html/Overload_Bloomberglp_Blpapi_EventFormatter_SetElementNull.htm">
+          <HelpTOCNode Title="SetElementNull Method (String)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_SetElementNull_1.htm" />
+          <HelpTOCNode Title="SetElementNull Method (Name)" Url="html/M_Bloomberglp_Blpapi_EventFormatter_SetElementNull.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="EventHandler Delegate" Url="html/T_Bloomberglp_Blpapi_EventHandler.htm" />
+    <HelpTOCNode Id="9a16cfc7-9fe7-4753-9b48-843c90d08e14" Title="EventQueue Class" Url="html/T_Bloomberglp_Blpapi_EventQueue.htm">
+      <HelpTOCNode Title="EventQueue Constructor " Url="html/M_Bloomberglp_Blpapi_EventQueue__ctor.htm" />
+      <HelpTOCNode Id="b1ae5b5e-4c71-4239-bc3e-a8e881453468" Title="EventQueue Methods" Url="html/Methods_T_Bloomberglp_Blpapi_EventQueue.htm">
+        <HelpTOCNode Id="45cb3c7c-1fe0-4942-aab9-3e45a915a2d6" Title="NextEvent Method " Url="html/Overload_Bloomberglp_Blpapi_EventQueue_NextEvent.htm">
+          <HelpTOCNode Title="NextEvent Method " Url="html/M_Bloomberglp_Blpapi_EventQueue_NextEvent.htm" />
+          <HelpTOCNode Title="NextEvent Method (Int64)" Url="html/M_Bloomberglp_Blpapi_EventQueue_NextEvent_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Purge Method " Url="html/M_Bloomberglp_Blpapi_EventQueue_Purge.htm" />
+        <HelpTOCNode Title="TryNextEvent Method " Url="html/M_Bloomberglp_Blpapi_EventQueue_TryNextEvent.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ebfa0263-eac9-40c9-8409-1bdac8d4e2e2" Title="Identity Interface" Url="html/T_Bloomberglp_Blpapi_Identity.htm">
+      <HelpTOCNode Id="ea9fd72e-34ec-4871-ac4e-102c3be71392" Title="Identity Properties" Url="html/Properties_T_Bloomberglp_Blpapi_Identity.htm">
+        <HelpTOCNode Title="SeatType Property " Url="html/P_Bloomberglp_Blpapi_Identity_SeatType.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5d176f1e-5285-466d-9d05-73633f145a39" Title="Identity Methods" Url="html/Methods_T_Bloomberglp_Blpapi_Identity.htm">
+        <HelpTOCNode Id="306f6981-77b4-4a0f-93ad-bc09eda4fe63" Title="HasEntitlements Method " Url="html/Overload_Bloomberglp_Blpapi_Identity_HasEntitlements.htm">
+          <HelpTOCNode Title="HasEntitlements Method (Int32[], Service)" Url="html/M_Bloomberglp_Blpapi_Identity_HasEntitlements_2.htm" />
+          <HelpTOCNode Title="HasEntitlements Method (Element, Service)" Url="html/M_Bloomberglp_Blpapi_Identity_HasEntitlements.htm" />
+          <HelpTOCNode Title="HasEntitlements Method (Int32[], Service, List(Int32))" Url="html/M_Bloomberglp_Blpapi_Identity_HasEntitlements_3.htm" />
+          <HelpTOCNode Title="HasEntitlements Method (Element, Service, List(Int32))" Url="html/M_Bloomberglp_Blpapi_Identity_HasEntitlements_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="IsAuthorized Method " Url="html/M_Bloomberglp_Blpapi_Identity_IsAuthorized.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="872eae88-4cdf-4bd4-a97c-67cbcf342704" Title="InvalidConversionException Class" Url="html/T_Bloomberglp_Blpapi_InvalidConversionException.htm">
+      <HelpTOCNode Id="81d44d4a-a3ec-42e3-9a57-604a7901aa9a" Title="InvalidConversionException Constructor " Url="html/Overload_Bloomberglp_Blpapi_InvalidConversionException__ctor.htm">
+        <HelpTOCNode Title="InvalidConversionException Constructor " Url="html/M_Bloomberglp_Blpapi_InvalidConversionException__ctor.htm" />
+        <HelpTOCNode Title="InvalidConversionException Constructor (String)" Url="html/M_Bloomberglp_Blpapi_InvalidConversionException__ctor_1.htm" />
+        <HelpTOCNode Title="InvalidConversionException Constructor (String, Exception)" Url="html/M_Bloomberglp_Blpapi_InvalidConversionException__ctor_2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6df42317-66df-48a0-8b7c-14da21464c48" Title="InvalidConversionException Properties" Url="html/Properties_T_Bloomberglp_Blpapi_InvalidConversionException.htm">
+        <HelpTOCNode Title="Description Property " Url="html/P_Bloomberglp_Blpapi_InvalidConversionException_Description.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="a1a19795-ffdb-4205-ac21-09056e6a0064" Title="InvalidRequestException Class" Url="html/T_Bloomberglp_Blpapi_InvalidRequestException.htm">
+      <HelpTOCNode Id="98f3dca3-9aa4-4289-ba69-bc13e8485210" Title="InvalidRequestException Constructor " Url="html/Overload_Bloomberglp_Blpapi_InvalidRequestException__ctor.htm">
+        <HelpTOCNode Title="InvalidRequestException Constructor " Url="html/M_Bloomberglp_Blpapi_InvalidRequestException__ctor.htm" />
+        <HelpTOCNode Title="InvalidRequestException Constructor (String)" Url="html/M_Bloomberglp_Blpapi_InvalidRequestException__ctor_1.htm" />
+        <HelpTOCNode Title="InvalidRequestException Constructor (String, Exception)" Url="html/M_Bloomberglp_Blpapi_InvalidRequestException__ctor_2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c9ab4e24-099b-4021-b4d7-fcb1103e6658" Title="InvalidRequestException Properties" Url="html/Properties_T_Bloomberglp_Blpapi_InvalidRequestException.htm">
+        <HelpTOCNode Title="Description Property " Url="html/P_Bloomberglp_Blpapi_InvalidRequestException_Description.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="74a3666e-c54a-485a-9500-45e23818243a" Title="Logging Class" Url="html/T_Bloomberglp_Blpapi_Logging.htm">
+      <HelpTOCNode Title="Logging Constructor " Url="html/M_Bloomberglp_Blpapi_Logging__ctor.htm" />
+      <HelpTOCNode Id="dfeb7754-97be-45ae-9073-087bd93a4007" Title="Logging Methods" Url="html/Methods_T_Bloomberglp_Blpapi_Logging.htm">
+        <HelpTOCNode Title="DeregisterCallback Method " Url="html/M_Bloomberglp_Blpapi_Logging_DeregisterCallback.htm" />
+        <HelpTOCNode Title="LogTestMessage Method " Url="html/M_Bloomberglp_Blpapi_Logging_LogTestMessage.htm" />
+        <HelpTOCNode Title="RegisterCallback Method " Url="html/M_Bloomberglp_Blpapi_Logging_RegisterCallback.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="27cb96b2-5d67-451c-8c1f-f31036f8ed67" Title="Logging.Callback Interface" Url="html/T_Bloomberglp_Blpapi_Logging_Callback.htm">
+      <HelpTOCNode Id="ddfe7030-bfd9-4468-84e1-aaa434a5e074" Title="Callback Methods" Url="html/Methods_T_Bloomberglp_Blpapi_Logging_Callback.htm">
+        <HelpTOCNode Title="OnMessage Method " Url="html/M_Bloomberglp_Blpapi_Logging_Callback_OnMessage.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ff40b9ac-a0db-4cb9-b76f-f8092cf4116b" Title="Message Class" Url="html/T_Bloomberglp_Blpapi_Message.htm">
+      <HelpTOCNode Title="Message Constructor " Url="html/M_Bloomberglp_Blpapi_Message__ctor.htm" />
+      <HelpTOCNode Id="6906d5eb-b26e-4a1b-a2c2-984fe2b1c77a" Title="Message Properties" Url="html/Properties_T_Bloomberglp_Blpapi_Message.htm">
+        <HelpTOCNode Title="AsElement Property " Url="html/P_Bloomberglp_Blpapi_Message_AsElement.htm" />
+        <HelpTOCNode Title="CorrelationID Property " Url="html/P_Bloomberglp_Blpapi_Message_CorrelationID.htm" />
+        <HelpTOCNode Title="CorrelationIDs Property " Url="html/P_Bloomberglp_Blpapi_Message_CorrelationIDs.htm" />
+        <HelpTOCNode Title="Elements Property " Url="html/P_Bloomberglp_Blpapi_Message_Elements.htm" />
+        <HelpTOCNode Title="FragmentType Property " Url="html/P_Bloomberglp_Blpapi_Message_FragmentType.htm" />
+        <HelpTOCNode Title="IsValid Property " Url="html/P_Bloomberglp_Blpapi_Message_IsValid.htm" />
+        <HelpTOCNode Id="92178e84-6605-4b13-bde7-90a8466f0c46" Title="Item Property " Url="html/Overload_Bloomberglp_Blpapi_Message_Item.htm">
+          <HelpTOCNode Title="Item Property (String)" Url="html/P_Bloomberglp_Blpapi_Message_Item.htm" />
+          <HelpTOCNode Title="Item Property (String, Int32)" Url="html/P_Bloomberglp_Blpapi_Message_Item_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="MessageType Property " Url="html/P_Bloomberglp_Blpapi_Message_MessageType.htm" />
+        <HelpTOCNode Title="NumCorrelationIDs Property " Url="html/P_Bloomberglp_Blpapi_Message_NumCorrelationIDs.htm" />
+        <HelpTOCNode Title="NumElements Property " Url="html/P_Bloomberglp_Blpapi_Message_NumElements.htm" />
+        <HelpTOCNode Title="RecapType Property " Url="html/P_Bloomberglp_Blpapi_Message_RecapType.htm" />
+        <HelpTOCNode Title="Service Property " Url="html/P_Bloomberglp_Blpapi_Message_Service.htm" />
+        <HelpTOCNode Title="TimeReceived Property " Url="html/P_Bloomberglp_Blpapi_Message_TimeReceived.htm" />
+        <HelpTOCNode Title="TopicName Property " Url="html/P_Bloomberglp_Blpapi_Message_TopicName.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="8db2685a-4388-494f-8830-f5b7c34f26ee" Title="Message Methods" Url="html/Methods_T_Bloomberglp_Blpapi_Message.htm">
+        <HelpTOCNode Title="GetCorrelationID Method " Url="html/M_Bloomberglp_Blpapi_Message_GetCorrelationID.htm" />
+        <HelpTOCNode Id="7d54a9d8-94bc-4ef3-a5f0-481552e8c878" Title="GetElement Method " Url="html/Overload_Bloomberglp_Blpapi_Message_GetElement.htm">
+          <HelpTOCNode Title="GetElement Method (String)" Url="html/M_Bloomberglp_Blpapi_Message_GetElement_1.htm" />
+          <HelpTOCNode Title="GetElement Method (Name)" Url="html/M_Bloomberglp_Blpapi_Message_GetElement.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="5accbe7d-03b8-4199-8ebe-66c6bdf47e1e" Title="GetElementAsBool Method " Url="html/Overload_Bloomberglp_Blpapi_Message_GetElementAsBool.htm">
+          <HelpTOCNode Title="GetElementAsBool Method (String)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsBool_1.htm" />
+          <HelpTOCNode Title="GetElementAsBool Method (Name)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsBool.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="623e1693-6a8d-45e8-bbaf-e72bbe21baf9" Title="GetElementAsBytes Method " Url="html/Overload_Bloomberglp_Blpapi_Message_GetElementAsBytes.htm">
+          <HelpTOCNode Title="GetElementAsBytes Method (String)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsBytes_1.htm" />
+          <HelpTOCNode Title="GetElementAsBytes Method (Name)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsBytes.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="682f74b5-225d-4b55-8b0f-51e4c9f3e0b7" Title="GetElementAsChar Method " Url="html/Overload_Bloomberglp_Blpapi_Message_GetElementAsChar.htm">
+          <HelpTOCNode Title="GetElementAsChar Method (String)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsChar_1.htm" />
+          <HelpTOCNode Title="GetElementAsChar Method (Name)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsChar.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="0c09c7ab-a05d-46f7-9635-2349402bcbbc" Title="GetElementAsDate Method " Url="html/Overload_Bloomberglp_Blpapi_Message_GetElementAsDate.htm">
+          <HelpTOCNode Title="GetElementAsDate Method (String)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsDate_1.htm" />
+          <HelpTOCNode Title="GetElementAsDate Method (Name)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsDate.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="f771dfc1-3517-442d-ad66-1681dd2d7165" Title="GetElementAsDatetime Method " Url="html/Overload_Bloomberglp_Blpapi_Message_GetElementAsDatetime.htm">
+          <HelpTOCNode Title="GetElementAsDatetime Method (String)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsDatetime_1.htm" />
+          <HelpTOCNode Title="GetElementAsDatetime Method (Name)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsDatetime.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="96383fb3-d927-4b6b-8188-86722c8edd99" Title="GetElementAsFloat32 Method " Url="html/Overload_Bloomberglp_Blpapi_Message_GetElementAsFloat32.htm">
+          <HelpTOCNode Title="GetElementAsFloat32 Method (String)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsFloat32_1.htm" />
+          <HelpTOCNode Title="GetElementAsFloat32 Method (Name)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsFloat32.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="41e2fba7-9e89-4362-8bd6-0a15f126803d" Title="GetElementAsFloat64 Method " Url="html/Overload_Bloomberglp_Blpapi_Message_GetElementAsFloat64.htm">
+          <HelpTOCNode Title="GetElementAsFloat64 Method (String)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsFloat64_1.htm" />
+          <HelpTOCNode Title="GetElementAsFloat64 Method (Name)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsFloat64.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="7928d762-88be-4af2-a9f4-eae73225d8c3" Title="GetElementAsInt32 Method " Url="html/Overload_Bloomberglp_Blpapi_Message_GetElementAsInt32.htm">
+          <HelpTOCNode Title="GetElementAsInt32 Method (String)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsInt32_1.htm" />
+          <HelpTOCNode Title="GetElementAsInt32 Method (Name)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsInt32.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="8c8e4981-4dc0-4bca-9589-9978a10d52d9" Title="GetElementAsInt64 Method " Url="html/Overload_Bloomberglp_Blpapi_Message_GetElementAsInt64.htm">
+          <HelpTOCNode Title="GetElementAsInt64 Method (String)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsInt64_1.htm" />
+          <HelpTOCNode Title="GetElementAsInt64 Method (Name)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsInt64.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="97b4187e-5b57-4f0c-b6a3-5fd9ed58b30f" Title="GetElementAsName Method " Url="html/Overload_Bloomberglp_Blpapi_Message_GetElementAsName.htm">
+          <HelpTOCNode Title="GetElementAsName Method (String)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsName_1.htm" />
+          <HelpTOCNode Title="GetElementAsName Method (Name)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsName.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="a471f158-997e-4187-ac84-c068b8e96430" Title="GetElementAsString Method " Url="html/Overload_Bloomberglp_Blpapi_Message_GetElementAsString.htm">
+          <HelpTOCNode Title="GetElementAsString Method (String)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsString_1.htm" />
+          <HelpTOCNode Title="GetElementAsString Method (Name)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsString.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="06f23e0b-a68b-4016-a3bb-05a9f540508c" Title="GetElementAsTime Method " Url="html/Overload_Bloomberglp_Blpapi_Message_GetElementAsTime.htm">
+          <HelpTOCNode Title="GetElementAsTime Method (String)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsTime_1.htm" />
+          <HelpTOCNode Title="GetElementAsTime Method (Name)" Url="html/M_Bloomberglp_Blpapi_Message_GetElementAsTime.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="645925cc-8cd6-4081-b2d6-de1e39f9c1ef" Title="HasElement Method " Url="html/Overload_Bloomberglp_Blpapi_Message_HasElement.htm">
+          <HelpTOCNode Title="HasElement Method (String)" Url="html/M_Bloomberglp_Blpapi_Message_HasElement_2.htm" />
+          <HelpTOCNode Title="HasElement Method (Name)" Url="html/M_Bloomberglp_Blpapi_Message_HasElement.htm" />
+          <HelpTOCNode Title="HasElement Method (String, Boolean)" Url="html/M_Bloomberglp_Blpapi_Message_HasElement_3.htm" />
+          <HelpTOCNode Title="HasElement Method (Name, Boolean)" Url="html/M_Bloomberglp_Blpapi_Message_HasElement_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="e851aff6-c680-49b8-b6b8-ce017e537015" Title="Print Method " Url="html/Overload_Bloomberglp_Blpapi_Message_Print.htm">
+          <HelpTOCNode Title="Print Method (Stream)" Url="html/M_Bloomberglp_Blpapi_Message_Print.htm" />
+          <HelpTOCNode Title="Print Method (TextWriter)" Url="html/M_Bloomberglp_Blpapi_Message_Print_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="ToString Method " Url="html/M_Bloomberglp_Blpapi_Message_ToString.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="Message.Fragment Enumeration" Url="html/T_Bloomberglp_Blpapi_Message_Fragment.htm" />
+    <HelpTOCNode Title="Message.Recap Enumeration" Url="html/T_Bloomberglp_Blpapi_Message_Recap.htm" />
+    <HelpTOCNode Id="8e7888bb-733c-44d6-a0b3-87231d2967a7" Title="Name Class" Url="html/T_Bloomberglp_Blpapi_Name.htm">
+      <HelpTOCNode Id="81203696-ca02-463c-9605-4201304fde9d" Title="Name Constructor " Url="html/Overload_Bloomberglp_Blpapi_Name__ctor.htm">
+        <HelpTOCNode Title="Name Constructor " Url="html/M_Bloomberglp_Blpapi_Name__ctor.htm" />
+        <HelpTOCNode Title="Name Constructor (String)" Url="html/M_Bloomberglp_Blpapi_Name__ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="075bc521-5f3a-45c1-80bf-b7f3dc5d6747" Title="Name Methods" Url="html/Methods_T_Bloomberglp_Blpapi_Name.htm">
+        <HelpTOCNode Title="Equals Method " Url="html/M_Bloomberglp_Blpapi_Name_Equals.htm" />
+        <HelpTOCNode Title="FindName Method " Url="html/M_Bloomberglp_Blpapi_Name_FindName.htm" />
+        <HelpTOCNode Title="FreeGlobalNameTable Method " Url="html/M_Bloomberglp_Blpapi_Name_FreeGlobalNameTable.htm" />
+        <HelpTOCNode Title="GetHashCode Method " Url="html/M_Bloomberglp_Blpapi_Name_GetHashCode.htm" />
+        <HelpTOCNode Title="GetName Method " Url="html/M_Bloomberglp_Blpapi_Name_GetName.htm" />
+        <HelpTOCNode Title="HasName Method " Url="html/M_Bloomberglp_Blpapi_Name_HasName.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/M_Bloomberglp_Blpapi_Name_ToString.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="34337ccb-65dc-4358-91ff-ee400d770359" Title="Name Fields" Url="html/Fields_T_Bloomberglp_Blpapi_Name.htm">
+        <HelpTOCNode Title="NullName Field" Url="html/F_Bloomberglp_Blpapi_Name_NullName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="NameEnumeration Interface" Url="html/T_Bloomberglp_Blpapi_NameEnumeration.htm" />
+    <HelpTOCNode Id="587714f5-e780-424b-a443-1631091541e0" Title="NameEnumerationTable Class" Url="html/T_Bloomberglp_Blpapi_NameEnumerationTable.htm">
+      <HelpTOCNode Title="NameEnumerationTable Constructor " Url="html/M_Bloomberglp_Blpapi_NameEnumerationTable__ctor.htm" />
+      <HelpTOCNode Id="a91a05c8-ad7c-4c36-8a00-aa6938d73d1d" Title="NameEnumerationTable Properties" Url="html/Properties_T_Bloomberglp_Blpapi_NameEnumerationTable.htm">
+        <HelpTOCNode Title="Item Property " Url="html/P_Bloomberglp_Blpapi_NameEnumerationTable_Item.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0aede585-6400-4f80-87c4-c5f672a05d2a" Title="NotFoundException Class" Url="html/T_Bloomberglp_Blpapi_NotFoundException.htm">
+      <HelpTOCNode Id="cddc0df1-77f2-4801-8ee2-f55935291023" Title="NotFoundException Constructor " Url="html/Overload_Bloomberglp_Blpapi_NotFoundException__ctor.htm">
+        <HelpTOCNode Title="NotFoundException Constructor " Url="html/M_Bloomberglp_Blpapi_NotFoundException__ctor.htm" />
+        <HelpTOCNode Title="NotFoundException Constructor (String)" Url="html/M_Bloomberglp_Blpapi_NotFoundException__ctor_1.htm" />
+        <HelpTOCNode Title="NotFoundException Constructor (String, Exception)" Url="html/M_Bloomberglp_Blpapi_NotFoundException__ctor_2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3f521eea-a9c0-4967-84ff-edbc12ea26d8" Title="NotFoundException Methods" Url="html/Methods_T_Bloomberglp_Blpapi_NotFoundException.htm">
+        <HelpTOCNode Title="Description Method " Url="html/M_Bloomberglp_Blpapi_NotFoundException_Description.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d27ae13a-47f8-4986-95cf-7bce0a493829" Title="Operation Class" Url="html/T_Bloomberglp_Blpapi_Operation.htm">
+      <HelpTOCNode Title="Operation Constructor " Url="html/M_Bloomberglp_Blpapi_Operation__ctor.htm" />
+      <HelpTOCNode Id="fbf610a8-2bf5-4389-990f-faa26f05ab38" Title="Operation Properties" Url="html/Properties_T_Bloomberglp_Blpapi_Operation.htm">
+        <HelpTOCNode Title="Description Property " Url="html/P_Bloomberglp_Blpapi_Operation_Description.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/P_Bloomberglp_Blpapi_Operation_Name.htm" />
+        <HelpTOCNode Title="NumResponseDefinition Property " Url="html/P_Bloomberglp_Blpapi_Operation_NumResponseDefinition.htm" />
+        <HelpTOCNode Title="RequestDefinition Property " Url="html/P_Bloomberglp_Blpapi_Operation_RequestDefinition.htm" />
+        <HelpTOCNode Title="RequestType Property " Url="html/P_Bloomberglp_Blpapi_Operation_RequestType.htm" />
+        <HelpTOCNode Title="ResponseDefinitions Property " Url="html/P_Bloomberglp_Blpapi_Operation_ResponseDefinitions.htm" />
+        <HelpTOCNode Title="ResponseType Property " Url="html/P_Bloomberglp_Blpapi_Operation_ResponseType.htm" />
+        <HelpTOCNode Title="Status Property " Url="html/P_Bloomberglp_Blpapi_Operation_Status.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f6e222be-7f78-494c-8f29-99f6e1403405" Title="Operation Methods" Url="html/Methods_T_Bloomberglp_Blpapi_Operation.htm">
+        <HelpTOCNode Title="GetResponseDefinition Method " Url="html/M_Bloomberglp_Blpapi_Operation_GetResponseDefinition.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="ProviderEventHandler Delegate" Url="html/T_Bloomberglp_Blpapi_ProviderEventHandler.htm" />
+    <HelpTOCNode Id="6884df38-b49a-459d-bb20-37f8dd3b36ea" Title="ProviderSession Class" Url="html/T_Bloomberglp_Blpapi_ProviderSession.htm">
+      <HelpTOCNode Id="3072278f-5dd5-4e09-870f-8a29b6341e86" Title="ProviderSession Constructor " Url="html/Overload_Bloomberglp_Blpapi_ProviderSession__ctor.htm">
+        <HelpTOCNode Title="ProviderSession Constructor " Url="html/M_Bloomberglp_Blpapi_ProviderSession__ctor.htm" />
+        <HelpTOCNode Title="ProviderSession Constructor (SessionOptions)" Url="html/M_Bloomberglp_Blpapi_ProviderSession__ctor_1.htm" />
+        <HelpTOCNode Title="ProviderSession Constructor (SessionOptions, ProviderEventHandler)" Url="html/M_Bloomberglp_Blpapi_ProviderSession__ctor_2.htm" />
+        <HelpTOCNode Title="ProviderSession Constructor (SessionOptions, ProviderEventHandler, EventDispatcher)" Url="html/M_Bloomberglp_Blpapi_ProviderSession__ctor_3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5308c2c8-08c5-468f-b464-d80d4719d4c5" Title="ProviderSession Methods" Url="html/Methods_T_Bloomberglp_Blpapi_ProviderSession.htm">
+        <HelpTOCNode Title="ActivateSubServiceCodeRange Method " Url="html/M_Bloomberglp_Blpapi_ProviderSession_ActivateSubServiceCodeRange.htm" />
+        <HelpTOCNode Title="CreateTopic Method " Url="html/M_Bloomberglp_Blpapi_ProviderSession_CreateTopic.htm" />
+        <HelpTOCNode Id="49ff6d31-4627-4590-94e7-1aa9cad822e2" Title="CreateTopics Method " Url="html/Overload_Bloomberglp_Blpapi_ProviderSession_CreateTopics.htm">
+          <HelpTOCNode Title="CreateTopics Method (TopicList)" Url="html/M_Bloomberglp_Blpapi_ProviderSession_CreateTopics.htm" />
+          <HelpTOCNode Title="CreateTopics Method (TopicList, ResolveMode)" Url="html/M_Bloomberglp_Blpapi_ProviderSession_CreateTopics_1.htm" />
+          <HelpTOCNode Title="CreateTopics Method (TopicList, ResolveMode, Identity)" Url="html/M_Bloomberglp_Blpapi_ProviderSession_CreateTopics_2.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="acf7f999-9351-49ac-b935-55fda1eaea58" Title="CreateTopicsAsync Method " Url="html/Overload_Bloomberglp_Blpapi_ProviderSession_CreateTopicsAsync.htm">
+          <HelpTOCNode Title="CreateTopicsAsync Method (TopicList)" Url="html/M_Bloomberglp_Blpapi_ProviderSession_CreateTopicsAsync.htm" />
+          <HelpTOCNode Title="CreateTopicsAsync Method (TopicList, ResolveMode)" Url="html/M_Bloomberglp_Blpapi_ProviderSession_CreateTopicsAsync_1.htm" />
+          <HelpTOCNode Title="CreateTopicsAsync Method (TopicList, ResolveMode, Identity)" Url="html/M_Bloomberglp_Blpapi_ProviderSession_CreateTopicsAsync_2.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="DeactivateSubServiceCodeRange Method " Url="html/M_Bloomberglp_Blpapi_ProviderSession_DeactivateSubServiceCodeRange.htm" />
+        <HelpTOCNode Title="DeleteTopic Method " Url="html/M_Bloomberglp_Blpapi_ProviderSession_DeleteTopic.htm" />
+        <HelpTOCNode Title="DeleteTopics Method " Url="html/M_Bloomberglp_Blpapi_ProviderSession_DeleteTopics.htm" />
+        <HelpTOCNode Title="DeregisterService Method " Url="html/M_Bloomberglp_Blpapi_ProviderSession_DeregisterService.htm" />
+        <HelpTOCNode Title="GetTopic Method " Url="html/M_Bloomberglp_Blpapi_ProviderSession_GetTopic.htm" />
+        <HelpTOCNode Title="Publish Method " Url="html/M_Bloomberglp_Blpapi_ProviderSession_Publish.htm" />
+        <HelpTOCNode Id="825fce0e-9e6f-4810-a7df-84f544126735" Title="RegisterService Method " Url="html/Overload_Bloomberglp_Blpapi_ProviderSession_RegisterService.htm">
+          <HelpTOCNode Title="RegisterService Method (String, Identity)" Url="html/M_Bloomberglp_Blpapi_ProviderSession_RegisterService.htm" />
+          <HelpTOCNode Title="RegisterService Method (String, Identity, ServiceRegistrationOptions)" Url="html/M_Bloomberglp_Blpapi_ProviderSession_RegisterService_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="6ac5ac9b-d266-4efb-994b-361a5f99ee8b" Title="RegisterServiceAsync Method " Url="html/Overload_Bloomberglp_Blpapi_ProviderSession_RegisterServiceAsync.htm">
+          <HelpTOCNode Title="RegisterServiceAsync Method (String, Identity)" Url="html/M_Bloomberglp_Blpapi_ProviderSession_RegisterServiceAsync.htm" />
+          <HelpTOCNode Title="RegisterServiceAsync Method (String, Identity, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_ProviderSession_RegisterServiceAsync_1.htm" />
+          <HelpTOCNode Title="RegisterServiceAsync Method (String, Identity, ServiceRegistrationOptions)" Url="html/M_Bloomberglp_Blpapi_ProviderSession_RegisterServiceAsync_3.htm" />
+          <HelpTOCNode Title="RegisterServiceAsync Method (String, Identity, CorrelationID, ServiceRegistrationOptions)" Url="html/M_Bloomberglp_Blpapi_ProviderSession_RegisterServiceAsync_2.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="bec5fe7c-e719-4f6c-b42d-a7bfb8dbebc0" Title="Resolve Method " Url="html/Overload_Bloomberglp_Blpapi_ProviderSession_Resolve.htm">
+          <HelpTOCNode Title="Resolve Method (ResolutionList)" Url="html/M_Bloomberglp_Blpapi_ProviderSession_Resolve.htm" />
+          <HelpTOCNode Title="Resolve Method (ResolutionList, ResolveMode)" Url="html/M_Bloomberglp_Blpapi_ProviderSession_Resolve_1.htm" />
+          <HelpTOCNode Title="Resolve Method (ResolutionList, ResolveMode, Identity)" Url="html/M_Bloomberglp_Blpapi_ProviderSession_Resolve_2.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="a1d5455f-cb08-4612-9f1f-28df9d7c2834" Title="ResolveAsync Method " Url="html/Overload_Bloomberglp_Blpapi_ProviderSession_ResolveAsync.htm">
+          <HelpTOCNode Title="ResolveAsync Method (ResolutionList)" Url="html/M_Bloomberglp_Blpapi_ProviderSession_ResolveAsync.htm" />
+          <HelpTOCNode Title="ResolveAsync Method (ResolutionList, ResolveMode)" Url="html/M_Bloomberglp_Blpapi_ProviderSession_ResolveAsync_1.htm" />
+          <HelpTOCNode Title="ResolveAsync Method (ResolutionList, ResolveMode, Identity)" Url="html/M_Bloomberglp_Blpapi_ProviderSession_ResolveAsync_2.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="22fbef70-d99e-463f-875d-07a9d85d0029" Title="SendResponse Method " Url="html/Overload_Bloomberglp_Blpapi_ProviderSession_SendResponse.htm">
+          <HelpTOCNode Title="SendResponse Method (Event)" Url="html/M_Bloomberglp_Blpapi_ProviderSession_SendResponse.htm" />
+          <HelpTOCNode Title="SendResponse Method (Event, Boolean)" Url="html/M_Bloomberglp_Blpapi_ProviderSession_SendResponse_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="SetEventHandler Method " Url="html/M_Bloomberglp_Blpapi_ProviderSession_SetEventHandler.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="964d9b2f-2bc0-48a3-97d8-d985a547b61c" Title="Request Interface" Url="html/T_Bloomberglp_Blpapi_Request.htm">
+      <HelpTOCNode Id="447eddb5-7ac1-49a6-9bdc-b18b66eeae2e" Title="Request Properties" Url="html/Properties_T_Bloomberglp_Blpapi_Request.htm">
+        <HelpTOCNode Title="AsElement Property " Url="html/P_Bloomberglp_Blpapi_Request_AsElement.htm" />
+        <HelpTOCNode Title="Elements Property " Url="html/P_Bloomberglp_Blpapi_Request_Elements.htm" />
+        <HelpTOCNode Id="2a94b23c-9076-42dd-a6b5-c9d833839b8d" Title="Item Property " Url="html/Overload_Bloomberglp_Blpapi_Request_Item.htm">
+          <HelpTOCNode Title="Item Property (String)" Url="html/P_Bloomberglp_Blpapi_Request_Item_1.htm" />
+          <HelpTOCNode Title="Item Property (Name)" Url="html/P_Bloomberglp_Blpapi_Request_Item.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Operation Property " Url="html/P_Bloomberglp_Blpapi_Request_Operation.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9bfac004-7804-4c27-b226-abe2378f4b5f" Title="Request Methods" Url="html/Methods_T_Bloomberglp_Blpapi_Request.htm">
+        <HelpTOCNode Id="f47933da-9b02-47cc-b06a-9a01801276ed" Title="Append Method " Url="html/Overload_Bloomberglp_Blpapi_Request_Append.htm">
+          <HelpTOCNode Title="Append Method (String, Constant)" Url="html/M_Bloomberglp_Blpapi_Request_Append_11.htm" />
+          <HelpTOCNode Title="Append Method (String, Datetime)" Url="html/M_Bloomberglp_Blpapi_Request_Append_12.htm" />
+          <HelpTOCNode Title="Append Method (String, Name)" Url="html/M_Bloomberglp_Blpapi_Request_Append_13.htm" />
+          <HelpTOCNode Title="Append Method (String, Boolean)" Url="html/M_Bloomberglp_Blpapi_Request_Append_14.htm" />
+          <HelpTOCNode Title="Append Method (String, Byte[])" Url="html/M_Bloomberglp_Blpapi_Request_Append_15.htm" />
+          <HelpTOCNode Title="Append Method (String, Char)" Url="html/M_Bloomberglp_Blpapi_Request_Append_16.htm" />
+          <HelpTOCNode Title="Append Method (String, Double)" Url="html/M_Bloomberglp_Blpapi_Request_Append_17.htm" />
+          <HelpTOCNode Title="Append Method (String, Int32)" Url="html/M_Bloomberglp_Blpapi_Request_Append_18.htm" />
+          <HelpTOCNode Title="Append Method (String, Int64)" Url="html/M_Bloomberglp_Blpapi_Request_Append_19.htm" />
+          <HelpTOCNode Title="Append Method (String, Single)" Url="html/M_Bloomberglp_Blpapi_Request_Append_20.htm" />
+          <HelpTOCNode Title="Append Method (String, String)" Url="html/M_Bloomberglp_Blpapi_Request_Append_21.htm" />
+          <HelpTOCNode Title="Append Method (Name, Constant)" Url="html/M_Bloomberglp_Blpapi_Request_Append.htm" />
+          <HelpTOCNode Title="Append Method (Name, Datetime)" Url="html/M_Bloomberglp_Blpapi_Request_Append_1.htm" />
+          <HelpTOCNode Title="Append Method (Name, Name)" Url="html/M_Bloomberglp_Blpapi_Request_Append_2.htm" />
+          <HelpTOCNode Title="Append Method (Name, Boolean)" Url="html/M_Bloomberglp_Blpapi_Request_Append_3.htm" />
+          <HelpTOCNode Title="Append Method (Name, Byte[])" Url="html/M_Bloomberglp_Blpapi_Request_Append_4.htm" />
+          <HelpTOCNode Title="Append Method (Name, Char)" Url="html/M_Bloomberglp_Blpapi_Request_Append_5.htm" />
+          <HelpTOCNode Title="Append Method (Name, Double)" Url="html/M_Bloomberglp_Blpapi_Request_Append_6.htm" />
+          <HelpTOCNode Title="Append Method (Name, Int32)" Url="html/M_Bloomberglp_Blpapi_Request_Append_7.htm" />
+          <HelpTOCNode Title="Append Method (Name, Int64)" Url="html/M_Bloomberglp_Blpapi_Request_Append_8.htm" />
+          <HelpTOCNode Title="Append Method (Name, Single)" Url="html/M_Bloomberglp_Blpapi_Request_Append_9.htm" />
+          <HelpTOCNode Title="Append Method (Name, String)" Url="html/M_Bloomberglp_Blpapi_Request_Append_10.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="13a9a165-6e4b-448c-b2de-7febcf6260c8" Title="GetElement Method " Url="html/Overload_Bloomberglp_Blpapi_Request_GetElement.htm">
+          <HelpTOCNode Title="GetElement Method (String)" Url="html/M_Bloomberglp_Blpapi_Request_GetElement_1.htm" />
+          <HelpTOCNode Title="GetElement Method (Name)" Url="html/M_Bloomberglp_Blpapi_Request_GetElement.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="e932f6cf-d0e6-4a37-81b5-129bd151a649" Title="HasElement Method " Url="html/Overload_Bloomberglp_Blpapi_Request_HasElement.htm">
+          <HelpTOCNode Title="HasElement Method (String)" Url="html/M_Bloomberglp_Blpapi_Request_HasElement_1.htm" />
+          <HelpTOCNode Title="HasElement Method (Name)" Url="html/M_Bloomberglp_Blpapi_Request_HasElement.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="cb3f24fd-d932-49d0-a9b5-4629a130ec49" Title="Print Method " Url="html/Overload_Bloomberglp_Blpapi_Request_Print.htm">
+          <HelpTOCNode Title="Print Method (Stream)" Url="html/M_Bloomberglp_Blpapi_Request_Print.htm" />
+          <HelpTOCNode Title="Print Method (TextWriter)" Url="html/M_Bloomberglp_Blpapi_Request_Print_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="11b7d785-fa8b-40cc-8d32-ff4b5c7e60f9" Title="Set Method " Url="html/Overload_Bloomberglp_Blpapi_Request_Set.htm">
+          <HelpTOCNode Title="Set Method (String, Constant)" Url="html/M_Bloomberglp_Blpapi_Request_Set_11.htm" />
+          <HelpTOCNode Title="Set Method (String, Datetime)" Url="html/M_Bloomberglp_Blpapi_Request_Set_12.htm" />
+          <HelpTOCNode Title="Set Method (String, Name)" Url="html/M_Bloomberglp_Blpapi_Request_Set_13.htm" />
+          <HelpTOCNode Title="Set Method (String, Boolean)" Url="html/M_Bloomberglp_Blpapi_Request_Set_14.htm" />
+          <HelpTOCNode Title="Set Method (String, Byte[])" Url="html/M_Bloomberglp_Blpapi_Request_Set_15.htm" />
+          <HelpTOCNode Title="Set Method (String, Char)" Url="html/M_Bloomberglp_Blpapi_Request_Set_16.htm" />
+          <HelpTOCNode Title="Set Method (String, Double)" Url="html/M_Bloomberglp_Blpapi_Request_Set_17.htm" />
+          <HelpTOCNode Title="Set Method (String, Int32)" Url="html/M_Bloomberglp_Blpapi_Request_Set_18.htm" />
+          <HelpTOCNode Title="Set Method (String, Int64)" Url="html/M_Bloomberglp_Blpapi_Request_Set_19.htm" />
+          <HelpTOCNode Title="Set Method (String, Single)" Url="html/M_Bloomberglp_Blpapi_Request_Set_20.htm" />
+          <HelpTOCNode Title="Set Method (String, String)" Url="html/M_Bloomberglp_Blpapi_Request_Set_21.htm" />
+          <HelpTOCNode Title="Set Method (Name, Constant)" Url="html/M_Bloomberglp_Blpapi_Request_Set.htm" />
+          <HelpTOCNode Title="Set Method (Name, Datetime)" Url="html/M_Bloomberglp_Blpapi_Request_Set_1.htm" />
+          <HelpTOCNode Title="Set Method (Name, Name)" Url="html/M_Bloomberglp_Blpapi_Request_Set_2.htm" />
+          <HelpTOCNode Title="Set Method (Name, Boolean)" Url="html/M_Bloomberglp_Blpapi_Request_Set_3.htm" />
+          <HelpTOCNode Title="Set Method (Name, Byte[])" Url="html/M_Bloomberglp_Blpapi_Request_Set_4.htm" />
+          <HelpTOCNode Title="Set Method (Name, Char)" Url="html/M_Bloomberglp_Blpapi_Request_Set_5.htm" />
+          <HelpTOCNode Title="Set Method (Name, Double)" Url="html/M_Bloomberglp_Blpapi_Request_Set_6.htm" />
+          <HelpTOCNode Title="Set Method (Name, Int32)" Url="html/M_Bloomberglp_Blpapi_Request_Set_7.htm" />
+          <HelpTOCNode Title="Set Method (Name, Int64)" Url="html/M_Bloomberglp_Blpapi_Request_Set_8.htm" />
+          <HelpTOCNode Title="Set Method (Name, Single)" Url="html/M_Bloomberglp_Blpapi_Request_Set_9.htm" />
+          <HelpTOCNode Title="Set Method (Name, String)" Url="html/M_Bloomberglp_Blpapi_Request_Set_10.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="1c54766b-2431-4bfa-9dd9-31ea9c3147f2" Title="RequestQueueOverflowException Class" Url="html/T_Bloomberglp_Blpapi_RequestQueueOverflowException.htm">
+      <HelpTOCNode Id="8ae28c66-9e78-4ee0-9e72-b2372a3d8298" Title="RequestQueueOverflowException Constructor " Url="html/Overload_Bloomberglp_Blpapi_RequestQueueOverflowException__ctor.htm">
+        <HelpTOCNode Title="RequestQueueOverflowException Constructor " Url="html/M_Bloomberglp_Blpapi_RequestQueueOverflowException__ctor.htm" />
+        <HelpTOCNode Title="RequestQueueOverflowException Constructor (String)" Url="html/M_Bloomberglp_Blpapi_RequestQueueOverflowException__ctor_1.htm" />
+        <HelpTOCNode Title="RequestQueueOverflowException Constructor (String, Exception)" Url="html/M_Bloomberglp_Blpapi_RequestQueueOverflowException__ctor_2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="90e54300-adc7-4291-94fd-081d4edc3787" Title="RequestQueueOverflowException Properties" Url="html/Properties_T_Bloomberglp_Blpapi_RequestQueueOverflowException.htm">
+        <HelpTOCNode Title="Description Property " Url="html/P_Bloomberglp_Blpapi_RequestQueueOverflowException_Description.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="31457247-114e-45a9-aadf-09062fcebb1f" Title="RequestTemplate Interface" Url="html/T_Bloomberglp_Blpapi_RequestTemplate.htm">
+      <HelpTOCNode Id="1c774233-567d-4695-8f69-d7018c5cc8cc" Title="RequestTemplate Methods" Url="html/Methods_T_Bloomberglp_Blpapi_RequestTemplate.htm">
+        <HelpTOCNode Title="close Method " Url="html/M_Bloomberglp_Blpapi_RequestTemplate_close.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ffe19e75-2c52-4bf2-a83c-d456224f6efb" Title="ResolutionList Class" Url="html/T_Bloomberglp_Blpapi_ResolutionList.htm">
+      <HelpTOCNode Title="ResolutionList Constructor " Url="html/M_Bloomberglp_Blpapi_ResolutionList__ctor.htm" />
+      <HelpTOCNode Id="fa093175-2b3a-4dd2-95da-c73e9b349665" Title="ResolutionList Methods" Url="html/Methods_T_Bloomberglp_Blpapi_ResolutionList.htm">
+        <HelpTOCNode Id="17bb1f5c-9685-4ba1-b495-5879acfedae3" Title="Add Method " Url="html/Overload_Bloomberglp_Blpapi_ResolutionList_Add.htm">
+          <HelpTOCNode Title="Add Method (String)" Url="html/M_Bloomberglp_Blpapi_ResolutionList_Add_2.htm" />
+          <HelpTOCNode Title="Add Method (Message)" Url="html/M_Bloomberglp_Blpapi_ResolutionList_Add.htm" />
+          <HelpTOCNode Title="Add Method (String, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_ResolutionList_Add_3.htm" />
+          <HelpTOCNode Title="Add Method (Message, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_ResolutionList_Add_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="AddAttribute Method " Url="html/M_Bloomberglp_Blpapi_ResolutionList_AddAttribute.htm" />
+        <HelpTOCNode Title="Attribute Method " Url="html/M_Bloomberglp_Blpapi_ResolutionList_Attribute.htm" />
+        <HelpTOCNode Title="AttributeAt Method " Url="html/M_Bloomberglp_Blpapi_ResolutionList_AttributeAt.htm" />
+        <HelpTOCNode Title="CorrelationIdAt Method " Url="html/M_Bloomberglp_Blpapi_ResolutionList_CorrelationIdAt.htm" />
+        <HelpTOCNode Title="Message Method " Url="html/M_Bloomberglp_Blpapi_ResolutionList_Message.htm" />
+        <HelpTOCNode Title="MessageAt Method " Url="html/M_Bloomberglp_Blpapi_ResolutionList_MessageAt.htm" />
+        <HelpTOCNode Title="Size Method " Url="html/M_Bloomberglp_Blpapi_ResolutionList_Size.htm" />
+        <HelpTOCNode Title="Status Method " Url="html/M_Bloomberglp_Blpapi_ResolutionList_Status.htm" />
+        <HelpTOCNode Title="StatusAt Method " Url="html/M_Bloomberglp_Blpapi_ResolutionList_StatusAt.htm" />
+        <HelpTOCNode Title="TopicString Method " Url="html/M_Bloomberglp_Blpapi_ResolutionList_TopicString.htm" />
+        <HelpTOCNode Title="TopicStringAt Method " Url="html/M_Bloomberglp_Blpapi_ResolutionList_TopicStringAt.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="ResolutionStatus Enumeration" Url="html/T_Bloomberglp_Blpapi_ResolutionStatus.htm" />
+    <HelpTOCNode Title="ResolveMode Enumeration" Url="html/T_Bloomberglp_Blpapi_ResolveMode.htm" />
+    <HelpTOCNode Id="dbf57aad-fa96-45e1-b720-b2f83dd1f659" Title="Schema Class" Url="html/T_Bloomberglp_Blpapi_Schema.htm">
+      <HelpTOCNode Title="Schema Constructor " Url="html/M_Bloomberglp_Blpapi_Schema__ctor.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="Schema.Datatype Enumeration" Url="html/T_Bloomberglp_Blpapi_Schema_Datatype.htm" />
+    <HelpTOCNode Title="Schema.Status Enumeration" Url="html/T_Bloomberglp_Blpapi_Schema_Status.htm" />
+    <HelpTOCNode Id="8290277d-1636-4f01-b082-a32ca9f8c2fd" Title="SchemaElementDefinition Class" Url="html/T_Bloomberglp_Blpapi_SchemaElementDefinition.htm">
+      <HelpTOCNode Title="SchemaElementDefinition Constructor " Url="html/M_Bloomberglp_Blpapi_SchemaElementDefinition__ctor.htm" />
+      <HelpTOCNode Id="97e850ee-0f74-4541-b42b-0fec9a14dbaf" Title="SchemaElementDefinition Properties" Url="html/Properties_T_Bloomberglp_Blpapi_SchemaElementDefinition.htm">
+        <HelpTOCNode Title="AlternateNames Property " Url="html/P_Bloomberglp_Blpapi_SchemaElementDefinition_AlternateNames.htm" />
+        <HelpTOCNode Title="Constraints Property " Url="html/P_Bloomberglp_Blpapi_SchemaElementDefinition_Constraints.htm" />
+        <HelpTOCNode Title="Description Property " Url="html/P_Bloomberglp_Blpapi_SchemaElementDefinition_Description.htm" />
+        <HelpTOCNode Title="MaxValues Property " Url="html/P_Bloomberglp_Blpapi_SchemaElementDefinition_MaxValues.htm" />
+        <HelpTOCNode Title="MinValues Property " Url="html/P_Bloomberglp_Blpapi_SchemaElementDefinition_MinValues.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/P_Bloomberglp_Blpapi_SchemaElementDefinition_Name.htm" />
+        <HelpTOCNode Title="NumAlternateNames Property " Url="html/P_Bloomberglp_Blpapi_SchemaElementDefinition_NumAlternateNames.htm" />
+        <HelpTOCNode Title="Status Property " Url="html/P_Bloomberglp_Blpapi_SchemaElementDefinition_Status.htm" />
+        <HelpTOCNode Title="TypeDefinition Property " Url="html/P_Bloomberglp_Blpapi_SchemaElementDefinition_TypeDefinition.htm" />
+        <HelpTOCNode Title="UserData Property " Url="html/P_Bloomberglp_Blpapi_SchemaElementDefinition_UserData.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="735f7dcb-6e8b-489c-8bba-2b562d97ed69" Title="SchemaElementDefinition Methods" Url="html/Methods_T_Bloomberglp_Blpapi_SchemaElementDefinition.htm">
+        <HelpTOCNode Title="GetAlternateName Method " Url="html/M_Bloomberglp_Blpapi_SchemaElementDefinition_GetAlternateName.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0d946f8f-ffbc-4a74-902d-a69bbc8de480" Title="SchemaElementDefinition Fields" Url="html/Fields_T_Bloomberglp_Blpapi_SchemaElementDefinition.htm">
+        <HelpTOCNode Title="UNBOUNDED Field" Url="html/F_Bloomberglp_Blpapi_SchemaElementDefinition_UNBOUNDED.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="cb02804d-effb-4013-a93e-5dae2ed1d138" Title="SchemaTypeDefinition Class" Url="html/T_Bloomberglp_Blpapi_SchemaTypeDefinition.htm">
+      <HelpTOCNode Title="SchemaTypeDefinition Constructor " Url="html/M_Bloomberglp_Blpapi_SchemaTypeDefinition__ctor.htm" />
+      <HelpTOCNode Id="77fa247b-7bc8-4ee3-95b6-0055f75ea40e" Title="SchemaTypeDefinition Properties" Url="html/Properties_T_Bloomberglp_Blpapi_SchemaTypeDefinition.htm">
+        <HelpTOCNode Title="Constraints Property " Url="html/P_Bloomberglp_Blpapi_SchemaTypeDefinition_Constraints.htm" />
+        <HelpTOCNode Title="Datatype Property " Url="html/P_Bloomberglp_Blpapi_SchemaTypeDefinition_Datatype.htm" />
+        <HelpTOCNode Title="Description Property " Url="html/P_Bloomberglp_Blpapi_SchemaTypeDefinition_Description.htm" />
+        <HelpTOCNode Title="ElementDefinitions Property " Url="html/P_Bloomberglp_Blpapi_SchemaTypeDefinition_ElementDefinitions.htm" />
+        <HelpTOCNode Title="Enumeration Property " Url="html/P_Bloomberglp_Blpapi_SchemaTypeDefinition_Enumeration.htm" />
+        <HelpTOCNode Title="IsComplexType Property " Url="html/P_Bloomberglp_Blpapi_SchemaTypeDefinition_IsComplexType.htm" />
+        <HelpTOCNode Title="IsEnumerationType Property " Url="html/P_Bloomberglp_Blpapi_SchemaTypeDefinition_IsEnumerationType.htm" />
+        <HelpTOCNode Title="IsSimpleType Property " Url="html/P_Bloomberglp_Blpapi_SchemaTypeDefinition_IsSimpleType.htm" />
+        <HelpTOCNode Id="a86a460c-1c78-499c-b062-25e6635ed7a4" Title="Item Property " Url="html/Overload_Bloomberglp_Blpapi_SchemaTypeDefinition_Item.htm">
+          <HelpTOCNode Title="Item Property (Int32)" Url="html/P_Bloomberglp_Blpapi_SchemaTypeDefinition_Item_1.htm" />
+          <HelpTOCNode Title="Item Property (String)" Url="html/P_Bloomberglp_Blpapi_SchemaTypeDefinition_Item_2.htm" />
+          <HelpTOCNode Title="Item Property (Name)" Url="html/P_Bloomberglp_Blpapi_SchemaTypeDefinition_Item.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Name Property " Url="html/P_Bloomberglp_Blpapi_SchemaTypeDefinition_Name.htm" />
+        <HelpTOCNode Title="NumElementDefinitions Property " Url="html/P_Bloomberglp_Blpapi_SchemaTypeDefinition_NumElementDefinitions.htm" />
+        <HelpTOCNode Title="Status Property " Url="html/P_Bloomberglp_Blpapi_SchemaTypeDefinition_Status.htm" />
+        <HelpTOCNode Title="UserData Property " Url="html/P_Bloomberglp_Blpapi_SchemaTypeDefinition_UserData.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="247ec3c2-91c7-493f-b627-f4af00fbcd49" Title="SchemaTypeDefinition Methods" Url="html/Methods_T_Bloomberglp_Blpapi_SchemaTypeDefinition.htm">
+        <HelpTOCNode Id="c7ea76c0-a46e-47b4-9af3-01db8ac14897" Title="GetElementDefinition Method " Url="html/Overload_Bloomberglp_Blpapi_SchemaTypeDefinition_GetElementDefinition.htm">
+          <HelpTOCNode Title="GetElementDefinition Method (Int32)" Url="html/M_Bloomberglp_Blpapi_SchemaTypeDefinition_GetElementDefinition_1.htm" />
+          <HelpTOCNode Title="GetElementDefinition Method (String)" Url="html/M_Bloomberglp_Blpapi_SchemaTypeDefinition_GetElementDefinition_2.htm" />
+          <HelpTOCNode Title="GetElementDefinition Method (Name)" Url="html/M_Bloomberglp_Blpapi_SchemaTypeDefinition_GetElementDefinition.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="HasElementDefinition Method " Url="html/M_Bloomberglp_Blpapi_SchemaTypeDefinition_HasElementDefinition.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="SeatType Enumeration" Url="html/T_Bloomberglp_Blpapi_SeatType.htm" />
+    <HelpTOCNode Id="f0f710d1-e78d-47d9-a364-1aaa8a9c8b06" Title="Service Class" Url="html/T_Bloomberglp_Blpapi_Service.htm">
+      <HelpTOCNode Title="Service Constructor " Url="html/M_Bloomberglp_Blpapi_Service__ctor.htm" />
+      <HelpTOCNode Id="764a5dd8-ac13-4f4f-8074-bbcf86b77b44" Title="Service Properties" Url="html/Properties_T_Bloomberglp_Blpapi_Service.htm">
+        <HelpTOCNode Title="AuthorizationServiceName Property " Url="html/P_Bloomberglp_Blpapi_Service_AuthorizationServiceName.htm" />
+        <HelpTOCNode Title="EventDefinitions Property " Url="html/P_Bloomberglp_Blpapi_Service_EventDefinitions.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/P_Bloomberglp_Blpapi_Service_Name.htm" />
+        <HelpTOCNode Title="NumEventDefinitions Property " Url="html/P_Bloomberglp_Blpapi_Service_NumEventDefinitions.htm" />
+        <HelpTOCNode Title="NumOperations Property " Url="html/P_Bloomberglp_Blpapi_Service_NumOperations.htm" />
+        <HelpTOCNode Title="Operations Property " Url="html/P_Bloomberglp_Blpapi_Service_Operations.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="e9236aff-8744-4055-acf8-89c6cbcdedc3" Title="Service Methods" Url="html/Methods_T_Bloomberglp_Blpapi_Service.htm">
+        <HelpTOCNode Title="CreateAdminEvent Method " Url="html/M_Bloomberglp_Blpapi_Service_CreateAdminEvent.htm" />
+        <HelpTOCNode Title="CreateAuthorizationRequest Method " Url="html/M_Bloomberglp_Blpapi_Service_CreateAuthorizationRequest.htm" />
+        <HelpTOCNode Title="CreatePublishEvent Method " Url="html/M_Bloomberglp_Blpapi_Service_CreatePublishEvent.htm" />
+        <HelpTOCNode Title="CreateRequest Method " Url="html/M_Bloomberglp_Blpapi_Service_CreateRequest.htm" />
+        <HelpTOCNode Title="CreateResponseEvent Method " Url="html/M_Bloomberglp_Blpapi_Service_CreateResponseEvent.htm" />
+        <HelpTOCNode Id="f78870d1-d9be-45ae-8c11-fa442573cf23" Title="GetEventDefinition Method " Url="html/Overload_Bloomberglp_Blpapi_Service_GetEventDefinition.htm">
+          <HelpTOCNode Title="GetEventDefinition Method (Int32)" Url="html/M_Bloomberglp_Blpapi_Service_GetEventDefinition_1.htm" />
+          <HelpTOCNode Title="GetEventDefinition Method (String)" Url="html/M_Bloomberglp_Blpapi_Service_GetEventDefinition_2.htm" />
+          <HelpTOCNode Title="GetEventDefinition Method (Name)" Url="html/M_Bloomberglp_Blpapi_Service_GetEventDefinition.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="1a36494c-a0af-4479-91ae-b03ff09f7375" Title="GetOperation Method " Url="html/Overload_Bloomberglp_Blpapi_Service_GetOperation.htm">
+          <HelpTOCNode Title="GetOperation Method (Int32)" Url="html/M_Bloomberglp_Blpapi_Service_GetOperation_1.htm" />
+          <HelpTOCNode Title="GetOperation Method (String)" Url="html/M_Bloomberglp_Blpapi_Service_GetOperation_2.htm" />
+          <HelpTOCNode Title="GetOperation Method (Name)" Url="html/M_Bloomberglp_Blpapi_Service_GetOperation.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="3a44e9d8-5b26-4510-b6dc-93701e2255b4" Title="Print Method " Url="html/Overload_Bloomberglp_Blpapi_Service_Print.htm">
+          <HelpTOCNode Title="Print Method (Stream)" Url="html/M_Bloomberglp_Blpapi_Service_Print.htm" />
+          <HelpTOCNode Title="Print Method (TextWriter)" Url="html/M_Bloomberglp_Blpapi_Service_Print_1.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6f4e74a7-0978-4558-bcb4-8ff494374c56" Title="ServiceRegistrationOptions Class" Url="html/T_Bloomberglp_Blpapi_ServiceRegistrationOptions.htm">
+      <HelpTOCNode Title="ServiceRegistrationOptions Constructor " Url="html/M_Bloomberglp_Blpapi_ServiceRegistrationOptions__ctor.htm" />
+      <HelpTOCNode Id="47cc045f-279b-4d33-9f39-04023636c4d5" Title="ServiceRegistrationOptions Properties" Url="html/Properties_T_Bloomberglp_Blpapi_ServiceRegistrationOptions.htm">
+        <HelpTOCNode Title="GroupId Property " Url="html/P_Bloomberglp_Blpapi_ServiceRegistrationOptions_GroupId.htm" />
+        <HelpTOCNode Title="PartsToRegister Property " Url="html/P_Bloomberglp_Blpapi_ServiceRegistrationOptions_PartsToRegister.htm" />
+        <HelpTOCNode Title="ServicePriority Property " Url="html/P_Bloomberglp_Blpapi_ServiceRegistrationOptions_ServicePriority.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9a25c52b-3f4f-45d9-b9cf-bf06a7f5669b" Title="ServiceRegistrationOptions Methods" Url="html/Methods_T_Bloomberglp_Blpapi_ServiceRegistrationOptions.htm">
+        <HelpTOCNode Title="AddActiveSubServiceCodeRange Method " Url="html/M_Bloomberglp_Blpapi_ServiceRegistrationOptions_AddActiveSubServiceCodeRange.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d28896cf-7e49-498b-b2e9-67ad6b2cda90" Title="ServiceRegistrationOptions.RegistrationParts Class" Url="html/T_Bloomberglp_Blpapi_ServiceRegistrationOptions_RegistrationParts.htm">
+      <HelpTOCNode Title="ServiceRegistrationOptions.RegistrationParts Constructor " Url="html/M_Bloomberglp_Blpapi_ServiceRegistrationOptions_RegistrationParts__ctor.htm" />
+      <HelpTOCNode Id="aeaf4be9-e4ee-453a-a002-f8fdae29ffd0" Title="RegistrationParts Fields" Url="html/Fields_T_Bloomberglp_Blpapi_ServiceRegistrationOptions_RegistrationParts.htm">
+        <HelpTOCNode Title="PART_DEFAULT Field" Url="html/F_Bloomberglp_Blpapi_ServiceRegistrationOptions_RegistrationParts_PART_DEFAULT.htm" />
+        <HelpTOCNode Title="PART_OPERATIONS Field" Url="html/F_Bloomberglp_Blpapi_ServiceRegistrationOptions_RegistrationParts_PART_OPERATIONS.htm" />
+        <HelpTOCNode Title="PART_PUBLISHER_RESOLUTION Field" Url="html/F_Bloomberglp_Blpapi_ServiceRegistrationOptions_RegistrationParts_PART_PUBLISHER_RESOLUTION.htm" />
+        <HelpTOCNode Title="PART_PUBLISHING Field" Url="html/F_Bloomberglp_Blpapi_ServiceRegistrationOptions_RegistrationParts_PART_PUBLISHING.htm" />
+        <HelpTOCNode Title="PART_SUBSCRIBER_RESOLUTION Field" Url="html/F_Bloomberglp_Blpapi_ServiceRegistrationOptions_RegistrationParts_PART_SUBSCRIBER_RESOLUTION.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="ServiceRegistrationOptions.ServiceRegistrationPriority Enumeration" Url="html/T_Bloomberglp_Blpapi_ServiceRegistrationOptions_ServiceRegistrationPriority.htm" />
+    <HelpTOCNode Id="ba0a5d2a-18a2-4ea9-ada3-414b32519855" Title="Session Class" Url="html/T_Bloomberglp_Blpapi_Session.htm">
+      <HelpTOCNode Id="ffbc86bf-e1a3-4147-865e-87c634a3592e" Title="Session Constructor " Url="html/Overload_Bloomberglp_Blpapi_Session__ctor.htm">
+        <HelpTOCNode Title="Session Constructor " Url="html/M_Bloomberglp_Blpapi_Session__ctor.htm" />
+        <HelpTOCNode Title="Session Constructor (SessionOptions)" Url="html/M_Bloomberglp_Blpapi_Session__ctor_1.htm" />
+        <HelpTOCNode Title="Session Constructor (SessionOptions, EventHandler)" Url="html/M_Bloomberglp_Blpapi_Session__ctor_2.htm" />
+        <HelpTOCNode Title="Session Constructor (SessionOptions, EventHandler, EventDispatcher)" Url="html/M_Bloomberglp_Blpapi_Session__ctor_3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6d09a980-9b80-4317-89fc-0ee6520f185d" Title="Session Methods" Url="html/Methods_T_Bloomberglp_Blpapi_Session.htm">
+        <HelpTOCNode Id="f12d0f0e-fafe-4ace-a629-52c126429cb6" Title="createSnapshotRequestTemplate Method " Url="html/Overload_Bloomberglp_Blpapi_Session_createSnapshotRequestTemplate.htm">
+          <HelpTOCNode Title="createSnapshotRequestTemplate Method (String, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_Session_createSnapshotRequestTemplate.htm" />
+          <HelpTOCNode Title="createSnapshotRequestTemplate Method (String, CorrelationID, Identity)" Url="html/M_Bloomberglp_Blpapi_Session_createSnapshotRequestTemplate_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetSubscriptions Method " Url="html/M_Bloomberglp_Blpapi_Session_GetSubscriptions.htm" />
+        <HelpTOCNode Title="GetSubscriptionStatus Method " Url="html/M_Bloomberglp_Blpapi_Session_GetSubscriptionStatus.htm" />
+        <HelpTOCNode Title="GetSubscriptionString Method " Url="html/M_Bloomberglp_Blpapi_Session_GetSubscriptionString.htm" />
+        <HelpTOCNode Id="84e23998-9bf5-47ea-acb1-4b89a08c45ff" Title="Resubscribe Method " Url="html/Overload_Bloomberglp_Blpapi_Session_Resubscribe.htm">
+          <HelpTOCNode Title="Resubscribe Method (IList(Subscription))" Url="html/M_Bloomberglp_Blpapi_Session_Resubscribe.htm" />
+          <HelpTOCNode Title="Resubscribe Method (IList(Subscription), Int32)" Url="html/M_Bloomberglp_Blpapi_Session_Resubscribe_1.htm" />
+          <HelpTOCNode Title="Resubscribe Method (IList(Subscription), String)" Url="html/M_Bloomberglp_Blpapi_Session_Resubscribe_3.htm" />
+          <HelpTOCNode Title="Resubscribe Method (IList(Subscription), Int32, String)" Url="html/M_Bloomberglp_Blpapi_Session_Resubscribe_2.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="5c8ff907-6998-4475-b389-2a544ab76e9f" Title="SendRequest Method " Url="html/Overload_Bloomberglp_Blpapi_Session_SendRequest.htm">
+          <HelpTOCNode Title="SendRequest Method (RequestTemplate)" Url="html/M_Bloomberglp_Blpapi_Session_SendRequest_12.htm" />
+          <HelpTOCNode Title="SendRequest Method (Request, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_Session_SendRequest.htm" />
+          <HelpTOCNode Title="SendRequest Method (RequestTemplate, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_Session_SendRequest_13.htm" />
+          <HelpTOCNode Title="SendRequest Method (Request, CorrelationID, String)" Url="html/M_Bloomberglp_Blpapi_Session_SendRequest_1.htm" />
+          <HelpTOCNode Title="SendRequest Method (Request, EventQueue, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_Session_SendRequest_2.htm" />
+          <HelpTOCNode Title="SendRequest Method (Request, Identity, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_Session_SendRequest_4.htm" />
+          <HelpTOCNode Title="SendRequest Method (Request, UserHandle, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_Session_SendRequest_8.htm" />
+          <HelpTOCNode Title="SendRequest Method (Request, EventQueue, CorrelationID, String)" Url="html/M_Bloomberglp_Blpapi_Session_SendRequest_3.htm" />
+          <HelpTOCNode Title="SendRequest Method (Request, Identity, CorrelationID, String)" Url="html/M_Bloomberglp_Blpapi_Session_SendRequest_5.htm" />
+          <HelpTOCNode Title="SendRequest Method (Request, Identity, EventQueue, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_Session_SendRequest_6.htm" />
+          <HelpTOCNode Title="SendRequest Method (Request, UserHandle, CorrelationID, String)" Url="html/M_Bloomberglp_Blpapi_Session_SendRequest_9.htm" />
+          <HelpTOCNode Title="SendRequest Method (Request, UserHandle, EventQueue, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_Session_SendRequest_10.htm" />
+          <HelpTOCNode Title="SendRequest Method (Request, Identity, EventQueue, CorrelationID, String)" Url="html/M_Bloomberglp_Blpapi_Session_SendRequest_7.htm" />
+          <HelpTOCNode Title="SendRequest Method (Request, UserHandle, EventQueue, CorrelationID, String)" Url="html/M_Bloomberglp_Blpapi_Session_SendRequest_11.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="SetEventHandler Method " Url="html/M_Bloomberglp_Blpapi_Session_SetEventHandler.htm" />
+        <HelpTOCNode Id="a52a98d0-8ee3-45d2-a550-e921cfe6d606" Title="Subscribe Method " Url="html/Overload_Bloomberglp_Blpapi_Session_Subscribe.htm">
+          <HelpTOCNode Title="Subscribe Method (IList(Subscription))" Url="html/M_Bloomberglp_Blpapi_Session_Subscribe.htm" />
+          <HelpTOCNode Title="Subscribe Method (IList(Subscription), Identity)" Url="html/M_Bloomberglp_Blpapi_Session_Subscribe_1.htm" />
+          <HelpTOCNode Title="Subscribe Method (IList(Subscription), UserHandle)" Url="html/M_Bloomberglp_Blpapi_Session_Subscribe_3.htm" />
+          <HelpTOCNode Title="Subscribe Method (IList(Subscription), String)" Url="html/M_Bloomberglp_Blpapi_Session_Subscribe_5.htm" />
+          <HelpTOCNode Title="Subscribe Method (IList(Subscription), Identity, String)" Url="html/M_Bloomberglp_Blpapi_Session_Subscribe_2.htm" />
+          <HelpTOCNode Title="Subscribe Method (IList(Subscription), UserHandle, String)" Url="html/M_Bloomberglp_Blpapi_Session_Subscribe_4.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="65d6d471-ec37-468a-acfc-2a769d9aafba" Title="Unsubscribe Method " Url="html/Overload_Bloomberglp_Blpapi_Session_Unsubscribe.htm">
+          <HelpTOCNode Title="Unsubscribe Method (CorrelationID)" Url="html/M_Bloomberglp_Blpapi_Session_Unsubscribe.htm" />
+          <HelpTOCNode Title="Unsubscribe Method (IList(Subscription))" Url="html/M_Bloomberglp_Blpapi_Session_Unsubscribe_1.htm" />
+          <HelpTOCNode Title="Unsubscribe Method (IList(Subscription), String)" Url="html/M_Bloomberglp_Blpapi_Session_Unsubscribe_2.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="Session.SubscriptionStatus Enumeration" Url="html/T_Bloomberglp_Blpapi_Session_SubscriptionStatus.htm" />
+    <HelpTOCNode Id="a8a9f5c5-abd8-4ce5-b34c-54491f426848" Title="SessionOptions Class" Url="html/T_Bloomberglp_Blpapi_SessionOptions.htm">
+      <HelpTOCNode Title="SessionOptions Constructor " Url="html/M_Bloomberglp_Blpapi_SessionOptions__ctor.htm" />
+      <HelpTOCNode Id="83764d13-383c-41ba-a7cf-4e59af280d9d" Title="SessionOptions Properties" Url="html/Properties_T_Bloomberglp_Blpapi_SessionOptions.htm">
+        <HelpTOCNode Title="AllowMultipleCorrelatorsPerMsg Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_AllowMultipleCorrelatorsPerMsg.htm" />
+        <HelpTOCNode Title="AuthenticationOptions Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_AuthenticationOptions.htm" />
+        <HelpTOCNode Title="AutoRestartOnDisconnection Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_AutoRestartOnDisconnection.htm" />
+        <HelpTOCNode Title="BandwidthSaveModeDisabled Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_BandwidthSaveModeDisabled.htm" />
+        <HelpTOCNode Title="ClientMode Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_ClientMode.htm" />
+        <HelpTOCNode Title="ConnectTimeout Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_ConnectTimeout.htm" />
+        <HelpTOCNode Title="DefaultKeepAliveInactivityTime Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_DefaultKeepAliveInactivityTime.htm" />
+        <HelpTOCNode Title="DefaultKeepAliveResponseTimeout Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_DefaultKeepAliveResponseTimeout.htm" />
+        <HelpTOCNode Title="DefaultSubscriptionService Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_DefaultSubscriptionService.htm" />
+        <HelpTOCNode Title="DefaultTopicPrefix Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_DefaultTopicPrefix.htm" />
+        <HelpTOCNode Title="KeepaliveEnabled Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_KeepaliveEnabled.htm" />
+        <HelpTOCNode Title="MaxEventQueueSize Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_MaxEventQueueSize.htm" />
+        <HelpTOCNode Title="MaxOutstandingRequests Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_MaxOutstandingRequests.htm" />
+        <HelpTOCNode Title="MaxPendingRequests Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_MaxPendingRequests.htm" />
+        <HelpTOCNode Title="MaxSendCacheSize Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_MaxSendCacheSize.htm" />
+        <HelpTOCNode Title="NumStartAttempts Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_NumStartAttempts.htm" />
+        <HelpTOCNode Title="RecordSubscriptionDataReceiveTimes Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_RecordSubscriptionDataReceiveTimes.htm" />
+        <HelpTOCNode Title="ServerAddresses Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_ServerAddresses.htm" />
+        <HelpTOCNode Title="ServerHost Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_ServerHost.htm" />
+        <HelpTOCNode Title="ServerPort Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_ServerPort.htm" />
+        <HelpTOCNode Title="ServiceCheckTimeout Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_ServiceCheckTimeout.htm" />
+        <HelpTOCNode Title="ServiceDownloadTimeout Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_ServiceDownloadTimeout.htm" />
+        <HelpTOCNode Title="SlowConsumerWarningHiWaterMark Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_SlowConsumerWarningHiWaterMark.htm" />
+        <HelpTOCNode Title="SlowConsumerWarningLoWaterMark Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_SlowConsumerWarningLoWaterMark.htm" />
+        <HelpTOCNode Title="TlsOptions Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_TlsOptions.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9c913d31-10d5-4f9d-bc1e-75ea896915e3" Title="SessionOptions Methods" Url="html/Methods_T_Bloomberglp_Blpapi_SessionOptions.htm">
+        <HelpTOCNode Title="ToString Method " Url="html/M_Bloomberglp_Blpapi_SessionOptions_ToString.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="SessionOptions.ClientModeType Enumeration" Url="html/T_Bloomberglp_Blpapi_SessionOptions_ClientModeType.htm" />
+    <HelpTOCNode Id="d6fdb43b-582a-4426-8769-e79b2ae1cdfe" Title="SessionOptions.ServerAddress Class" Url="html/T_Bloomberglp_Blpapi_SessionOptions_ServerAddress.htm">
+      <HelpTOCNode Title="SessionOptions.ServerAddress Constructor " Url="html/M_Bloomberglp_Blpapi_SessionOptions_ServerAddress__ctor.htm" />
+      <HelpTOCNode Id="1f857e61-d5d1-4139-8ab8-1f098173f2ec" Title="ServerAddress Properties" Url="html/Properties_T_Bloomberglp_Blpapi_SessionOptions_ServerAddress.htm">
+        <HelpTOCNode Title="Host Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_ServerAddress_Host.htm" />
+        <HelpTOCNode Title="Port Property " Url="html/P_Bloomberglp_Blpapi_SessionOptions_ServerAddress_Port.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2f65ffdc-1370-454a-9a9e-12d42373a31f" Title="ServerAddress Methods" Url="html/Methods_T_Bloomberglp_Blpapi_SessionOptions_ServerAddress.htm">
+        <HelpTOCNode Title="ToString Method " Url="html/M_Bloomberglp_Blpapi_SessionOptions_ServerAddress_ToString.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="49754252-512b-42d4-bd23-101d92d1bf8e" Title="Subscription Class" Url="html/T_Bloomberglp_Blpapi_Subscription.htm">
+      <HelpTOCNode Id="57d7e81e-542b-43f0-bddc-078ede0b30af" Title="Subscription Constructor " Url="html/Overload_Bloomberglp_Blpapi_Subscription__ctor.htm">
+        <HelpTOCNode Title="Subscription Constructor (String)" Url="html/M_Bloomberglp_Blpapi_Subscription__ctor.htm" />
+        <HelpTOCNode Title="Subscription Constructor (String, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_Subscription__ctor_1.htm" />
+        <HelpTOCNode Title="Subscription Constructor (String, Boolean)" Url="html/M_Bloomberglp_Blpapi_Subscription__ctor_3.htm" />
+        <HelpTOCNode Title="Subscription Constructor (String, IList(String))" Url="html/M_Bloomberglp_Blpapi_Subscription__ctor_4.htm" />
+        <HelpTOCNode Title="Subscription Constructor (String, String)" Url="html/M_Bloomberglp_Blpapi_Subscription__ctor_8.htm" />
+        <HelpTOCNode Title="Subscription Constructor (String, CorrelationID, Boolean)" Url="html/M_Bloomberglp_Blpapi_Subscription__ctor_2.htm" />
+        <HelpTOCNode Title="Subscription Constructor (String, IList(String), CorrelationID)" Url="html/M_Bloomberglp_Blpapi_Subscription__ctor_5.htm" />
+        <HelpTOCNode Title="Subscription Constructor (String, IList(String), IList(String))" Url="html/M_Bloomberglp_Blpapi_Subscription__ctor_6.htm" />
+        <HelpTOCNode Title="Subscription Constructor (String, String, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_Subscription__ctor_9.htm" />
+        <HelpTOCNode Title="Subscription Constructor (String, String, String)" Url="html/M_Bloomberglp_Blpapi_Subscription__ctor_10.htm" />
+        <HelpTOCNode Title="Subscription Constructor (String, IList(String), IList(String), CorrelationID)" Url="html/M_Bloomberglp_Blpapi_Subscription__ctor_7.htm" />
+        <HelpTOCNode Title="Subscription Constructor (String, String, String, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_Subscription__ctor_11.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2f1a5fd7-8c3c-41da-83e0-3c49a185a60a" Title="Subscription Properties" Url="html/Properties_T_Bloomberglp_Blpapi_Subscription.htm">
+        <HelpTOCNode Title="CorrelationID Property " Url="html/P_Bloomberglp_Blpapi_Subscription_CorrelationID.htm" />
+        <HelpTOCNode Title="IsResolved Property " Url="html/P_Bloomberglp_Blpapi_Subscription_IsResolved.htm" />
+        <HelpTOCNode Title="SubscriptionStatus Property " Url="html/P_Bloomberglp_Blpapi_Subscription_SubscriptionStatus.htm" />
+        <HelpTOCNode Title="SubscriptionString Property " Url="html/P_Bloomberglp_Blpapi_Subscription_SubscriptionString.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="dbb8f5f8-f33b-4538-b1d1-c0b087026ab3" Title="Subscription Methods" Url="html/Methods_T_Bloomberglp_Blpapi_Subscription.htm">
+        <HelpTOCNode Title="ToString Method " Url="html/M_Bloomberglp_Blpapi_Subscription_ToString.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="058383b0-f8a2-4e1b-b08f-7041be0b0ed2" Title="TlsOptions Class" Url="html/T_Bloomberglp_Blpapi_TlsOptions.htm">
+      <HelpTOCNode Id="09038e2d-29b7-4ebe-8e28-cbc49ef7a6ee" Title="TlsOptions Properties" Url="html/Properties_T_Bloomberglp_Blpapi_TlsOptions.htm">
+        <HelpTOCNode Title="CheckRevocation Property " Url="html/P_Bloomberglp_Blpapi_TlsOptions_CheckRevocation.htm" />
+        <HelpTOCNode Title="ClientCredentials Property " Url="html/P_Bloomberglp_Blpapi_TlsOptions_ClientCredentials.htm" />
+        <HelpTOCNode Title="CrlFetchTimeout Property " Url="html/P_Bloomberglp_Blpapi_TlsOptions_CrlFetchTimeout.htm" />
+        <HelpTOCNode Title="TlsHandshakeTimeout Property " Url="html/P_Bloomberglp_Blpapi_TlsOptions_TlsHandshakeTimeout.htm" />
+        <HelpTOCNode Title="TrustedCertificates Property " Url="html/P_Bloomberglp_Blpapi_TlsOptions_TrustedCertificates.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0b974e0c-6728-407b-af07-a7755a92fce4" Title="TlsOptions Methods" Url="html/Methods_T_Bloomberglp_Blpapi_TlsOptions.htm">
+        <HelpTOCNode Title="Create Method " Url="html/M_Bloomberglp_Blpapi_TlsOptions_Create.htm" />
+        <HelpTOCNode Title="CreateFromBlobs Method " Url="html/M_Bloomberglp_Blpapi_TlsOptions_CreateFromBlobs.htm" />
+        <HelpTOCNode Title="CreateFromFiles Method " Url="html/M_Bloomberglp_Blpapi_TlsOptions_CreateFromFiles.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/M_Bloomberglp_Blpapi_TlsOptions_ToString.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="01b3a27f-eee4-4441-8ef9-7e80c1808488" Title="Topic Interface" Url="html/T_Bloomberglp_Blpapi_Topic.htm">
+      <HelpTOCNode Id="35cf0311-c733-4618-a76f-bbc915570649" Title="Topic Properties" Url="html/Properties_T_Bloomberglp_Blpapi_Topic.htm">
+        <HelpTOCNode Title="Service Property " Url="html/P_Bloomberglp_Blpapi_Topic_Service.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="33f95be0-93b0-4342-8bac-a3bc82394c6e" Title="Topic Methods" Url="html/Methods_T_Bloomberglp_Blpapi_Topic.htm">
+        <HelpTOCNode Title="IsActive Method " Url="html/M_Bloomberglp_Blpapi_Topic_IsActive.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="dde52efd-58af-47a8-8e6c-2aa557bb5c76" Title="TopicList Class" Url="html/T_Bloomberglp_Blpapi_TopicList.htm">
+      <HelpTOCNode Title="TopicList Constructor " Url="html/M_Bloomberglp_Blpapi_TopicList__ctor.htm" />
+      <HelpTOCNode Id="01827827-ce81-42d7-8313-136807e0a298" Title="TopicList Properties" Url="html/Properties_T_Bloomberglp_Blpapi_TopicList.htm">
+        <HelpTOCNode Title="Size Property " Url="html/P_Bloomberglp_Blpapi_TopicList_Size.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="25598940-5259-4939-a62b-66935670fa84" Title="TopicList Methods" Url="html/Methods_T_Bloomberglp_Blpapi_TopicList.htm">
+        <HelpTOCNode Id="8f76e566-8fa5-492a-a21f-65c3dd76fa70" Title="Add Method " Url="html/Overload_Bloomberglp_Blpapi_TopicList_Add.htm">
+          <HelpTOCNode Title="Add Method (String)" Url="html/M_Bloomberglp_Blpapi_TopicList_Add_2.htm" />
+          <HelpTOCNode Title="Add Method (Message)" Url="html/M_Bloomberglp_Blpapi_TopicList_Add.htm" />
+          <HelpTOCNode Title="Add Method (String, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_TopicList_Add_3.htm" />
+          <HelpTOCNode Title="Add Method (Message, CorrelationID)" Url="html/M_Bloomberglp_Blpapi_TopicList_Add_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="CorrelationIdAt Method " Url="html/M_Bloomberglp_Blpapi_TopicList_CorrelationIdAt.htm" />
+        <HelpTOCNode Title="Message Method " Url="html/M_Bloomberglp_Blpapi_TopicList_Message.htm" />
+        <HelpTOCNode Title="MessageAt Method " Url="html/M_Bloomberglp_Blpapi_TopicList_MessageAt.htm" />
+        <HelpTOCNode Title="Status Method " Url="html/M_Bloomberglp_Blpapi_TopicList_Status.htm" />
+        <HelpTOCNode Title="StatusAt Method " Url="html/M_Bloomberglp_Blpapi_TopicList_StatusAt.htm" />
+        <HelpTOCNode Title="TopicString Method " Url="html/M_Bloomberglp_Blpapi_TopicList_TopicString.htm" />
+        <HelpTOCNode Title="TopicStringAt Method " Url="html/M_Bloomberglp_Blpapi_TopicList_TopicStringAt.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="TopicList.TopicStatus Enumeration" Url="html/T_Bloomberglp_Blpapi_TopicList_TopicStatus.htm" />
+    <HelpTOCNode Id="febd9a6f-27d6-4112-ba0f-c007d81124dc" Title="UserHandle Interface" Url="html/T_Bloomberglp_Blpapi_UserHandle.htm">
+      <HelpTOCNode Title="UserHandle Properties" Url="html/Properties_T_Bloomberglp_Blpapi_UserHandle.htm" />
+      <HelpTOCNode Title="UserHandle Methods" Url="html/Methods_T_Bloomberglp_Blpapi_UserHandle.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="e3004f5c-cb36-4e84-900e-7940970bf7c1" Title="VersionInfo Class" Url="html/T_Bloomberglp_Blpapi_VersionInfo.htm">
+      <HelpTOCNode Title="VersionInfo Constructor " Url="html/M_Bloomberglp_Blpapi_VersionInfo__ctor.htm" />
+      <HelpTOCNode Id="96df5e27-3a4a-4ac4-b722-9a1f4d498eb4" Title="VersionInfo Properties" Url="html/Properties_T_Bloomberglp_Blpapi_VersionInfo.htm">
+        <HelpTOCNode Title="BuildVersion Property " Url="html/P_Bloomberglp_Blpapi_VersionInfo_BuildVersion.htm" />
+        <HelpTOCNode Title="MajorVersion Property " Url="html/P_Bloomberglp_Blpapi_VersionInfo_MajorVersion.htm" />
+        <HelpTOCNode Title="MinorVersion Property " Url="html/P_Bloomberglp_Blpapi_VersionInfo_MinorVersion.htm" />
+        <HelpTOCNode Title="PatchVersion Property " Url="html/P_Bloomberglp_Blpapi_VersionInfo_PatchVersion.htm" />
+        <HelpTOCNode Title="VersionIdentifier Property " Url="html/P_Bloomberglp_Blpapi_VersionInfo_VersionIdentifier.htm" />
+        <HelpTOCNode Title="VersionString Property " Url="html/P_Bloomberglp_Blpapi_VersionInfo_VersionString.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e1548be7-788c-4cf7-ad9a-f2db4d39a523" Title="ZfpUtil Class" Url="html/T_Bloomberglp_Blpapi_ZfpUtil.htm">
+      <HelpTOCNode Title="ZfpUtil Constructor " Url="html/M_Bloomberglp_Blpapi_ZfpUtil__ctor.htm" />
+      <HelpTOCNode Id="6a3b5a83-0365-4223-9174-c2c94c66714e" Title="ZfpUtil Methods" Url="html/Methods_T_Bloomberglp_Blpapi_ZfpUtil.htm">
+        <HelpTOCNode Title="GetZfpOptionsForLeasedLines Method " Url="html/M_Bloomberglp_Blpapi_ZfpUtil_GetZfpOptionsForLeasedLines.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="ZfpUtil.Remote Enumeration" Url="html/T_Bloomberglp_Blpapi_ZfpUtil_Remote.htm" />
+  </HelpTOCNode>
+</HelpTOC>

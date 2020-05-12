@@ -1,0 +1,111 @@
+Version 3.14.0:
+===============
+- Improved usage of network bandwidth for snapshot requests
+    Optimized the network bandwidth usage between endpoints and Bloomberg data
+    centers for snapshot requests. Customers can request to disable the
+    optimization by setting the 'bandwidthSaveModeDisabled' session option.
+
+- Stability and performance improvements
+
+Version 3.13.1:
+===============
+- Conversions to string using print helpers ignore null-terminators
+	Previously, when converting an e.g., Element to string explicitly,
+	or when printing it, null-terminators embedded in strings
+	would cause the resulting string to be truncated to the first one.
+
+- Format docstrings to be rendered by the Sphinx documentation generator
+- Stability and performance improvements
+
+Version 3.13.0:
+===============
+- Automated network configuration for ZFP over leased lines
+    Allow customers that leverage leased lines/routers for Bloomberg services
+    (such as existing Bloomberg terminals) to use this infrastructure to
+    connect their applications to Zero Foot-Print (ZFP) instances.
+
+    A new utility class, 'blpapi.ZfpUtil', can be used to create a
+    'SessionOptions' object with the appropriate servers. Applications can
+    update the options, including authorization settings, but should not
+    change the servers.
+
+    Added a new example ZfpOverLeasedLinesSessionExample.py to demonstrate
+    how to create a session over ZFP leased lines.
+
+- Stability and performance improvements
+
+Version 3.12.3:
+===============
+- Improve error reporting on failure to load the blpapi package
+- Remove dependency on the C++ runtime
+
+Version 3.12.2:
+===============
+- Stability and performance improvements
+
+Version 3.12.1:
+===============
+- Stability and performance improvements
+
+Version 3.12.0:
+===============
+- Add SessionOptions.toString() and SessionOptions.__str__
+- Add version helpers
+- Python3.7 compatibility
+	- Deprecated the named parameter 'async' for blpapi.EventFormatter.stop in
+	favor of 'async_'. 'async' is a reserved keyword with Python3.7.
+
+Version 3.11.0:
+===============
+- Add support for zero footprint connections
+- Add support for fragmented recaps
+- Add support for consuming microseconds
+
+Version 3.10.0:
+===============
+- Documentation change
+	Clarify the meaning of integer priorities in 'ProviderSession'. Greater
+	values indicate higher priorities.
+
+- Add support for 3.10 features
+	- Provide access to the Message recap type
+	- Enable configuration of service timeouts in SessionOptions
+	- Add support for publisher terminated subscriptions
+	For more details on these features, please refer to the C++ release notes
+
+Version 3.9.2:
+==============
+- Fix Message.fragmentType
+
+Version 3.9.1:
+==============
+- DPKG support
+- Fix argument handling in LocalMktDataSubscriptionExample.py
+- Fix ErrorInfo processing bug in SubscriptionWIthEventHandlerExample.py
+- Fix missing dependency on the binary package
+- Add support PyPI with wheels
+- Add Message.fragmentType
+
+Version 3.9.0:
+==============
+- Support for all new interfaces included in blpapi release 3.9
+- Python 3 support
+
+Version 3.7:
+==============
+- added support for new interfaces in BLPAPI 3.7
+
+Version 3.5.4:
+==============
+- fix source installation error when building against version 3.7 of C++ SDK
+- document system-wide C++ SDK installation
+
+Version 3.5.3:
+==============
+- preliminary support for Darwin platform (beta)
+- added 'Identity.hasEntitlements' and 'Identity.failedEntitlements' functions
+- report error if installation is attempted using Python 3
+
+Version 3.5.2:
+==============
+- Initial public release of Python SDK

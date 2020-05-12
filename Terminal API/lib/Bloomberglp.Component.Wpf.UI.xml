@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bloomberglp.Component.Wpf.UI</name>
+    </assembly>
+    <members>
+        <member name="T:Bloomberglp.Component.Wpf.UI.BlpControl">
+            <summary>
+            Visual WPF container for a Bloomberg component
+            </summary>
+            <example>
+            <para>
+            The following example shows how to embed a Bloomberg component in a WPF application.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            using Bloomberglp.Component.Wpf.UI;
+            using System.Windows;
+            using System.Windows.Controls;
+            
+            //begin the asynchronous CreateComponent operation
+            BlpTerminal.BeginCreateComponent("BCHART", OnComponentCreated, uiContext);
+            
+            //callback method called when the CreateComponent operation is complete
+            void OnComponentCreated(IAsyncResult ar)
+            {
+                //complete asynchronous operation and get returned component instance
+                BlpComponent component = (BlpComponent)BlpTerminal.EndCreateComponent(ar);
+            
+                //post request to UI thread using WPF Dispatcher
+                Dispatcher.BeginInvoke(DispatcherPriority.Normal, (Action)delegate
+                {
+                    //create a WPF Window
+                    var window = new Window();
+            
+                    //create an instance of the WPF control
+                    var control = new BlpControl();
+            
+                    //initialize the visual control with the Bloomberg component instance
+                    control.Initialize(component);
+            
+                    //set control as the content for the window
+                    window.Content = control;
+            
+                    //show the window with embedded Bloomberg control
+                    window.Show();
+                });
+            }
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.Component.Wpf.UI.BlpControl.#ctor">
+            <summary>
+            Creates a new instance of the BlpControl class
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.Component.Wpf.UI.BlpControl.Component">
+            <summary>
+            Gets the Bloomberg component associated with this visual container
+            </summary>
+        </member>
+        <member name="M:Bloomberglp.Component.Wpf.UI.BlpControl.Initialize(Bloomberglp.TerminalApiEx.BlpComponent)">
+            <summary>
+            Initializes the visual container with an instance of a Bloomberg component
+            </summary>
+            <param name="component">The component instance to associate with the visual container</param>
+        </member>
+        <member name="M:Bloomberglp.Component.Wpf.UI.BlpControl.OnRenderSizeChanged(System.Windows.SizeChangedInfo)">
+            <summary>
+            Called when the control size changes
+            </summary>
+            <param name="sizeInfo">New size of the control</param>
+        </member>
+        <member name="T:Bloomberglp.Component.Wpf.UI.DisconnectedContent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Bloomberglp.Component.Wpf.UI.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.Component.Wpf.UI.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.Component.Wpf.UI.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

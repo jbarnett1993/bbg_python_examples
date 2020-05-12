@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bloomberglp.Component.Forms.UI</name>
+    </assembly>
+    <members>
+        <member name="T:Bloomberglp.Component.Forms.UI.BlpControl">
+            <summary>
+            Visual Windows Forms container for a Bloomberg component
+            </summary>
+            <example>
+            <para>
+            The following example shows how to embed a Bloomberg component in a Windows Forms Application.
+            <code>
+            
+            using Bloomberglp.TerminalApiEx;
+            using Bloomberglp.Component.Forms.UI;
+            using System.Windows.Forms;
+            using System.Threading;
+            
+            //capture current UI thread context
+            //assuming call is mode from UI thread
+            SynchronizationContext uiContext = SynchronizationContext.Current;
+            
+            //begin the asynchronous CreateComponent operation
+            //passing in current SynchronizationContext as state 
+            BlpTerminal.BeginCreateComponent("BCHART", OnComponentCreated, uiContext);
+            
+            //callback method called when the CreateComponent operation is complete
+            void OnComponentCreated(IAsyncResult ar)
+            {
+                //complete asynchronous operation and get returned component instance
+                BlpComponent component = (BlpComponent)BlpTerminal.EndCreateComponent(ar);
+            
+                //get SynchronizationContext for UI thread passed as state to BeginCreateComponent
+                SynchronizationContext uiContext = (SynchronizationContext)ar.AsyncState;
+            
+                //post request to UI thread
+                uiContext.Post(EmbedComponent, component);
+            }
+            
+            //when this method is called it will be on UI thread 
+            //and it will be safe to create and use UI controls
+            void EmbedComponent(object state)
+            {
+                //get instance of component passed in as state
+                BlpComponent component = (BlpComponent)state;
+            
+                //create a WindowsForms Form
+                Form form = new Form();
+            
+                //create an instance of the Windows Forms control
+                BlpControl control = new BlpControl();
+            
+                //initialize the visual control with the Bloomberg component instance
+                control.Initialize(component);
+            
+                //set dock style of control to fill entire form area
+                control.Dock = DockStyle.Fill;
+            
+                //add control to the form
+                form.Controls.Add(control);
+            
+                //show form with embedded Bloomberg control
+                form.Show();
+            }
+            
+            </code>
+            </para>
+            </example>
+        </member>
+        <member name="M:Bloomberglp.Component.Forms.UI.BlpControl.#ctor">
+            <summary>
+            Creates a new instance of the BlpControl class
+            </summary>
+        </member>
+        <member name="P:Bloomberglp.Component.Forms.UI.BlpControl.Component">
+            <summary>
+            Gets the Bloomberg component associated with this visual container
+            </summary>
+        </member>
+        <member name="M:Bloomberglp.Component.Forms.UI.BlpControl.Initialize(Bloomberglp.TerminalApiEx.BlpComponent)">
+            <summary>
+            Initializes the visual container with an instance of a Bloomberg component
+            </summary>
+            <param name="component">The component instance to associate with the visual container</param>
+        </member>
+        <member name="M:Bloomberglp.Component.Forms.UI.BlpControl.OnSizeChanged(System.EventArgs)">
+            <summary>
+            Called when the size of the control has changed
+            </summary>
+            <param name="e">Event arguments</param>
+        </member>
+    </members>
+</doc>
